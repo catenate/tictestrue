@@ -1,0 +1,88 @@
+/home/jdc/Dropbox/tictestrue
+/usr/local/plan9/font/times/latin1.7a.font
+/home/jdc/opt/src/icons/icons.14.font
+  0.0000000  59.9218750
+w Newcol Kill Putall Dump acme.dump Exit 
+c          0 New Cut Paste Snarf Sort Zerox Delcol 
+c          1 New Cut Paste Snarf Sort Zerox Delcol 
+f          0           2           0           0   2.0697168 
+          2          51          85           1           0 /home/jdc/Dropbox/tictestrue/ Del Snarf Get | Look 
+f          0          37          18          18  12.0915033 
+         37          61          18           0           0 /home/jdc/Dropbox/tictestrue/ttt.1.out Del Snarf Undo | Look 
+f          0          38          60          78  14.1612200 
+         38          63         189           0           0 /home/jdc/Dropbox/tictestrue/ttt.rb Del Snarf Undo Redo | Look 
+f          0          51         109         109  25.5991285 
+         51          51         331           0           0 /home/jdc/Dropbox/tictestrue/ruby Del Snarf | Look 
+F          1           0          31          31   2.0697168          43 
+          1          61          43           0           1 /home/jdc/Dropbox/tictestrue/guide Del Snarf Undo Put | Look 
+chmod +x ttt.1
+chmod +x ttt.rb
+testcmd ttt
+F          1           1        1148        1148  22.7668845        1153 
+         20          54        1153           0           1 /home/jdc/Dropbox/tictestrue/+Errors Del Snarf | Look 
+rc (/usr/local/plan9/bin/rc): null list in concatenation
+apply: No such file or directory
+which apply
+which: exit 1
+which diffout
+/home/jdc/bin/9/diffout
+which apply
+/home/jdc/bin/9/apply
+rc (/usr/local/plan9/bin/rc): null list in concatenation
+usage: apply [-hls] [-j nproc] command files...
+/home/jdc/bin/9/testcmd
+rc (/usr/local/plan9/bin/rc): null list in concatenation
+usage: apply [-hls] [-j nproc] command files...
+rc (/usr/local/plan9/bin/rc): null list in concatenation
+usage: apply [-hls] [-j nproc] command files...
+hw.1
+1c1
+< hello world
+---
+> ./hw.1: Exec format error
+/home/jdc/bin/9/diffout: failed hw.1
+hw.1
+1c1
+< hello world
+---
+> ./hw: No such file or directory
+/home/jdc/bin/9/diffout: failed hw.1
+/usr/bin/ruby1.9.1
+hw.1
+hello world
+hw.1
+hello world
+hello world
+hello world
+hello world
+ttt.1
+1,3c1
+< 1 2 3
+< 4 5 6
+< 7 8 9
+---
+> ./ttt.rb: Permission denied
+/home/jdc/bin/9/diffout: failed ttt.1
+ttt.1
+1 2 3
+4 5 6
+7 8 9
+ttt.1
+1,3c1
+< 1 2 3
+< 4 5 6
+< 7 8 9
+---
+> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+/home/jdc/bin/9/diffout: failed ttt.1
+ttt.1
+1,3c1
+< 1 2 3
+< 4 5 6
+< 7 8 9
+---
+> 1
+/home/jdc/bin/9/diffout: failed ttt.1
+ttt.1
+which diffout
+/tmp

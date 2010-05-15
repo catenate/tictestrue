@@ -1,0 +1,4 @@
+chmod +x ttt.1
+git status
+ls -ltr
+testcmd ttt
