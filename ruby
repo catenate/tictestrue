@@ -15,3 +15,9 @@ nb ruby define print array element
 board = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 puts "#{board.inspect}"
 puts "#{board[0]}"
+
+
+nb function method structure layout
+def /name/
+	/code/
+end

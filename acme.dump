@@ -1,4 +1,4 @@
-/home/jdc/Dropbox/tictestrue
+/home/jdc/git/tictestrue
 /usr/local/plan9/font/times/latin1.7a.font
 /home/jdc/opt/src/icons/icons.14.font
   0.0000000  59.9218750
@@ -6,83 +6,81 @@ w Newcol Kill Putall Dump acme.dump Exit
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           2           0           0   2.0697168 
-          2          51          85           1           0 /home/jdc/Dropbox/tictestrue/ Del Snarf Get | Look 
-f          0          37          18          18  12.0915033 
-         37          61          18           0           0 /home/jdc/Dropbox/tictestrue/ttt.1.out Del Snarf Undo | Look 
-f          0          38          60          78  14.1612200 
-         38          63         189           0           0 /home/jdc/Dropbox/tictestrue/ttt.rb Del Snarf Undo Redo | Look 
-f          0          51         109         109  25.5991285 
-         51          51         331           0           0 /home/jdc/Dropbox/tictestrue/ruby Del Snarf | Look 
-F          1           0          31          31   2.0697168          43 
-          1          61          43           0           1 /home/jdc/Dropbox/tictestrue/guide Del Snarf Undo Put | Look 
-chmod +x ttt.1
-chmod +x ttt.rb
-testcmd ttt
-F          1           1        1148        1148  22.7668845        1153 
-         20          54        1153           0           1 /home/jdc/Dropbox/tictestrue/+Errors Del Snarf | Look 
-rc (/usr/local/plan9/bin/rc): null list in concatenation
-apply: No such file or directory
-which apply
-which: exit 1
-which diffout
-/home/jdc/bin/9/diffout
-which apply
-/home/jdc/bin/9/apply
-rc (/usr/local/plan9/bin/rc): null list in concatenation
-usage: apply [-hls] [-j nproc] command files...
-/home/jdc/bin/9/testcmd
-rc (/usr/local/plan9/bin/rc): null list in concatenation
-usage: apply [-hls] [-j nproc] command files...
-rc (/usr/local/plan9/bin/rc): null list in concatenation
-usage: apply [-hls] [-j nproc] command files...
-hw.1
-1c1
-< hello world
----
-> ./hw.1: Exec format error
-/home/jdc/bin/9/diffout: failed hw.1
-hw.1
-1c1
-< hello world
----
-> ./hw: No such file or directory
-/home/jdc/bin/9/diffout: failed hw.1
-/usr/bin/ruby1.9.1
-hw.1
-hello world
-hw.1
-hello world
-hello world
-hello world
-hello world
+          2          47          76           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
+f          0           3          62          62  12.2004357 
+          3          55          62           0           0 /home/jdc/git/tictestrue/history Del Snarf Undo | Look 
+f          0          14         102         102  19.9346405 
+         14          54         102           0           0 /home/jdc/git/tictestrue/README Del Snarf Undo | Look 
+f          1          13          25          36   2.0697168 
+         13          53         131           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
+F          1           1        2070        2070  19.0631808        2070 
+          5          50        2070           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf | Look 
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	acme.dump
+#	guide
+nothing added to commit but untracked files present (use "git add" to track)
+--rw-r--r-- M 0 jdc jdc    0 May 15 18:31 README
+d-rwxr-xr-x M 0 jdc jdc    0 May 15 18:32 .git
+--rwxr-xr-x M 0 jdc jdc  189 May 15 18:40 ttt.rb
+--rw-r--r-- M 0 jdc jdc   18 May 15 18:40 ttt.1.out
+--rw------- M 0 jdc jdc 2579 May 15 18:40 acme.dump
+--rw-r--r-- M 0 jdc jdc   15 May 15 18:40 guide
+--rwxr-xr-x M 0 jdc jdc   35 May 15 18:40 ttt.1
+--rw-r--r-- M 0 jdc jdc  331 May 15 18:40 ruby
+--rw-r--r-- M 0 jdc jdc   62 May 15 18:44 history
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	acme.dump
+#	guide
+#	history
+#	ruby
+#	ttt.1
+#	ttt.1.out
+#	ttt.rb
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   README
+#	new file:   acme.dump
+#	new file:   guide
+#	new file:   history
+#	new file:   ruby
+#	new file:   ttt.1
+#	new file:   ttt.1.out
+#	new file:   ttt.rb
+#
 ttt.1
-1,3c1
-< 1 2 3
-< 4 5 6
-< 7 8 9
----
-> ./ttt.rb: Permission denied
-/home/jdc/bin/9/diffout: failed ttt.1
-ttt.1
-1 2 3
-4 5 6
-7 8 9
-ttt.1
-1,3c1
-< 1 2 3
-< 4 5 6
-< 7 8 9
----
-> [1, 2, 3, 4, 5, 6, 7, 8, 9]
-/home/jdc/bin/9/diffout: failed ttt.1
-ttt.1
-1,3c1
-< 1 2 3
-< 4 5 6
-< 7 8 9
----
-> 1
-/home/jdc/bin/9/diffout: failed ttt.1
-ttt.1
-which diffout
-/tmp
+[master 396bfa5] Add print-board test case and code.
+ 8 files changed, 125 insertions(+), 0 deletions(-)
+ create mode 100644 acme.dump
+ create mode 100644 guide
+ create mode 100644 history
+ create mode 100644 ruby
+ create mode 100755 ttt.1
+ create mode 100644 ttt.1.out
+ create mode 100755 ttt.rb
+# On branch master
+nothing to commit (working directory clean)
+To git@github.com:catenate/tictestrue.git
+   d16fd09..396bfa5  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")

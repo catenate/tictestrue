@@ -1,3 +1,15 @@
 nb init repository
 cp /home/jdc/Dropbox/tictestrue/* .
 rm hw*
+
+
+nb justify project
+I thought I'd use this little project as an opportunity to practice
+aspects of disciplined TDD, Ruby, and XP. So, I set up a github
+project;¹ reused an elementary output-diff test framework I wrote for
+shell scripts with predictable output (not actually in the repository);
+started writing tests before I wrote any Ruby code; and track what I'm
+doing as user stories (features, and no-point chores) in a public
+Pivotal Tracker project.²
+ ¹ http://github.com/catenate/tictestrue
+ ² http://www.pivotaltracker.com/projects/82400
