@@ -21,3 +21,19 @@ nb function method structure layout
 def /name/
 	/code/
 end
+
+
+nb class initialize method structure layout
+class Board
+	def initialize(board)
+		@board = board
+	end
+end
+
+
+nb imput prompt loop exit nil
+printf("> ")
+while move = gets
+	puts move
+	printf("> ")
+end

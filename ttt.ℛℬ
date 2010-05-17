@@ -2,7 +2,7 @@
 
 class Board
 	def initialize(board)
-		@board = board
+		@board ⇐ board
 	end
 
 	def display_board
@@ -12,19 +12,19 @@ class Board
 	end
 	
 	def apply_move(move, xo)
-		if move >= 1 && move <= 9
-			@board[move-1] = xo
+		if move ≥ 1 ⋀ move ≤ 9
+			@board[move-1] ⇐ xo
 		else
-			puts "please enter 1-9"
+			puts "please enter 1–9"
 		end
 	end
 end
 
-board = Board.new([1, 2, 3, 4, 5, 6, 7, 8, 9])
+board ⇐ Board.new([1, 2, 3, 4, 5, 6, 7, 8, 9])
 board.display_board
 
 printf("> ")
-while move = gets
+while move ⇐ gets
 	board.apply_move(Integer(move), "x")
 	board.display_board
 	printf("> ")

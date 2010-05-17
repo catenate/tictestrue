@@ -1,9 +1,10 @@
-chmod +x ttt.1
-git add *
+chmod +x ttt.3
+git add 
 git status
-git commit -a -m 'Add print-board test case and code.'
+git commit -a -m 'Accept and display player-first move.'
 git push origin master
 ls -ltr
+mk ttt.rb
 testcmd ttt
 |fmt -w 72
 |sort|uniq
