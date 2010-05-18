@@ -1,20 +1,20 @@
 /home/jdc/git/tictestrue
 /usr/local/plan9/font/times/latin1.7a.font
 /home/jdc/opt/src/icons/icons.14.font
-  0.0000000  59.9218750
+  0.0000000  59.8437500
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           2           0           0   2.0697168 
-          2          47          76           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0           3          62          62  12.2004357 
-          3          55          62           0           0 /home/jdc/git/tictestrue/history Del Snarf Undo | Look 
-f          0          14         102         102  19.9346405 
-         14          54         102           0           0 /home/jdc/git/tictestrue/README Del Snarf Undo | Look 
-f          1          13          25          36   2.0697168 
-         13          53         131           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
-F          1           1        2070        2070  19.0631808        2070 
-          5          50        2070           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf | Look 
+f          0           1           0           0   2.0697168 
+          1          47         135           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
+f          0          48         275         295   4.1394336 
+         48          60         393           0           0 /home/jdc/git/tictestrue/lib/board.ℛℬ Del Snarf Redo | Look 
+f          0          39         188         238   8.1699346 
+         39          66        1455           0           0 /home/jdc/git/tictestrue/test/test_board.ℛℬ Del Snarf Undo | Look 
+f          1          10          67          87   2.0697168 
+         10          53         162           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
+F          1           1       37254       37254  27.1241830       37254 
+         11          59       37254           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
@@ -84,3 +84,1325 @@ To git@github.com:catenate/tictestrue.git
 #	modified:   guide
 #
 no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   history
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+ttt.1
+1,3c1
+< 1 2 3
+< 4 5 6
+< 7 8 9
+---
+> ./ttt.rb:3:in `<main>': undefined local variable or method `display_board' for main:Object (NameError)
+/home/jdc/bin/9/diffout: failed ttt.1
+ttt.1
+1,3c1,2
+< 1 2 3
+< 4 5 6
+< 7 8 9
+---
+> ./ttt.rb:4:in `display_board': undefined local variable or method `board' for main:Object (NameError)
+> 	from ./ttt.rb:10:in `<main>'
+/home/jdc/bin/9/diffout: failed ttt.1
+ttt.1
+1,3c1,2
+< 1 2 3
+< 4 5 6
+< 7 8 9
+---
+> ./ttt.rb:5:in `display_board': undefined local variable or method `board' for main:Object (NameError)
+> 	from ./ttt.rb:10:in `<main>'
+/home/jdc/bin/9/diffout: failed ttt.1
+ttt.1
+1 2 3
+4 5 6
+7 8 9
+ttt.1
+ttt.1
+1 2 3
+4 5 6
+7 8 9
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   history
+#	modified:   ruby
+#	modified:   ttt.rb
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   history
+#	modified:   ruby
+#	modified:   ttt.rb
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master c6ed27d] Move board storage and printing into a class.
+ 5 files changed, 125 insertions(+), 92 deletions(-)
+ rewrite acme.dump (87%)
+# On branch master
+nothing to commit (working directory clean)
+To git@github.com:catenate/tictestrue.git
+   396bfa5..c6ed27d  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+The old-school physical social network, reflected online.
+New /home/jdc/Dropbox/nb/intficttt.1
+ttt.2
+4,6d3
+< 1 2 3
+< 4 x 6
+< 7 8 9
+/home/jdc/bin/9/diffout: failed ttt.2
+ttt.1
+ttt.2
+4,6d3
+< 1 2 3
+< 4 x 6
+< 7 8 9
+/home/jdc/bin/9/diffout: failed ttt.2
+4,6d3
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+3a4
+> > 
+failed ttt.1
+4,6c4,5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+---
+> > 5
+> > 
+failed ttt.2
+3a4
+> > 
+failed ttt.1
+5,7c5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+---
+> > 
+failed ttt.2
+3a4
+> > 
+failed ttt.1
+5,7d4
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+/home/jdc/Dropbox/nb1,3c1,4
+< 1 2 3
+< 4 5 6
+< 7 8 9
+---
+> sed -f toascii.sed ttt.ℛℬ > ttt.rb
+> ./ttt.rb:16: warning: mismatched indentations at 'end' with 'if' at 15
+> ./ttt.rb:17: warning: mismatched indentations at 'end' with 'def' at 14
+> ./ttt.rb:26: syntax error, unexpected $end, expecting keyword_end
+failed ttt.1
+1,8c1,4
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > 5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+< > 
+---
+> mk: 'ttt.rb' is up to date
+> ./ttt.rb:16: warning: mismatched indentations at 'end' with 'if' at 15
+> ./ttt.rb:17: warning: mismatched indentations at 'end' with 'def' at 14
+> ./ttt.rb:26: syntax error, unexpected $end, expecting keyword_end
+failed ttt.2
+0a1
+> mk: 'ttt.rb' is up to date
+3a5
+> > 
+failed ttt.1
+0a1
+> mk: 'ttt.rb' is up to date
+5,7d5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+0a1
+> mk: 'ttt.rb' is up to date
+failed ttt.1
+0a1
+> mk: 'ttt.rb' is up to date
+5,7d5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+0a1
+> mk: 'ttt.rb' is up to date
+failed ttt.1
+0a1
+> mk(1): 'ttt.rb' is up to date
+5,7d5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+1,8c1
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > 5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+< > 
+---
+> /ttt.rb: No such file or directory
+failed ttt.2
+
+1,8c1
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > 5
+< 1 2 3
+< 4 x 6
+< 7 8 9
+< > 
+---
+> /ttt.rb: No such file or directory
+failed ttt.2
+5,7d4
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+
+5,7d4
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+5,7d4
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+5,7d4
+< 1 2 3
+< 4 x 6
+< 7 8 9
+failed ttt.2
+/home/jdc/Dropbox/go/sed -f toascii.sed touch ttt.ℛℬ > ttt.rb
+sed -f toascii.sed ttt.ℛℬ > ttt.rb
+0a1
+> ./ttt.rb:26:in `<main>': undefined method `Int' for main:Object (NoMethodError)
+3,6d3
+< 7 8 9
+< > 5
+< 1 2 3
+< 4 x 6
+failed ttt.2
+0a1
+> ./ttt.rb:26:in `<main>': undefined method `apply_move' for main:Object (NoMethodError)
+3,6d3
+< 7 8 9
+< > 5
+< 1 2 3
+< 4 x 6
+failed ttt.2
+4,6c4,5
+< > 5
+< 1 2 3
+< 4 x 6
+---
+> > 1 2 3
+> 4 5 x
+failed ttt.2
+4,5c4
+< > 5
+< 1 2 3
+---
+> > 1 2 3
+failed ttt.2
+1 2 3
+4 5 6
+7 8 9
+> 1 2 3
+4 x 6
+7 8 9
+> 
+
+4,5c4
+< > 5
+< 1 2 3
+---
+> > 1 2 3
+failed ttt.2
+1 2 3
+4 5 6
+7 8 9
+> 1 2 3
+4 x 6
+7 8 9
+> 
+
+4,5c4,5
+< > 1 2 3
+< 4 x 6
+---
+> > x 2 3
+> 4 5 6
+6a7,30
+> > x x 3
+> 4 5 6
+> 7 8 9
+> > x x x
+> 4 5 6
+> 7 8 9
+> > x x x
+> x 5 6
+> 7 8 9
+> > x x x
+> x x 6
+> 7 8 9
+> > x x x
+> x x x
+> 7 8 9
+> > x x x
+> x x x
+> x 8 9
+> > x x x
+> x x x
+> x x 9
+> > x x x
+> x x x
+> x x x
+failed ttt.2
+27a28,30
+> > x x x
+> x x x
+> x x x
+failed ttt.2
+diff: can't stat ttt.3.out
+failed ttt.3
+0a1,2
+> ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+> 	from ./ttt.rb:28:in `<main>'
+failed ttt.3
+0a1,2
+> ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+> 	from ./ttt.rb:28:in `<main>'
+5,6d6
+< ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:28:in `<main>'
+failed ttt.3
+./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+	from ./ttt.rb:28:in `<main>'
+1 2 3
+4 5 6
+7 8 9
+> ttt.3: exit 1
+3a4,11
+> > 0 is not a move
+> 1 2 3
+> 4 5 6
+> 7 8 9
+> > 10 is not a move
+> 1 2 3
+> 4 5 6
+> 7 8 9
+failed ttt.2
+1,4c1,5
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > 
+---
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
+> 			puts "please enter 1–9"
+> 			                      ^
+failed ttt.1
+1,39c1,5
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > please enter 1–9
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > please enter 1–9
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > x 2 3
+< 4 5 6
+< 7 8 9
+< > x x 3
+< 4 5 6
+< 7 8 9
+< > x x x
+< 4 5 6
+< 7 8 9
+< > x x x
+< x 5 6
+< 7 8 9
+< > x x x
+< x x 6
+< 7 8 9
+< > x x x
+< x x x
+< 7 8 9
+< > x x x
+< x x x
+< x 8 9
+< > x x x
+< x x x
+< x x 9
+< > x x x
+< x x x
+< x x x
+< > 
+---
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
+> 			puts "please enter 1–9"
+> 			                      ^
+failed ttt.2
+1,6c1,5
+< ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:28:in `<main>'
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > 
+---
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
+> 			puts "please enter 1–9"
+> 			                      ^
+failed ttt.3
+1,4c1,5
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > 
+---
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
+> 			puts "please enter 1–9"
+> 			                      ^
+failed ttt.1
+1,39c1,5
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > please enter 1–9
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > please enter 1–9
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > x 2 3
+< 4 5 6
+< 7 8 9
+< > x x 3
+< 4 5 6
+< 7 8 9
+< > x x x
+< 4 5 6
+< 7 8 9
+< > x x x
+< x 5 6
+< 7 8 9
+< > x x x
+< x x 6
+< 7 8 9
+< > x x x
+< x x x
+< 7 8 9
+< > x x x
+< x x x
+< x 8 9
+< > x x x
+< x x x
+< x x 9
+< > x x x
+< x x x
+< x x x
+< > 
+---
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
+> 			puts "please enter 1–9"
+> 			                      ^
+failed ttt.2
+1,6c1,5
+< ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:28:in `<main>'
+< 1 2 3
+< 4 5 6
+< 7 8 9
+< > 
+---
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: invalid multibyte char (US-ASCII)
+> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
+> 			puts "please enter 1–9"
+> 			                      ^
+failed ttt.3
+4c4
+< > please enter 1–9
+---
+> > please enter 1-9
+8c8
+< > please enter 1–9
+---
+> > please enter 1-9
+failed ttt.2
+4c4
+< > please enter 1–9
+---
+> > please enter 1-9
+8c8
+< > please enter 1–9
+---
+> > please enter 1-9
+failed ttt.2
+4c4
+< > please enter 1–9
+---
+> > please enter 1-9
+8c8
+< > please enter 1–9
+---
+> > please enter 1-9
+failed ttt.2
+
+all passed
+4c4
+< > please enter 1–9
+---
+> > please enter 1-9
+failed ttt.2
+all passed
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#	modified:   ruby
+#	modified:   ttt.1
+#	modified:   ttt.1.out
+#	modified:   ttt.rb
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	mk.log
+#	git add mkfile
+#	git add toascii.sed
+#	git add ttt.2
+#	git add ttt.2.out
+#	git add ttt.3
+#	git add ttt.3.out
+#	"ttt.\342\204\233\342\204\254"
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   mkfile
+#	new file:   toascii.sed
+#	new file:   ttt.2
+#	new file:   ttt.2.out
+#	new file:   ttt.3
+#	new file:   ttt.3.out
+#	new file:   "ttt.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#	modified:   ruby
+#	modified:   ttt.1
+#	modified:   ttt.1.out
+#	modified:   ttt.rb
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	mk.log
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   mkfile
+#	new file:   toascii.sed
+#	new file:   ttt.2
+#	new file:   ttt.2.out
+#	new file:   ttt.3
+#	new file:   ttt.3.out
+#	new file:   "ttt.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#	modified:   ruby
+#	modified:   ttt.1
+#	modified:   ttt.1.out
+#	modified:   ttt.rb
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git add .gitignore
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   .gitignore
+#	new file:   mkfile
+#	new file:   toascii.sed
+#	new file:   ttt.2
+#	new file:   ttt.2.out
+#	new file:   ttt.3
+#	new file:   ttt.3.out
+#	new file:   "ttt.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#	modified:   ruby
+#	modified:   ttt.1
+#	modified:   ttt.1.out
+#	modified:   ttt.rb
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   .gitignore
+#	new file:   mkfile
+#	new file:   toascii.sed
+#	new file:   ttt.2
+#	new file:   ttt.2.out
+#	new file:   ttt.3
+#	new file:   ttt.3.out
+#	new file:   "ttt.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#	modified:   ruby
+#	modified:   ttt.1
+#	modified:   ttt.1.out
+#	modified:   ttt.rb
+#
+[master 766f0b0] Accept and display player-first move.
+ 13 files changed, 164 insertions(+), 4 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 mkfile
+ create mode 100644 toascii.sed
+ create mode 100755 ttt.2
+ create mode 100644 ttt.2.out
+ create mode 100755 ttt.3
+ create mode 100644 ttt.3.out
+ create mode 100644 "ttt.\342\204\233\342\204\254"
+# On branch master
+nothing to commit (working directory clean)
+To git@github.com:catenate/tictestrue.git
+   c6ed27d..766f0b0  master -> master
+./lib/ttt.ℛℬ
+mk: no recipe to make 'rb'
+mk: exit 1
+mk: 'rb' is up to date
+mk: 'rb' is up to date
+sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
+sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    ttt.rb -> lib/ttt.rb
+#	renamed:    "ttt.\342\204\233\342\204\254" -> "lib/ttt.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   lib/ttt.rb
+#	modified:   mkfile
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git add ensorcel
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	renamed:    ttt.rb -> lib/ttt.rb
+#	renamed:    "ttt.\342\204\233\342\204\254" -> "lib/ttt.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   lib/ttt.rb
+#	modified:   mkfile
+#
+sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
+ruby -I . test/test_ttt.rb
+sh: ruby: Permission denied
+mk: exit 1
+mk: ruby -I . test/test_ttt.rb  : exit status=exit(126)
+Usage: /usr/bin/ruby1.9.1 [switches] [--] [programfile] [arguments]
+  -0[octal]       specify record separator (\0, if no argument)
+  -a              autosplit mode with -n or -p (splits $_ into $F)
+  -c              check syntax only
+  -Cdirectory     cd to directory, before executing your script
+  -d              set debugging flags (set $DEBUG to true)
+  -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
+  -Eex[:in]       specify the default external and internal character encodings
+  -Fpattern       split() pattern for autosplit (-a)
+  -i[extension]   edit ARGV files in place (make backup if extension supplied)
+  -Idirectory     specify $LOAD_PATH directory (may be used more than once)
+  -l              enable line ending processing
+  -n              assume 'while gets(); ... end' loop around your script
+  -p              assume loop like -n but print line also like sed
+  -rlibrary       require the library, before executing your script
+  -s              enable some switch parsing for switches after script name
+  -S              look for the script using PATH environment variable
+  -T[level]       turn on tainting checks
+  -v              print version number, then turn on verbose mode
+  -w              turn warnings on for your script
+  -W[level]       set warning level; 0=silence, 1=medium, 2=verbose (default for level)
+  -x[directory]   strip off text before #!ruby line and perhaps cd to directory
+  --copyright     print the copyright
+  --version       print the version
+sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+1 2 3
+4 5 6
+7 8 9
+> well hello there
+Loaded suite test/test_ttt
+Started
+
+Finished in 0.000297 seconds.
+
+0 tests, 0 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
+sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+1 2 3
+4 5 6
+7 8 9
+> Loaded suite test/test_ttt
+Started
+E
+Finished in 0.000397 seconds.
+
+  1) Error:
+test_new(TestTtt):
+NoMethodError: undefined method `current_board' for Board:Class
+    test/test_ttt.rb:10:in `test_new'
+
+1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+1 2 3
+4 5 6
+7 8 9
+> Loaded suite test/test_ttt
+Started
+E
+Finished in 0.000580 seconds.
+
+  1) Error:
+test_new(TestTtt):
+NoMethodError: undefined method `current_board' for Board:Class
+    test/test_ttt.rb:10:in `test_new'
+
+1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+1 2 3
+4 5 6
+7 8 9
+> Loaded suite test/test_ttt
+Started
+E
+Finished in 0.000437 seconds.
+
+  1) Error:
+test_new(TestTtt):
+NoMethodError: undefined method `current_board' for Board:Class
+    test/test_ttt.rb:10:in `test_new'
+
+1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+1 2 3
+4 5 6
+7 8 9
+> Loaded suite test/test_ttt
+Started
+E
+Finished in 0.000407 seconds.
+
+  1) Error:
+test_new(TestTtt):
+NoMethodError: undefined method `current_board' for Board:Class
+    test/test_ttt.rb:10:in `test_new'
+
+1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+1 2 3
+4 5 6
+7 8 9
+> Loaded suite test/test_ttt
+Started
+F
+Finished in 0.000983 seconds.
+
+  1) Failure:
+test_new(TestTtt) [test/test_ttt.rb:10]:
+Expected [1, 2, 3, 4, 5, 6, 7, 8, 9] to match [1, 2, 3, 4, 5, 6, 7, 8, 9].
+
+1 tests, 2 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+1 2 3
+4 5 6
+7 8 9
+> Loaded suite test/test_ttt
+Started
+F
+Finished in 0.001777 seconds.
+
+  1) Failure:
+test_new(TestTtt) [test/test_ttt.rb:11]:
+Expected [1, 2, 3, 4, 5, 6, 7, 8, 9] to match [1, 2, 3, 4, 5, 6, 7, 8, 9].
+
+1 tests, 2 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	renamed:    ttt.rb -> lib/ttt.rb
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	deleted:   git mv lib/ttt.rb .
+#	modified:   mkfile
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	"lib/board.\342\204\233\342\204\254"
+#	test/
+fatal: bad source, source=lib/ttt.rb, destination=ttt.rb
+git: exit 128
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   mkfile
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git add test/
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#	new file:   test/test_ttt.rb
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   mkfile
+#	deleted:    test/test_ttt.rb
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#	new file:   git mv test/test_ttt.rb test/test_board.rb
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   mkfile
+#	modified:   test/test_ttt.rb
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   test/test_board.rb
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   mkfile
+#	modified:   test/test_board.rb
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+/usr/bin/ruby1.9.1: No such file or directory -- test/test_ttt.rb (LoadError)
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+mk: 'first' is up to date
+mk: 'first' is up to date
+mk: 'first' is up to date
+echo ./ttt.ℛℬ
+./ttt.ℛℬ
+./ttt.ℛℬ
+./lib/board.ℛℬ
+./ttt.ℛℬ
+./test/test_board.ℛℬ
+echo ./ttt.ℛℬ
+mk: 'first' is up to date
+echo ./ttt.ℛℬ
+./ttt.ℛℬ
+echo ./ttt.ℛℬ
+./ttt.ℛℬ
+mk: 'test' is up to date
+mk: 'test' is up to date
+echo ./ttt.ℛℬ
+./ttt.ℛℬ
+echo ./ttt.ℛℬ
+./ttt.ℛℬ
+URB = `{find . -name *.ℛℬ}
+./ttt.ℛℬ
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+mk: 'first' is up to date
+echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+test/test_board.rb:2:in `require': no such file to load -- lib/ttt (LoadError)
+	from test/test_board.rb:2:in `<main>'
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+mk: exit 1
+
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+echo test/test_board
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+echo test/test_board
+./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
+test/test_board
+
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+
+mk: 'first' is up to date
+
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   test/test_board.rb
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   ensorcel
+#	modified:   mkfile
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git add lib/board.rb
+#	test/test_board
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   lib/board.rb
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   test/test_board.rb
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   ensorcel
+#	modified:   mkfile
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	test/test_board
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+test/test_board.rb:14: syntax error, unexpected tINTEGER, expecting ')'mk: exit 1
+
+	def test_move_fill_1(1, "x")
+	                      ^
+test/test_board.rb:14: syntax error, unexpected ')', expecting keyword_end
+test/test_board.rb:17: syntax error, unexpected keyword_end, expecting $end
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   lib/board.rb
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   test/test_board.rb
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   ensorcel
+#	modified:   mkfile
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	test/test_board
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   lib/board.rb
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   test/test_board.rb
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   ensorcel
+#	modified:   guide
+#	modified:   mkfile
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git add test/test_board
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   lib/board.rb
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> oldtest/ttt.1
+#	renamed:    ttt.1.out -> oldtest/ttt.1.out
+#	renamed:    ttt.2 -> oldtest/ttt.2
+#	renamed:    ttt.2.out -> oldtest/ttt.2.out
+#	renamed:    ttt.3 -> oldtest/ttt.3
+#	renamed:    ttt.3.out -> oldtest/ttt.3.out
+#	new file:   test/test_board
+#	new file:   test/test_board.rb
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   ensorcel
+#	modified:   guide
+#	modified:   mkfile
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ensorcel
+#	new file:   lib/board.rb
+#	new file:   "lib/board.\342\204\233\342\204\254"
+#	new file:   test/test_board
+#	new file:   test/test_board.rb
+#	new file:   "test/test_board.\342\204\233\342\204\254"
+#	renamed:    ttt.1 -> testcmd/ttt.1
+#	renamed:    ttt.1.out -> testcmd/ttt.1.out
+#	renamed:    ttt.2 -> testcmd/ttt.2
+#	renamed:    ttt.2.out -> testcmd/ttt.2.out
+#	renamed:    ttt.3 -> testcmd/ttt.3
+#	renamed:    ttt.3.out -> testcmd/ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   ensorcel
+#	modified:   guide
+#	modified:   mkfile
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#

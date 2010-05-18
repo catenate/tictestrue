@@ -1,11 +1,11 @@
 chmod +x ttt.3
-git add 
+git mv oldtest testcmd
 git status
-git commit -a -m 'Accept and display player-first move.'
+git commit -a -m 'Set up unit testing.'
 git push origin master
 ls -ltr
-mk ttt.rb
-testcmd ttt
+mk -n
+#testcmd ttt
 |fmt -w 72
 |sort|uniq
 

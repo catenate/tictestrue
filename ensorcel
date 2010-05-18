@@ -1,0 +1,3 @@
+#!/usr/local/plan9/bin/rc
+echo 'URB = `{find . -name ''*.ℛℬ''}'
+echo 'URB_TEST = `{find test -name ''*.ℛℬ''}'
