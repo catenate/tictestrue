@@ -37,3 +37,11 @@ while move = gets
 	puts move
 	printf("> ")
 end
+
+
+nb iterator times upto step each loop for in
+Thomas 2009, pp. 144–146
+
+
+nb custom class ruby broken
+http://blog.nathanielbibler.com/post/73525836/using-the-ruby-array-uniq-with-custom-classes

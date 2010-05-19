@@ -7,11 +7,11 @@ TEST = ${URB_TEST:test/%.ℛℬ=test/%}
 	sed -f toascii.sed $stem.ℛℬ > $stem.rb
 	chmod +x $stem.rb
 
-first:V: test
+first:V: rb test
 
 rb:V: $RB
 
 test:V: $TEST
 
-%: %.rb
-	$RUBY -I . $stem.rb > $stem
+%:V: %.rb
+	$RUBY -I . $stem.rb

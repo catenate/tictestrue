@@ -2,11 +2,11 @@
 require 'lib/board'
 
 board = Board.new([1, 2, 3, 4, 5, 6, 7, 8, 9])
-board.display_board
+board.display
 
 printf("> ")
 while move = gets
-	board.apply_move(Integer(move), "x")
-	board.display_board
+	board.move(Integer(move), "x")
+	board.display
 	printf("> ")
 end

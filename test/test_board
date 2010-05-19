@@ -1,8 +1,13 @@
 Loaded suite test/test_board
 Started
+.please enter 1-9
 please enter 1-9
-please enter 1-9
-...
-Finished in 0.000940 seconds.
+.F.
+Finished in 0.001416 seconds.
 
-3 tests, 13 assertions, 0 failures, 0 errors, 0 skips
+  1) Failure:
+test_move_fill(TestTtt) [test/test_board.rb:39]:
+<140> expected but was
+<130>.
+
+4 tests, 14 assertions, 1 failures, 0 errors, 0 skips
