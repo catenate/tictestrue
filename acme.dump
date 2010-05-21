@@ -23,8 +23,8 @@ f          0           8           0          27  16.5577342
           8          54         265           0           0 /home/jdc/git/tictestrue/toascii.sed Del Snarf | Look 
 f          0          13          15          15  18.6274510 
          13          58          15           0           0 /home/jdc/git/tictestrue/.gitignore Del Snarf Undo | Look 
-F          1           0       46546       46546   2.0697168       46546 
-          9          62       46546           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look mk 
+F          1           0       46804       46804   2.0697168       46804 
+          9          62       46804           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look mk 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -2227,7 +2227,14 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #	modified:   ttt.rb
 #	modified:   "ttt.\342\204\233\342\204\254"
 #
-f          1          10          79          90  57.9520697 
+[master 143dd17] Plays! Loses on fork 5-9-3-7.
+ 14 files changed, 2777 insertions(+), 4280 deletions(-)
+ rewrite acme.dump (82%)
+ rewrite guide (85%)
+ create mode 100644 nbindex
+To git@github.com:catenate/tictestrue.git
+   8923dc4..143dd17  master -> master
+f          1          10         139         162  57.9520697 
          10          64         240           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look New scratch
 f          1          11        1332        1499  96.0784314 
          11          50        1499           0           0 /home/jdc/git/tictestrue/scratch Del Snarf | Look 

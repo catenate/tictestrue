@@ -37,31 +37,31 @@ class TestTtt < Test::Unit::TestCase
 		
 		@board.move(3, "x")
 		assert_equal(@board.board, ["x", "x", "x", 4, 5, 6, 7, 8, 9])
-		assert_equal(@board.eval("x"), 122)
+		assert_equal(@board.eval("x"), 132)
 		
 		@board.move(4, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", 5, 6, 7, 8, 9])
-		assert_equal(@board.eval("x"), 142)
+		assert_equal(@board.eval("x"), 152)
 		
 		@board.move(5, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", 6, 7, 8, 9])
-		assert_equal(@board.eval("x"), 184)
+		assert_equal(@board.eval("x"), 194)
 		
 		@board.move(6, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", 7, 8, 9])
-		assert_equal(@board.eval("x"), 314)
+		assert_equal(@board.eval("x"), 324)
 		
 		@board.move(7, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", "x", 8, 9])
-		assert_equal(@board.eval("x"), 535)
+		assert_equal(@board.eval("x"), 555)
 		
 		@board.move(8, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", "x", "x", 9])
-		assert_equal(@board.eval("x"), 675)
+		assert_equal(@board.eval("x"), 695)
 		
 		@board.move(9, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", "x", "x", "x"])
-		assert_equal(@board.eval("x"), 1006)
+		assert_equal(@board.eval("x"), 1046)
 	end
 
 	def test_first_1

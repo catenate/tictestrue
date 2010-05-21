@@ -3,7 +3,7 @@
 chmod +x ttt.3
 git mv oldtest testcmd
 git status
-git commit -a -m 'Plays! Loses on fork 5-9-3-7.'
+git commit -a -m 'Value adjacent corners as 2-in-a-rows.'
 git push origin master
 g def `{find . -name '*.ℛℬ'}
 ls -ltr

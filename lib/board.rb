@@ -48,7 +48,7 @@ class Board
 		if @board[2] == xo && @board[4] == xo && @board[6] == xo
 			score += 100
 		end
-		
+
 		# Each 2-in-a-row is worth 10.
 		# horizontal
 		if @board[0] == xo && @board[1] == xo
@@ -113,6 +113,20 @@ class Board
 			score += 10
 		end
 		if @board[5] == xo && @board[7] == xo
+			score += 10
+		end
+		
+		# corners
+		if @board[0] == xo && @board[2] == xo
+			score += 10
+		end
+		if @board[0] == xo && @board[6] == xo
+			score += 10
+		end
+		if @board[8] == xo && @board[2] == xo
+			score += 10
+		end
+		if @board[8] == xo && @board[6] == xo
 			score += 10
 		end
 		
