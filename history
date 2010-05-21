@@ -13,3 +13,115 @@ doing as user stories (features, and no-point chores) in a public
 Pivotal Tracker project.²
  ¹ http://github.com/catenate/tictestrue
  ² http://www.pivotaltracker.com/projects/82400
+
+
+nb design
+Select the best move (pick) from the current board (board) for a given
+player (xo).  This should not only evaluate all the boards (boards)
+generated from xo's possible moves (nil in boards array if not an
+allowed move), but for non-winning moves (evaluation < 120) should also
+consider (subtract) the evaluation of the board after the opponent's
+(ox) best subsequent move.
+
+Maximum valuation without winning: 10(2h+v+3d) + c = 61.
+
+	x x o
+	o x x
+	x o o
+
+Minimum winning valuation: 100 + 10(2h) = 120.
+
+	x x x
+	o o 6
+	7 8 9
+
+Given a starting board (board), generate an array of boards (boards)
+that are the result of applying each of xo's moves to board.  If the
+given move is not possible, store nil instead of a board.  Create
+another array (evals) evaluating each board.  If one of the board
+positions is a win (eval >= 120), pick this move.  This is the first
+part of the evaluation, the immediate result of the xo's move.
+
+A move is not a good move, however, if it immediately gives the other,
+opposing player (ox) a win.  Further, we want to minimize the value of
+the other player's new positions (oboards[]), while still maximizing our
+own (subtract the opposing player's best eval from our eval of each
+position).
+
+	def eval(xo)
+		fakeeval(@board, xo)
+	end
+
+	def fakeeval(board, xo)
+		# current contents of eval, but against board instead of @board
+		# we do this because it's hard to generate lots of different boards?
+	end
+
+	def fakemove(board, move, xo)
+		if board[move-1] =? "x" ⋁ board[move-1] =? "o"
+			board ⇐ nil
+		else
+			board[move-1] ⇐ xo
+		end
+		board
+	end
+
+	def pick(xo)
+		ox ⇐ xo =? "x" ? "o" : "x"
+
+`		boards ⇐ Array.new(9) { Board.new(@board) }
+		evals ⇐ Array.new(9) { 0 }
+		
+		0.upto(8) do |i|
+			boards[i].move(i+1, xo)
+			evals[i] = boards[i].eval(xo)
+			
+			oboards ⇐ Array.new(9) { Board.new(boards[i].get) }
+			0.upto(8) do |j|
+				oboards[j].move(j+1, xo)
+			end
+			oevals ⇐ [ oboards[1].eval(ox), oboards[2].eval(ox), oboards[3].eval(ox), oboards[4].eval(ox), oboards[5].eval(ox), oboards[6].eval(ox), oboards[7].eval(ox), oboards[8].eval(ox), oboards[9].eval(ox) ]
+			
+			evals[i] -= oevals.max
+		end
+		
+		# return index of highest value in evals
+	end
+
+	def oevalmoves(xo)
+
+Generate an array (boards) with the result of making each of xo's
+possible moves from the current position.  Since not all moves are
+possible, this could be a hash instead, with a key of the move, and a
+value of the resulting board.  Evaluate each of these boards, creating a
+hash with a key of the move, and a value of the evaluation.  Or, instead
+of hashes, use nil in arrays, with the array index designating the move.
+
+
+nb wargames imdb quote
+[after playing out all possible outcomes for Global Thermonuclear War] 
+Joshua: Greetings, Professor Falken. 
+Stephen Falken: Hello, Joshua. 
+Joshua: A strange game. The only winning move is not to play. How about a nice game of chess? 
+
+
+nb loses
+1 2 3
+4 5 6
+7 8 9
+> 5
+o 2 3
+4 x 6
+7 8 9
+> 9
+o o 3
+4 x 6
+7 8 x
+> 3
+o o x
+4 x o
+7 8 x
+> 7
+o o x
+4 x o
+x o x

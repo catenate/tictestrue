@@ -1,65 +1,13 @@
+/home/jdc/Dropbox/nb/ttt
 :, |sed 's,,,g'
 chmod +x ttt.3
 git mv oldtest testcmd
 git status
-git commit -a -m 'Add class Boards to evaluate many moves.'
+git commit -a -m 'Plays! Loses on fork 5-9-3-7.'
 git push origin master
+g def `{find . -name '*.ℛℬ'}
 ls -ltr
 mk -n
 #testcmd ttt
 |fmt -w 72
 |sort|uniq
-
-		0.upto(8) do |b|
-			if boards[b].current[b] ≠ "x" ⋀ boards[b].current[b] ≠ "o"
-				boards[b].move(b, xo)
-				boards[b].display
-			end
-		end
-
-class Boards
-	def initialize(board)
-		@boards ⇐ Array.new(9) { Board.new(board) }
-	end
-	
-	def display
-		0.upto(8) do |b|
-			p @boards[b]
-		end
-	end
-	
-	def pick(xo)
-		0.upto(8) do |b|
-			@boards[b].move(b+1, xo)
-		end
-	end
-end
-
-class Boards
-	def initialize(board)
-		@board1 ⇐ Board.new(board)
-		@board2 ⇐ Board.new(board)
-	end
-	
-	def display
-		@board1.display
-		@board2.display
-	end
-	
-	def fill(xo)
-		@board1.move(1, xo)
-		@board2.move(2, xo)
-	end
-	
-	def pick(xo)
-		1
-	end
-end
-
-	def test_pick
-		boards ⇐ Boards.new(@board)
-		boards.display
-		boards.fill("o")
-		boards.display
-		assert_equal(boards.pick("o"), 5)
-	end

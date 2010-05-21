@@ -1,3999 +1,1992 @@
 /home/jdc/git/tictestrue
 /usr/local/plan9/font/times/latin1.7a.font
 /home/jdc/opt/src/icons/icons.14.font
-  0.0000000  59.8437500
+  0.0000000  58.0468750
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           1           0           0   2.0697168 
-          1          47         135           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0          93         245         245   4.1394336 
-         93          60        2474           0           0 /home/jdc/git/tictestrue/lib/board.ℛℬ Del Snarf Undo | Look 
-f          0          91        1409        1409   6.2091503 
-         91          61        1760           0           0 /home/jdc/git/tictestrue/lib/boards.ℛℬ Del Snarf Undo | Look 
-f          0          39        2533        2533   8.2788671 
-         39         101        2533           0           0 /home/jdc/git/tictestrue/test/test_board.ℛℬ Del Snarf Undo Redo | Look 
-f          1          10         102         102   2.0697168 
-         10          53         957           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
-F          1           1      117203      117203  33.8779956      117203 
-         11          59      117203           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
-# On branch master
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	acme.dump
-#	guide
-nothing added to commit but untracked files present (use "git add" to track)
---rw-r--r-- M 0 jdc jdc    0 May 15 18:31 README
-d-rwxr-xr-x M 0 jdc jdc    0 May 15 18:32 .git
---rwxr-xr-x M 0 jdc jdc  189 May 15 18:40 ttt.rb
---rw-r--r-- M 0 jdc jdc   18 May 15 18:40 ttt.1.out
---rw------- M 0 jdc jdc 2579 May 15 18:40 acme.dump
---rw-r--r-- M 0 jdc jdc   15 May 15 18:40 guide
---rwxr-xr-x M 0 jdc jdc   35 May 15 18:40 ttt.1
---rw-r--r-- M 0 jdc jdc  331 May 15 18:40 ruby
---rw-r--r-- M 0 jdc jdc   62 May 15 18:44 history
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   README
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	acme.dump
-#	guide
-#	history
-#	ruby
-#	ttt.1
-#	ttt.1.out
-#	ttt.rb
-no changes added to commit (use "git add" and/or "git commit -a")
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	modified:   README
-#	new file:   acme.dump
-#	new file:   guide
-#	new file:   history
-#	new file:   ruby
-#	new file:   ttt.1
-#	new file:   ttt.1.out
-#	new file:   ttt.rb
-#
-ttt.1
-[master 396bfa5] Add print-board test case and code.
- 8 files changed, 125 insertions(+), 0 deletions(-)
- create mode 100644 acme.dump
- create mode 100644 guide
- create mode 100644 history
- create mode 100644 ruby
- create mode 100755 ttt.1
- create mode 100644 ttt.1.out
- create mode 100755 ttt.rb
-# On branch master
-nothing to commit (working directory clean)
-To git@github.com:catenate/tictestrue.git
-   d16fd09..396bfa5  master -> master
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   guide
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   guide
-#	modified:   history
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-ttt.1
-1,3c1
-< 1 2 3
-< 4 5 6
-< 7 8 9
----
-> ./ttt.rb:3:in `<main>': undefined local variable or method `display_board' for main:Object (NameError)
-/home/jdc/bin/9/diffout: failed ttt.1
-ttt.1
-1,3c1,2
-< 1 2 3
-< 4 5 6
-< 7 8 9
----
-> ./ttt.rb:4:in `display_board': undefined local variable or method `board' for main:Object (NameError)
-> 	from ./ttt.rb:10:in `<main>'
-/home/jdc/bin/9/diffout: failed ttt.1
-ttt.1
-1,3c1,2
-< 1 2 3
-< 4 5 6
-< 7 8 9
----
-> ./ttt.rb:5:in `display_board': undefined local variable or method `board' for main:Object (NameError)
-> 	from ./ttt.rb:10:in `<main>'
-/home/jdc/bin/9/diffout: failed ttt.1
-ttt.1
-1 2 3
-4 5 6
-7 8 9
-ttt.1
-ttt.1
-1 2 3
-4 5 6
-7 8 9
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   guide
-#	modified:   history
-#	modified:   ruby
-#	modified:   ttt.rb
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   guide
-#	modified:   history
-#	modified:   ruby
-#	modified:   ttt.rb
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-[master c6ed27d] Move board storage and printing into a class.
- 5 files changed, 125 insertions(+), 92 deletions(-)
- rewrite acme.dump (87%)
-# On branch master
-nothing to commit (working directory clean)
-To git@github.com:catenate/tictestrue.git
-   396bfa5..c6ed27d  master -> master
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   guide
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-The old-school physical social network, reflected online.
-New /home/jdc/Dropbox/nb/intficttt.1
-ttt.2
-4,6d3
-< 1 2 3
-< 4 x 6
-< 7 8 9
-/home/jdc/bin/9/diffout: failed ttt.2
-ttt.1
-ttt.2
-4,6d3
-< 1 2 3
-< 4 x 6
-< 7 8 9
-/home/jdc/bin/9/diffout: failed ttt.2
-4,6d3
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-3a4
-> > 
-failed ttt.1
-4,6c4,5
-< 1 2 3
-< 4 x 6
-< 7 8 9
----
-> > 5
-> > 
-failed ttt.2
-3a4
-> > 
-failed ttt.1
-5,7c5
-< 1 2 3
-< 4 x 6
-< 7 8 9
----
-> > 
-failed ttt.2
-3a4
-> > 
-failed ttt.1
-5,7d4
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-/home/jdc/Dropbox/nb1,3c1,4
-< 1 2 3
-< 4 5 6
-< 7 8 9
----
-> sed -f toascii.sed ttt.ℛℬ > ttt.rb
-> ./ttt.rb:16: warning: mismatched indentations at 'end' with 'if' at 15
-> ./ttt.rb:17: warning: mismatched indentations at 'end' with 'def' at 14
-> ./ttt.rb:26: syntax error, unexpected $end, expecting keyword_end
-failed ttt.1
-1,8c1,4
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > 5
-< 1 2 3
-< 4 x 6
-< 7 8 9
-< > 
----
-> mk: 'ttt.rb' is up to date
-> ./ttt.rb:16: warning: mismatched indentations at 'end' with 'if' at 15
-> ./ttt.rb:17: warning: mismatched indentations at 'end' with 'def' at 14
-> ./ttt.rb:26: syntax error, unexpected $end, expecting keyword_end
-failed ttt.2
-0a1
-> mk: 'ttt.rb' is up to date
-3a5
-> > 
-failed ttt.1
-0a1
-> mk: 'ttt.rb' is up to date
-5,7d5
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-0a1
-> mk: 'ttt.rb' is up to date
-failed ttt.1
-0a1
-> mk: 'ttt.rb' is up to date
-5,7d5
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-0a1
-> mk: 'ttt.rb' is up to date
-failed ttt.1
-0a1
-> mk(1): 'ttt.rb' is up to date
-5,7d5
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-1,8c1
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > 5
-< 1 2 3
-< 4 x 6
-< 7 8 9
-< > 
----
-> /ttt.rb: No such file or directory
-failed ttt.2
+f          0           1           0        2797   2.0697168 
+          1          42        2797           0           0 /home/jdc/Dropbox/nb/ttt Del Snarf | Look 
+f          0           2          49          49   4.1394336 
+          2          47         152           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
+f          0           3           0           0   6.2091503 
+          3          51          41           1           0 /home/jdc/git/tictestrue/lib/ Del Snarf Get | Look 
+f          0           4        2678        2678   8.2788671 
+          4          55        3669           0           0 /home/jdc/git/tictestrue/lib/board.ℛℬ Del Snarf | Look 
+f          0           5        1807        1807  10.3485839 
+          5          61        3605           0           0 /home/jdc/git/tictestrue/test/test_board.ℛℬ Del Snarf | Look 
+f          0           6         304         304  12.4183007 
+          6          49         831           0           0 /home/jdc/git/tictestrue/ttt.ℛℬ Del Snarf | Look 
+f          0           7        3544        3544  14.4880174 
+          7          50        3629           0           0 /home/jdc/git/tictestrue/history Del Snarf | Look 
+f          0           8           0          27  16.5577342 
+          8          54         265           0           0 /home/jdc/git/tictestrue/toascii.sed Del Snarf | Look 
+f          0          13          15          15  18.6274510 
+         13          58          15           0           0 /home/jdc/git/tictestrue/.gitignore Del Snarf Undo | Look 
+F          1           0       46546       46546   2.0697168       46546 
+          9          62       46546           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look mk 
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:163: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............x 2 3 4 5 6 7 8 9
+x o 3 4 5 6 7 8 9
+x o o 4 5 6 7 8 9
+x o o o 5 6 7 8 9
+x o o o o 6 7 8 9
+x o o o o o 7 8 9
+x o o o o o o 8 9
+x o o o o o o o 9
+x o o o o o o o o
+o x 3 4 5 6 7 8 9
+o x 3 4 5 6 7 8 9
+o x o 4 5 6 7 8 9
+o x o o 5 6 7 8 9
+o x o o o 6 7 8 9
+o x o o o o 7 8 9
+o x o o o o o 8 9
+o x o o o o o o 9
+o x o o o o o o o
+o 2 x 4 5 6 7 8 9
+o o x 4 5 6 7 8 9
+o o x 4 5 6 7 8 9
+o o x o 5 6 7 8 9
+o o x o o 6 7 8 9
+o o x o o o 7 8 9
+o o x o o o o 8 9
+o o x o o o o o 9
+o o x o o o o o o
+o 2 3 x 5 6 7 8 9
+o o 3 x 5 6 7 8 9
+o o o x 5 6 7 8 9
+o o o x 5 6 7 8 9
+o o o x o 6 7 8 9
+o o o x o o 7 8 9
+o o o x o o o 8 9
+o o o x o o o o 9
+o o o x o o o o o
+o 2 3 4 x 6 7 8 9
+o o 3 4 x 6 7 8 9
+o o o 4 x 6 7 8 9
+o o o o x 6 7 8 9
+o o o o x 6 7 8 9
+o o o o x o 7 8 9
+o o o o x o o 8 9
+o o o o x o o o 9
+o o o o x o o o o
+o 2 3 4 5 x 7 8 9
+o o 3 4 5 x 7 8 9
+o o o 4 5 x 7 8 9
+o o o o 5 x 7 8 9
+o o o o o x 7 8 9
+o o o o o x 7 8 9
+o o o o o x o 8 9
+o o o o o x o o 9
+o o o o o x o o o
+o 2 3 4 5 6 x 8 9
+o o 3 4 5 6 x 8 9
+o o o 4 5 6 x 8 9
+o o o o 5 6 x 8 9
+o o o o o 6 x 8 9
+o o o o o o x 8 9
+o o o o o o x 8 9
+o o o o o o x o 9
+o o o o o o x o o
+o 2 3 4 5 6 7 x 9
+o o 3 4 5 6 7 x 9
+o o o 4 5 6 7 x 9
+o o o o 5 6 7 x 9
+o o o o o 6 7 x 9
+o o o o o o 7 x 9
+o o o o o o o x 9
+o o o o o o o x 9
+o o o o o o o x o
+o 2 3 4 5 6 7 8 x
+o o 3 4 5 6 7 8 x
+o o o 4 5 6 7 8 x
+o o o o 5 6 7 8 x
+o o o o o 6 7 8 x
+o o o o o o 7 8 x
+o o o o o o o 8 x
+o o o o o o o o x
+o o o o o o o o x
+F
+Finished in 0.006906 seconds.
 
-1,8c1
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > 5
-< 1 2 3
-< 4 x 6
-< 7 8 9
-< > 
----
-> /ttt.rb: No such file or directory
-failed ttt.2
-5,7d4
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:119]:
+<[-671, -751, -671, -751, -519, -751, -671, -751, -671]> expected but was
+<5>.
 
-5,7d4
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-5,7d4
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-5,7d4
-< 1 2 3
-< 4 x 6
-< 7 8 9
-failed ttt.2
-/home/jdc/Dropbox/go/sed -f toascii.sed touch ttt.ℛℬ > ttt.rb
-sed -f toascii.sed ttt.ℛℬ > ttt.rb
-0a1
-> ./ttt.rb:26:in `<main>': undefined method `Int' for main:Object (NoMethodError)
-3,6d3
-< 7 8 9
-< > 5
-< 1 2 3
-< 4 x 6
-failed ttt.2
-0a1
-> ./ttt.rb:26:in `<main>': undefined method `apply_move' for main:Object (NoMethodError)
-3,6d3
-< 7 8 9
-< > 5
-< 1 2 3
-< 4 x 6
-failed ttt.2
-4,6c4,5
-< > 5
-< 1 2 3
-< 4 x 6
----
-> > 1 2 3
-> 4 5 x
-failed ttt.2
-4,5c4
-< > 5
-< 1 2 3
----
-> > 1 2 3
-failed ttt.2
-1 2 3
-4 5 6
-7 8 9
-> 1 2 3
+14 tests, 36 assertions, 1 failures, 0 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:163: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+mk: exit 1
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+F
+Finished in 0.009760 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:119]:
+<[-1, -1, -1, -1, -1, -1, -1, -1, -1]> expected but was
+<5>.
+
+14 tests, 36 assertions, 1 failures, 0 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:164: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+............./home/jdc/git/tictestrue/lib/board.rb:159: warning: instance variable @boards not initialized
+E
+Finished in 0.001774 seconds.
+
+  1) Error:
+test_pickxo(TestTtt):
+NoMethodError: undefined method `[]' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:131:in `move'
+    /home/jdc/git/tictestrue/lib/board.rb:160:in `block in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:158:in `each'
+    /home/jdc/git/tictestrue/lib/board.rb:158:in `map'
+    /home/jdc/git/tictestrue/lib/board.rb:158:in `pickxo'
+    test/test_board.rb:118:in `test_pickxo'
+
+14 tests, 35 assertions, 0 failures, 1 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:164: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............x 2 3 4 5 6 7 8 9
+1 o 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x x 3 4 5 6 7 8 9
+x x 3 4 5 6 7 8 9
+1 2 o 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x x x 4 5 6 7 8 9
+x x x 4 5 6 7 8 9
+x x x 4 5 6 7 8 9
+1 2 3 o 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x x x x 5 6 7 8 9
+x x x x 5 6 7 8 9
+x x x x 5 6 7 8 9
+x x x x 5 6 7 8 9
+1 2 3 4 o 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x x x x x 6 7 8 9
+x x x x x 6 7 8 9
+x x x x x 6 7 8 9
+x x x x x 6 7 8 9
+x x x x x 6 7 8 9
+1 2 3 4 5 o 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x x x x x x 7 8 9
+x x x x x x 7 8 9
+x x x x x x 7 8 9
+x x x x x x 7 8 9
+x x x x x x 7 8 9
+x x x x x x 7 8 9
+1 2 3 4 5 6 o 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x x x x x x x 8 9
+x x x x x x x 8 9
+x x x x x x x 8 mk: exit 1
+9
+x x x x x x x 8 9
+x x x x x x x 8 9
+x x x x x x x 8 9
+x x x x x x x 8 9
+1 2 3 4 5 6 7 o 9
+1 2 3 4 5 6 7 8 o
+x x x x x x x x 9
+x x x x x x x x 9
+x x x x x x x x 9
+x x x x x x x x 9
+x x x x x x x x 9
+x x x x x x x x 9
+x x x x x x x x 9
+x x x x x x x x 9
+1 2 3 4 5 6 7 8 o
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+F
+Finished in 0.005222 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:119]:
+<[-1, 9, 119, 139, 181, 311, 531, 671, 1001]> expected but was
+<5>.
+
+14 tests, 36 assertions, 1 failures, 0 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:166: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+EE.........E.E
+Finished in 0.001786 seconds.
+
+  1) Error:
+test_error(TestTtt):
+NoMethodError: undefined method `get' for #<Board:0x00000001889b88 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
+    test/test_board.rb:17:in `test_error'
+
+  2) Error:
+test_fill(TestTtt):
+NoMethodError: undefined method `get' for #<Board:0x00000001887fc0 @board=["x", 2, 3, 4, 5, 6, 7, 8, 9]>
+    test/test_board.rb:27:in `test_fill'
+
+  3) Error:
+test_new(TestTtt):
+NoMethodError: undefined method `get' for #<Board:0x0000000188dc48 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
+    test/test_board.rb:11:in `test_new'
+
+  4) Error:
+test_pickxo(TestTtt):
+NoMethodError: undefined method `set' for #<Board:0x0000000188c5f8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
+    /home/jdc/git/tictestrue/lib/board.rb:161:in `block in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:160:in `each'
+    /home/jdc/git/tictestrue/lib/board.rb:160:in `map'
+    /home/jdc/git/tictestrue/lib/board.rb:160:in `pickxo'
+    test/test_board.rb:118:in `test_pickxo'
+
+14 tests, 12 assertions, 0 failures, 4 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:166: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.mk: exit 1
+............E
+Finished in 0.002590 seconds.
+
+  1) Error:
+test_pickxo(TestTtt):
+NoMethodError: undefined method `set' for #<Board:0x00000002067c40 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
+    /home/jdc/git/tictestrue/lib/board.rb:161:in `block in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:160:in `each'
+    /home/jdc/git/tictestrue/lib/board.rb:160:in `map'
+    /home/jdc/git/tictestrue/lib/board.rb:160:in `pickxo'
+    test/test_board.rb:118:in `test_pickxo'
+
+14 tests, 35 assertions, 0 failures, 1 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............E
+Finished in 0.002614 seconds.
+
+  1) Error:
+test_pickxo(TestTtt):
+NoMethodError: undefined method `get' for #<Board:0x00000001457190 @board=["x", 2, 3, 4, 5, 6, 7, 8, 9]>
+    /home/jdc/git/tictestrue/lib/board.rb:162:in `block (2 levels) in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:161:in `each'
+    /home/jdc/git/tictestrue/lib/board.rb:161:in `map'
+    /home/jdc/git/tictestrue/lib/board.rb:161:in `block in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:156:in `each'
+    /home/jdc/git/tictestrue/lib/board.rb:156:in `map'
+    /home/jdc/git/tictestrue/lib/board.rb:156:in `pickxo'
+    test/test_board.rb:118:in `test_pickxo'
+
+14 tests, 35 assertions, 0 failures, 1 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............x 2 3 4 5 6 7 8 9
+x o 3 4 5 6 7 8 9
+x 2 o 4 5 6 7 8 9
+x 2 3 o 5 6 7 8 9
+x 2 3 4 o 6 7 8 9
+x 2 3 4 5 o 7 8 9
+x 2 3 4 5 6 o 8 9
+x 2 3 4 5 6 7 o 9
+x 2 3 4 5 6 7 8 o
+o x 3 4 5 6 7 8 9
+1 x 3 4 5 6 7 8 9
+1 x o 4 5 6 7 8 9
+1 x 3 o 5 6 7 8 9
+1 x 3 4 o 6 7 8 9
+1 x 3 4 5 o 7 8 9
+1 x 3 4 5 6 o 8 9
+1 x 3 4 5 6 7 o 9
+1 x 3 4 5 6 7 8 o
+o 2 x 4 5 6 7 8 9
+1 o x 4 5 6 7 8 9
+1 2 x 4 5 6 7 8 9
+1 2 x o 5 6 7 8 9
+1 2 x 4 o 6 7 8 9
+1 2 x 4 5 o 7 8 9
+1 2 x 4 5 6 o 8 9
+1 2 x 4 5 6 7 o 9
+1 2 x 4 5 6 7 8 o
+o 2 3 x 5 6 7 8 9
+1 o 3 x 5 6 7 8 9
+1 2 o x 5 6 7 8 9
+1 2 3 x 5 6 7 8 9
+1 2 3 x o 6 7 8 9
+1 2 3 x 5 o 7 8 9
+1 2 3 x 5 6 o 8 9
+1 2 3 x 5 6 7 o 9
+1 2 3 x 5 6 7 8 o
+o 2 3 4 x 6 7 8 9
+1 o 3 4 x 6 7 8 9
+1 2 o 4 x 6 7 8 9
+1 2 3 o x 6 7 8 9
+1 2 3 4 x 6 7 8 9
+1 2 3 4 x o 7 8 9
+1 2 3 4 x 6 o 8 9
+1 2 3 4 x 6 7 o 9
+1 2 3 4 x 6 7 8 o
+o 2 3 4 5 x 7 8 9
+1 o 3 4 5 x 7 8 9
+1 2 o 4 5 x 7 8 9
+1 2 3 o 5 x 7 8 9
+1 2 3 4 o x 7 8 9
+1 2 3 4 5 x 7 8 9
+1 2 3 4 5 x o 8 9
+1 2 3 4 5 x 7 o 9
+1 2 3 4 5 x 7 8 o
+o 2 3 4 5 6 x 8 9
+1 o 3 4 5 6 x 8 9
+1 2 o 4 5 6 x 8 9
+1 2 3 o 5 6 x 8 9
+1 2 3 4 o 6 x 8 9
+1 2 3 4 5 o x 8 9
+1 2 3 4 5 6 x 8 9
+mk: exit 1
+1 2 3 4 5 6 x o 9
+1 2 3 4 5 6 x 8 o
+o 2 3 4 5 6 7 x 9
+1 o 3 4 5 6 7 x 9
+1 2 o 4 5 6 7 x 9
+1 2 3 o 5 6 7 x 9
+1 2 3 4 o 6 7 x 9
+1 2 3 4 5 o 7 x 9
+1 2 3 4 5 6 o x 9
+1 2 3 4 5 6 7 x 9
+1 2 3 4 5 6 7 x o
+o 2 3 4 5 6 7 8 x
+1 o 3 4 5 6 7 8 x
+1 2 o 4 5 6 7 8 x
+1 2 3 o 5 6 7 8 x
+1 2 3 4 o 6 7 8 x
+1 2 3 4 5 o 7 8 x
+1 2 3 4 5 6 o 8 x
+1 2 3 4 5 6 7 o x
+1 2 3 4 5 6 7 8 x
+F
+Finished in 0.004111 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:119]:
+<[-1, -1, -1, -1, 1, -1, -1, -1, -1]> expected but was
+<5>.
+
+14 tests, 36 assertions, 1 failures, 0 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............[0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 0, 0, 0]
+F
+Finished in 0.002798 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:119]:
+<[-1, -1, -1, -1, 1, -1, -1, -1, -1]> expected but was
+<5>.
+
+14 tests, 36 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+..............
+Finished in 0.004140 seconds.
+
+14 tests, 36 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+..............
+Finished in 0.005413 seconds.
+
+14 tests, 37 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+..............
+Finished in 0.008852 seconds.
+
+14 tests, 38 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............F
+Finished in 0.006490 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:131]:
+<8> expected but was
+<3>.
+
+14 tests, 39 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+..............
+Finished in 0.006073 seconds.
+
+14 tests, 39 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
 4 x 6
 7 8 9
-> 
-
-4,5c4
-< > 5
-< 1 2 3
----
-> > 1 2 3
-failed ttt.2
-1 2 3
-4 5 6
-7 8 9
-> 1 2 3
+o 2 3
 4 x 6
 7 8 9
-> 
-
-4,5c4,5
-< > 1 2 3
-< 4 x 6
----
-> > x 2 3
-> 4 5 6
-6a7,30
-> > x x 3
-> 4 5 6
-> 7 8 9
-> > x x x
-> 4 5 6
-> 7 8 9
-> > x x x
-> x 5 6
-> 7 8 9
-> > x x x
-> x x 6
-> 7 8 9
-> > x x x
-> x x x
-> 7 8 9
-> > x x x
-> x x x
-> x 8 9
-> > x x x
-> x x x
-> x x 9
-> > x x x
-> x x x
-> x x x
-failed ttt.2
-27a28,30
-> > x x x
-> x x x
-> x x x
-failed ttt.2
-diff: can't stat ttt.3.out
-failed ttt.3
-0a1,2
-> ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
-> 	from ./ttt.rb:28:in `<main>'
-failed ttt.3
-0a1,2
-> ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
-> 	from ./ttt.rb:28:in `<main>'
-5,6d6
-< ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
-< 	from ./ttt.rb:28:in `<main>'
-failed ttt.3
-./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
-	from ./ttt.rb:28:in `<main>'
-1 2 3
-4 5 6
+o x 3
+4 x 6
 7 8 9
-> ttt.3: exit 1
-3a4,11
-> > 0 is not a move
-> 1 2 3
-> 4 5 6
-> 7 8 9
-> > 10 is not a move
-> 1 2 3
-> 4 5 6
-> 7 8 9
-failed ttt.2
-1,4c1,5
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > 
----
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
-> 			puts "please enter 1–9"
-> 			                      ^
-failed ttt.1
-1,39c1,5
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > please enter 1–9
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > please enter 1–9
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > x 2 3
-< 4 5 6
-< 7 8 9
-< > x x 3
-< 4 5 6
-< 7 8 9
-< > x x x
-< 4 5 6
-< 7 8 9
-< > x x x
-< x 5 6
-< 7 8 9
-< > x x x
-< x x 6
-< 7 8 9
-< > x x x
-< x x x
-< 7 8 9
-< > x x x
-< x x x
-< x 8 9
-< > x x x
-< x x x
-< x x 9
-< > x x x
-< x x x
-< x x x
-< > 
----
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
-> 			puts "please enter 1–9"
-> 			                      ^
-failed ttt.2
-1,6c1,5
-< ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
-< 	from ./ttt.rb:28:in `<main>'
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > 
----
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
-> 			puts "please enter 1–9"
-> 			                      ^
-failed ttt.3
-1,4c1,5
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > 
----
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
-> 			puts "please enter 1–9"
-> 			                      ^
-failed ttt.1
-1,39c1,5
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > please enter 1–9
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > please enter 1–9
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > x 2 3
-< 4 5 6
-< 7 8 9
-< > x x 3
-< 4 5 6
-< 7 8 9
-< > x x x
-< 4 5 6
-< 7 8 9
-< > x x x
-< x 5 6
-< 7 8 9
-< > x x x
-< x x 6
-< 7 8 9
-< > x x x
-< x x x
-< 7 8 9
-< > x x x
-< x x x
-< x 8 9
-< > x x x
-< x x x
-< x x 9
-< > x x x
-< x x x
-< x x x
-< > 
----
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
-> 			puts "please enter 1–9"
-> 			                      ^
-failed ttt.2
-1,6c1,5
-< ./ttt.rb:28:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
-< 	from ./ttt.rb:28:in `<main>'
-< 1 2 3
-< 4 5 6
-< 7 8 9
-< > 
----
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: invalid multibyte char (US-ASCII)
-> ./ttt.rb:18: syntax error, unexpected $end, expecting keyword_end
-> 			puts "please enter 1–9"
-> 			                      ^
-failed ttt.3
-4c4
-< > please enter 1–9
----
-> > please enter 1-9
-8c8
-< > please enter 1–9
----
-> > please enter 1-9
-failed ttt.2
-4c4
-< > please enter 1–9
----
-> > please enter 1-9
-8c8
-< > please enter 1–9
----
-> > please enter 1-9
-failed ttt.2
-4c4
-< > please enter 1–9
----
-> > please enter 1-9
-8c8
-< > please enter 1–9
----
-> > please enter 1-9
-failed ttt.2
+o x 3
+4 x 6
+7 o 9
+.
+Finished in 0.009609 seconds.
 
-all passed
-4c4
-< > please enter 1–9
----
-> > please enter 1-9
-failed ttt.2
-all passed
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   guide
-#	modified:   ruby
-#	modified:   ttt.1
-#	modified:   ttt.1.out
-#	modified:   ttt.rb
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	mk.log
-#	git add mkfile
-#	git add toascii.sed
-#	git add ttt.2
-#	git add ttt.2.out
-#	git add ttt.3
-#	git add ttt.3.out
-#	"ttt.\342\204\233\342\204\254"
-no changes added to commit (use "git add" and/or "git commit -a")
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   mkfile
-#	new file:   toascii.sed
-#	new file:   ttt.2
-#	new file:   ttt.2.out
-#	new file:   ttt.3
-#	new file:   ttt.3.out
-#	new file:   "ttt.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   guide
-#	modified:   ruby
-#	modified:   ttt.1
-#	modified:   ttt.1.out
-#	modified:   ttt.rb
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	mk.log
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   mkfile
-#	new file:   toascii.sed
-#	new file:   ttt.2
-#	new file:   ttt.2.out
-#	new file:   ttt.3
-#	new file:   ttt.3.out
-#	new file:   "ttt.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   guide
-#	modified:   ruby
-#	modified:   ttt.1
-#	modified:   ttt.1.out
-#	modified:   ttt.rb
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	git add .gitignore
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   .gitignore
-#	new file:   mkfile
-#	new file:   toascii.sed
-#	new file:   ttt.2
-#	new file:   ttt.2.out
-#	new file:   ttt.3
-#	new file:   ttt.3.out
-#	new file:   "ttt.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   guide
-#	modified:   ruby
-#	modified:   ttt.1
-#	modified:   ttt.1.out
-#	modified:   ttt.rb
-#
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   .gitignore
-#	new file:   mkfile
-#	new file:   toascii.sed
-#	new file:   ttt.2
-#	new file:   ttt.2.out
-#	new file:   ttt.3
-#	new file:   ttt.3.out
-#	new file:   "ttt.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   guide
-#	modified:   ruby
-#	modified:   ttt.1
-#	modified:   ttt.1.out
-#	modified:   ttt.rb
-#
-[master 766f0b0] Accept and display player-first move.
- 13 files changed, 164 insertions(+), 4 deletions(-)
- create mode 100644 .gitignore
- create mode 100644 mkfile
- create mode 100644 toascii.sed
- create mode 100755 ttt.2
- create mode 100644 ttt.2.out
- create mode 100755 ttt.3
- create mode 100644 ttt.3.out
- create mode 100644 "ttt.\342\204\233\342\204\254"
-# On branch master
-nothing to commit (working directory clean)
-To git@github.com:catenate/tictestrue.git
-   c6ed27d..766f0b0  master -> master
-./lib/ttt.ℛℬ
-mk: no recipe to make 'rb'
-mk: exit 1
-mk: 'rb' is up to date
-mk: 'rb' is up to date
-sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
-sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	renamed:    ttt.rb -> lib/ttt.rb
-#	renamed:    "ttt.\342\204\233\342\204\254" -> "lib/ttt.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   lib/ttt.rb
-#	modified:   mkfile
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	git add ensorcel
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	renamed:    ttt.rb -> lib/ttt.rb
-#	renamed:    "ttt.\342\204\233\342\204\254" -> "lib/ttt.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   lib/ttt.rb
-#	modified:   mkfile
-#
-sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
-ruby -I . test/test_ttt.rb
-sh: ruby: Permission denied
-mk: exit 1
-mk: ruby -I . test/test_ttt.rb  : exit status=exit(126)
-Usage: /usr/bin/ruby1.9.1 [switches] [--] [programfile] [arguments]
-  -0[octal]       specify record separator (\0, if no argument)
-  -a              autosplit mode with -n or -p (splits $_ into $F)
-  -c              check syntax only
-  -Cdirectory     cd to directory, before executing your script
-  -d              set debugging flags (set $DEBUG to true)
-  -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
-  -Eex[:in]       specify the default external and internal character encodings
-  -Fpattern       split() pattern for autosplit (-a)
-  -i[extension]   edit ARGV files in place (make backup if extension supplied)
-  -Idirectory     specify $LOAD_PATH directory (may be used more than once)
-  -l              enable line ending processing
-  -n              assume 'while gets(); ... end' loop around your script
-  -p              assume loop like -n but print line also like sed
-  -rlibrary       require the library, before executing your script
-  -s              enable some switch parsing for switches after script name
-  -S              look for the script using PATH environment variable
-  -T[level]       turn on tainting checks
-  -v              print version number, then turn on verbose mode
-  -w              turn warnings on for your script
-  -W[level]       set warning level; 0=silence, 1=medium, 2=verbose (default for level)
-  -x[directory]   strip off text before #!ruby line and perhaps cd to directory
-  --copyright     print the copyright
-  --version       print the version
-sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+14 tests, 39 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-1 2 3
-4 5 6
-7 8 9
-> well hello there
-Loaded suite test/test_ttt
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
 Started
-
-Finished in 0.000297 seconds.
-
-0 tests, 0 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
-sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-1 2 3
-4 5 6
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
 7 8 9
-> Loaded suite test/test_ttt
-Started
-E
-Finished in 0.000397 seconds.
-
-  1) Error:
-test_new(TestTtt):
-NoMethodError: undefined method `current_board' for Board:Class
-    test/test_ttt.rb:10:in `test_new'
-
-1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-1 2 3
-4 5 6
+o 2 3
+4 x 6
 7 8 9
-> Loaded suite test/test_ttt
-Started
-E
-Finished in 0.000580 seconds.
-
-  1) Error:
-test_new(TestTtt):
-NoMethodError: undefined method `current_board' for Board:Class
-    test/test_ttt.rb:10:in `test_new'
-
-1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-1 2 3
-4 5 6
+o x 3
+4 x 6
 7 8 9
-> Loaded suite test/test_ttt
-Started
-E
-Finished in 0.000437 seconds.
-
-  1) Error:
-test_new(TestTtt):
-NoMethodError: undefined method `current_board' for Board:Class
-    test/test_ttt.rb:10:in `test_new'
-
-1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/ttt.ℛℬ > ./lib/ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-1 2 3
-4 5 6
-7 8 9
-> Loaded suite test/test_ttt
-Started
-E
-Finished in 0.000407 seconds.
-
-  1) Error:
-test_new(TestTtt):
-NoMethodError: undefined method `current_board' for Board:Class
-    test/test_ttt.rb:10:in `test_new'
-
-1 tests, 0 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
-sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-1 2 3
-4 5 6
-7 8 9
-> Loaded suite test/test_ttt
-Started
+o x 3
+4 x 6
+7 o 9
 F
-Finished in 0.000983 seconds.
+Finished in 0.008057 seconds.
 
   1) Failure:
-test_new(TestTtt) [test/test_ttt.rb:10]:
-Expected [1, 2, 3, 4, 5, 6, 7, 8, 9] to match [1, 2, 3, 4, 5, 6, 7, 8, 9].
+test_pickxo(TestTtt) [test/test_board.rb:139]:
+<4> expected but was
+<3>.
 
-1 tests, 2 assertions, 1 failures, 0 errors, 0 skips
+14 tests, 40 assertions, 1 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_ttt.ℛℬ > ./test/test_ttt.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-1 2 3
-4 5 6
-7 8 9
-> Loaded suite test/test_ttt
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
 Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+.
+Finished in 0.009474 seconds.
+
+14 tests, 40 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+.
+Finished in 0.008942 seconds.
+
+14 tests, 41 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
 F
-Finished in 0.001777 seconds.
+Finished in 0.010392 seconds.
 
   1) Failure:
-test_new(TestTtt) [test/test_ttt.rb:11]:
-Expected [1, 2, 3, 4, 5, 6, 7, 8, 9] to match [1, 2, 3, 4, 5, 6, 7, 8, 9].
+test_pickxo(TestTtt) [test/test_board.rb:149]:
+<3> expected but was
+<9>.
 
-1 tests, 2 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	renamed:    ttt.rb -> lib/ttt.rb
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#
-# Changed but not updated:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	deleted:   git mv lib/ttt.rb .
-#	modified:   mkfile
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	"lib/board.\342\204\233\342\204\254"
-#	test/
-fatal: bad source, source=lib/ttt.rb, destination=ttt.rb
-git: exit 128
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   mkfile
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	git add test/
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#	new file:   test/test_ttt.rb
-#
-# Changed but not updated:
-#   (use "git add/rm <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   mkfile
-#	deleted:    test/test_ttt.rb
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#	new file:   git mv test/test_ttt.rb test/test_board.rb
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   mkfile
-#	modified:   test/test_ttt.rb
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-/usr/bin/ruby1.9.1 -w -I . test/test_ttt.rb
-/usr/bin/ruby1.9.1: No such file or directory -- test/test_ttt.rb (LoadError)
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: 'first' is up to date
-mk: 'first' is up to date
-mk: 'first' is up to date
-echo ./ttt.ℛℬ
-./ttt.ℛℬ
-./ttt.ℛℬ
-./lib/board.ℛℬ
-./ttt.ℛℬ
-./test/test_board.ℛℬ
-echo ./ttt.ℛℬ
-mk: 'first' is up to date
-echo ./ttt.ℛℬ
-./ttt.ℛℬ
-echo ./ttt.ℛℬ
-./ttt.ℛℬ
-mk: 'test' is up to date
-mk: 'test' is up to date
-echo ./ttt.ℛℬ
-./ttt.ℛℬ
-echo ./ttt.ℛℬ
-./ttt.ℛℬ
-URB = `{find . -name *.ℛℬ}
-./ttt.ℛℬ
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-mk: 'first' is up to date
-echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-test/test_board.rb:2:in `require': no such file to load -- lib/ttt (LoadError)
-	from test/test_board.rb:2:in `<main>'
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-echo test/test_board
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+14 tests, 42 assertions, 1 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
 sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
 chmod +x ./test/test_board.rb
 sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
 chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-echo ./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-echo test/test_board
-./lib/board.ℛℬ ./ttt.ℛℬ ./test/test_board.ℛℬ
-test/test_board
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+.
+Finished in 0.009890 seconds.
 
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-
-mk: 'first' is up to date
-
+14 tests, 42 assertions, 0 failures, 0 errors, 0 skips
 sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
 chmod +x ./test/test_board.rb
 sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
 chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+.
+Finished in 0.010812 seconds.
 
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   ensorcel
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   "test/test_board.\342\204\233\342\204\254"
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	git add lib/board.rb
-#	test/test_board
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   lib/board.rb
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   ensorcel
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   "test/test_board.\342\204\233\342\204\254"
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	test/test_board
+14 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
 sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
 chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-test/test_board.rb:14: syntax error, unexpected tINTEGER, expecting ')'mk: exit 1
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.010444 seconds.
 
-	def test_move_fill_1(1, "x")
-	                      ^
-test/test_board.rb:14: syntax error, unexpected ')', expecting keyword_end
-test/test_board.rb:17: syntax error, unexpected keyword_end, expecting $end
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   lib/board.rb
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   ensorcel
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   "test/test_board.\342\204\233\342\204\254"
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	test/test_board
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   lib/board.rb
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   ensorcel
-#	modified:   guide
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   "test/test_board.\342\204\233\342\204\254"
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	git add test/test_board
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   lib/board.rb
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> oldtest/ttt.1
-#	renamed:    ttt.1.out -> oldtest/ttt.1.out
-#	renamed:    ttt.2 -> oldtest/ttt.2
-#	renamed:    ttt.2.out -> oldtest/ttt.2.out
-#	renamed:    ttt.3 -> oldtest/ttt.3
-#	renamed:    ttt.3.out -> oldtest/ttt.3.out
-#	new file:   test/test_board
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   ensorcel
-#	modified:   guide
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   "test/test_board.\342\204\233\342\204\254"
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   lib/board.rb
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	new file:   test/test_board
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> testcmd/ttt.1
-#	renamed:    ttt.1.out -> testcmd/ttt.1.out
-#	renamed:    ttt.2 -> testcmd/ttt.2
-#	renamed:    ttt.2.out -> testcmd/ttt.2.out
-#	renamed:    ttt.3 -> testcmd/ttt.3
-#	renamed:    ttt.3.out -> testcmd/ttt.3.out
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   ensorcel
-#	modified:   guide
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   "test/test_board.\342\204\233\342\204\254"
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ensorcel
-#	new file:   lib/board.rb
-#	new file:   "lib/board.\342\204\233\342\204\254"
-#	new file:   test/test_board
-#	new file:   test/test_board.rb
-#	new file:   "test/test_board.\342\204\233\342\204\254"
-#	renamed:    ttt.1 -> testcmd/ttt.1
-#	renamed:    ttt.1.out -> testcmd/ttt.1.out
-#	renamed:    ttt.2 -> testcmd/ttt.2
-#	renamed:    ttt.2.out -> testcmd/ttt.2.out
-#	renamed:    ttt.3 -> testcmd/ttt.3
-#	renamed:    ttt.3.out -> testcmd/ttt.3.out
-#
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   acme.dump
-#	modified:   ensorcel
-#	modified:   guide
-#	modified:   mkfile
-#	modified:   test/test_board.rb
-#	modified:   "test/test_board.\342\204\233\342\204\254"
-#	modified:   ttt.rb
-#	modified:   "ttt.\342\204\233\342\204\254"
-#
-[master 0b48c35] Set up unit testing.
- 17 files changed, 1479 insertions(+), 101 deletions(-)
- create mode 100755 ensorcel
- rename ttt.rb => lib/board.rb (63%)
- mode change 100755 => 100644
- rename "ttt.\342\204\233\342\204\254" => "lib/board.\342\204\233\342\204\254" (63%)
- create mode 100644 test/test_board
- create mode 100755 test/test_board.rb
- create mode 100644 "test/test_board.\342\204\233\342\204\254"
- rename ttt.1 => testcmd/ttt.1 (100%)
- rename ttt.1.out => testcmd/ttt.1.out (100%)
- rename ttt.2 => testcmd/ttt.2 (100%)
- rename ttt.2.out => testcmd/ttt.2.out (100%)
- rename ttt.3 => testcmd/ttt.3 (100%)
- rename ttt.3.out => testcmd/ttt.3.out (100%)
- rewrite ttt.rb (63%)
- rewrite "ttt.\342\204\233\342\204\254" (63%)
-To git@github.com:catenate/tictestrue.git
-   766f0b0..0b48c35  master -> master
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-mk: don't know how to make 'test.rb' in /home/jdc/git/tictestrue
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: exit 1
-mk: 'first' is up to date
-mk: 'first' is up to date
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.013581 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
 sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
 chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:161: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.012471 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
 sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
 chmod +x ./ttt.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: invalid character syntax; use ?\s
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: invalid character syntax; use ?\s
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: invalid character syntax; use ?\s
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: useless use of a variable in void context
-mk: exit 1
-test/test_board.rb:2:in `require': /home/jdc/git/tictestrue/lib/board.rb:19: syntax error, unexpected '?' (SyntaxError)
-		if @board[0] =? xo && @board[0] =? xo && @board[0] =? xo
-		               ^
-/home/jdc/git/tictestrue/lib/board.rb:19: syntax error, unexpected '?'
-		if @board[0] =? xo && @board[0] =? xo && @board[0] =? xo
-		                                  ^
-/home/jdc/git/tictestrue/lib/board.rb:19: syntax error, unexpected '?'
-		if @board[0] =? xo && @board[0] =? xo && @board[0] =? xo
-		                                                     ^
-/home/jdc/git/tictestrue/lib/board.rb:31: syntax error, unexpected keyword_end, expecting $end
-	from test/test_board.rb:2:in `<main>'
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: 'first' is up to date
-mk: don't know how to make 'lib/*.rb' in /home/jdc/git/tictestrue
-mk: exit 1
-mk: 'first' is up to date
-mk: 'first' is up to date
-mk: 'first' is up to date
-mk: 'first' is up to date
-mk: 'first' is up to date
-mk: 'first' is up to date
-mk: 'first' is up to date
-/usr/bin/ruby1.9.1 -w -I . .rb > 
-sh: mk: exit 1
-cannot create : Directory nonexistent
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(2)
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: invalid character syntax; use ?\s
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: invalid character syntax; use ?\s
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: invalid character syntax; use ?\s
-/home/jdc/git/tictestrue/lib/board.rb:19: warning: useless use of a variable in void context
-test/test_board.rb:2:in `require': /home/jdc/git/tictestrue/lib/board.rb:19: syntax error, unexpected '?' (SyntaxError)
-		if @board[0] =? xo && @board[0] =? xo && @board[0] =? xo
-		               ^
-/home/jdc/git/tictestrue/lib/board.rb:19: syntax error, unexpected '?'
-		if @board[0] =? xo && @board[0] =? xo && @board[0] =? xo
-		                                  ^
-/home/jdc/git/tictestrue/lib/board.rb:19: syntax error, unexpected '?'
-		if @board[0] =? xo && @board[0] =? xo && @board[0] =? xo
-		                                                     ^
-/home/jdc/git/tictestrue/lib/board.rb:31: syntax error, unexpected keyword_end, expecting $end
-	from test/test_board.rb:2:in `<main>'
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb > test/test_board
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-.F.
-Finished in 0.001496 seconds.
-
-  1) Failure:
-test_move_fill(TestTtt) [test/test_board.rb:39]:
-<140> expected but was
-<130>.
-
-4 tests, 14 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-.F.
-Finished in 0.001764 seconds.
-
-  1) Failure:
-test_move_fill(TestTtt) [test/test_board.rb:43]:
-<181> expected but was
-<150>.
-
-4 tests, 16 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-.F.
-Finished in 0.001092 seconds.
-
-  1) Failure:
-test_move_fill(TestTtt) [test/test_board.rb:47]:
-<211> expected but was
-<280>.
-
-4 tests, 18 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-.F.
-Finished in 0.001780 seconds.
-
-  1) Failure:
-test_move_fill(TestTtt) [test/test_board.rb:47]:
-<211> expected but was
-<311>.
-
-4 tests, 18 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-.F.
-Finished in 0.001482 seconds.
-
-  1) Failure:
-test_move_fill(TestTtt) [test/test_board.rb:51]:
-<531> expected but was
-<150>.
-
-4 tests, 20 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-.F.
-Finished in 0.000951 seconds.
-
-  1) Failure:
-test_move_fill(TestTtt) [test/test_board.rb:57]:
-<671> expected but was
-<661>.
-
-4 tests, 22 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-.F.
-Finished in 0.003071 seconds.
-
-  1) Failure:
-test_move_fill(TestTtt) [test/test_board.rb:57]:
-<671> expected but was
-<661>.
-
-4 tests, 22 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-...
-Finished in 0.000884 seconds.
-
-4 tests, 24 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-...
-Finished in 0.001996 seconds.
-
-4 tests, 24 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
 Loaded suite test/test_board
 Started
 please enter 1-9
 please enter 1-9
-...E
-Finished in 0.001005 seconds.
-
-  1) Error:
-test_pick_first(TestTtt):
-NameError: undefined local variable or method `boards' for #<TestTtt:0x00000001a4fa40>
-    test/test_board.rb:64:in `block in test_pick_first'
-    test/test_board.rb:63:in `upto'
-    test/test_board.rb:63:in `test_pick_first'
-
-4 tests, 23 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-please enter 1-9
-please enter 1-9
-...F
-Finished in 0.002037 seconds.
-
-  1) Failure:
-test_pick_first(TestTtt) [test/test_board.rb:69]:
-<10> expected but was
-<0>.
-
-4 tests, 25 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-please enter 1-9
-please enter 1-9
-...o 2 3
-4 5 6
+.............1 2 3
+4 x 6
 7 8 9
-o o 3
-4 5 6
+o 2 3
+4 x 6
 7 8 9
-F
-Finished in 0.002160 seconds.
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.013136 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.008456 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.011042 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.022934 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.011360 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.011582 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.011578 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.010843 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.013837 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.016852 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.011530 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.030397 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.017599 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.015311 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.011266 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.011603 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.017499 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:165: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.010673 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:168: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.F....F......1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 8 9
+o x 3
+4 x 6
+7 o 9
+o x 3
+x x 6
+7 o 9
+o x 3
+x x o
+7 o 9
+o x x
+x x o
+7 o 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.015867 seconds.
 
   1) Failure:
-test_pick_first(TestTtt) [test/test_board.rb:70]:
-<10> expected but was
-<0>.
-
-4 tests, 25 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-Eplease enter 1-9
-please enter 1-9
-...
-Finished in 0.001466 seconds.
-
-  1) Error:
-test_first_1(TestTtt):
-NameError: undefined local variable or method `board' for #<TestTtt:0x000000015fe258>
-    test/test_board.rb:63:in `test_first_1'
-
-4 tests, 23 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-Eplease enter 1-9
-please enter 1-9
-...
-Finished in 0.001199 seconds.
-
-  1) Error:
-test_first_1(TestTtt):
-NameError: undefined local variable or method `i' for #<TestTtt:0x00000001e7d498>
-    test/test_board.rb:63:in `test_first_1'
-
-4 tests, 23 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.please enter 1-9
-please enter 1-9
-...
-Finished in 0.000883 seconds.
-
-4 tests, 24 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-...F.....please enter 1-9
-please enter 1-9
-...
-Finished in 0.002452 seconds.
-
-  1) Failure:
-test_first_4(TestTtt) [test/test_board.rb:79]:
-<0> expected but was
-<1>.
-
-12 tests, 32 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-...FF....please enter 1-9
-please enter 1-9
-...
-Finished in 0.004818 seconds.
-
-  1) Failure:
-test_first_4(TestTtt) [test/test_board.rb:79]:
-<0> expected but was
-<1>.
+test_fill(TestTtt) [test/test_board.rb:48]:
+<182> expected but was
+<181>.
 
   2) Failure:
-test_first_5(TestTtt) [test/test_board.rb:84]:
+test_first_5(TestTtt) [test/test_board.rb:89]:
+<2> expected but was
+<1>.
+
+14 tests, 36 assertions, 2 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.FF.F.F.F.F..1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+F
+Finished in 0.006825 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:28]:
 <1> expected but was
 <0>.
 
-12 tests, 32 assertions, 2 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...
-Finished in 0.001267 seconds.
-
-12 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-/home/jdc/git/tictestrue/lib/board.rb:136: warning: unused literal ignored
-test/test_board.rb:2:in `require': /home/jdc/git/tictestrue/lib/board.rb:136: syntax error, unexpected '=', expecting keyword_end (SyntaxError)
-		next = 1
-		      ^
-/home/jdc/git/tictestrue/lib/board.rb:142: syntax error, unexpected '=', expecting keyword_end
-			next = 2
-			      ^
-/home/jdc/git/tictestrue/lib/board.rb:149: syntax error, unexpected '=', expecting keyword_end
-			next = 3
-			      ^
-/home/jdc/git/tictestrue/lib/board.rb:156: syntax error, unexpected '=', expecting keyword_end
-			next = 4
-			      ^
-/home/jdc/git/tictestrue/lib/board.rb:163: syntax error, unexpected '=', expecting keyword_end
-			next = 5
-			      ^
-	from test/test_board.rb:2:in `<main>'
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001306 seconds.
-
-  1) Error:
-test_next(TestTtt):
-NoMethodError: undefined method `next' for #<Board:0x00000000f60258 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    test/test_board.rb:108:in `test_next'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001015 seconds.
-
-  1) Error:
-test_next(TestTtt):
-ArgumentError: wrong number of arguments (0 for 1)
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `next'
-    test/test_board.rb:108:in `test_next'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...please enter 1-9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-F
-Finished in 0.009480 seconds.
-
-  1) Failure:
-test_next(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-please enter 1-9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-Fmk: exit 1
-
-Finished in 0.003249 seconds.
-
-  1) Failure:
-test_next(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002579 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NameError: undefined local variable or method `boards' for #<Boards:0x00000001d03038>
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `pick'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002125 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NameError: uninitialized constant TestTtt::Boards
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-F
-Finished in 0.002444 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
-<nil> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-F
-Finished in 0.003391 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...please enter 1-9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-Fmk: exit 1
-
-Finished in 0.001901 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002731 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-ArgumentError: wrong number of arguments (1 for 2)
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.......mk: exit 1
-..please enter 1-9
-please enter 1-9
-...please enter 1-9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-F
-Finished in 0.002572 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002176 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `move' for [1, 2, 3, 4, 5, 6, 7, 8, 9]:Array
-    /home/jdc/git/tictestrue/lib/board.rb:137:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:134:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:134:in `pick'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...please enter 1-9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-mk: exit 1
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-F
-Finished in 0.002315 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...please enter 1-9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-F
-Finished in 0.001726 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...please enter 1-9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-1 o 3
-4 5 6
-7 8 9
-1 2 o
-4 5 6
-7 8 9
-1 2 3
-o 5 6
-7 8 9
-1 2 3
-4 o 6
-7 8 9
-1 2 3
-4 5 o
-7 8 9
-1 2 3
-4 5 6
-o 8 9
-1 2 3
-4 5 6
-7 o 9
-Fmk: exit 1
-
-Finished in 0.002200 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
-<0> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...o 2 3
-4 5 6
-7 8 9
-1 o 3
-4 5 6
-7 8 9
-1 2 o
-4 5 6
-7 8 9
-1 2 3
-o 5 6
-7 8 9
-1 2 3
-4 o 6
-7 8 9
-1 2 3
-4 5 o
-7 8 9
-1 2 3
-4 5 6
-o 8 9
-mk: exit 1
-1 2 3
-4 5 6
-7 o 9
-1 2 3
-4 5 6
-7 8 o
-F
-Finished in 0.001419 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
+  2) Failure:
+test_first_1(TestTtt) [test/test_board.rb:69]:
 <1> expected but was
-<5>.
+<0>.
 
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001629 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `move' for [1, 2, 3, 4, 5, 6, 7, 8, 9]:Array
-    /home/jdc/git/tictestrue/lib/board.rb:137:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:134:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:134:in `pick'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-o o o
-o o o
-o o o
-mk: exit 1
-F
-Finished in 0.003274 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
+  3) Failure:
+test_first_3(TestTtt) [test/test_board.rb:79]:
 <1> expected but was
-<5>.
+<0>.
 
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001707 seconds.
+  4) Failure:
+test_first_5(TestTtt) [test/test_board.rb:89]:
+<2> expected but was
+<1>.
 
-  1) Error:
-test_pick(TestTtt):
-NameError: uninitialized constant TestTtt::Boards
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.003432 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NameError: uninitialized constant TestTtt::Boards
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-o o o
-4 5 6
-7 8 9
-o o o
-o 5 6
-7 8 9
-o o o
-o o 6
-7 8 9
-o o o
-o o o
-7 8 9
-o o o
-o o o
-o 8 9
-o o o
-o o o
-o o 9
-o o o
-o o o
-o o o
-F
-Finished in 0.003356 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:108]:
+  5) Failure:
+test_first_7(TestTtt) [test/test_board.rb:99]:
 <1> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001125 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `move' for [[...], 2, 3, 4, 5, 6, 7, 8, 9]:Array
-    /home/jdc/git/tictestrue/lib/board.rb:137:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `pick'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001918 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]=' for #<Board:0x00000001da0c98>
-    /home/jdc/git/tictestrue/lib/board.rb:136:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `pick'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001939 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]=' for #<Board:0x00000002628e90>
-    /home/jdc/git/tictestrue/lib/board.rb:127:in `move'
-    /home/jdc/git/tictestrue/lib/board.rb:136:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `pick'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002816 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000001b5d2e8>
-    /home/jdc/git/tictestrue/lib/board.rb:12:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:137:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `pick'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002907 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x000000028222e8>
-    /home/jdc/git/tictestrue/lib/board.rb:12:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:137:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `pick'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.003065 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NameError: uninitialized constant TestTtt::Boards
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...#<Boards:0x000000017bc2a0>E
-Finished in 0.002943 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x000000017bc2d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:141:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `pick'
-    test/test_board.rb:110:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002001 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000001b9d778 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `block in display'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001133 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000000cd8860 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `block in display'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001434 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000000aee898 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `block in display'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001333 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000000b25980 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `block in display'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002187 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000001ea38e0 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `block in display'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001557 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x000000010d2848 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:141:in `block in display'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:139:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001788 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]=' for #<Board:0x00000000adfa28 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:126:in `move'
-    /home/jdc/git/tictestrue/lib/board.rb:147:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:146:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:146:in `pick'
-    test/test_board.rb:110:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...#<Board:0x00000001c43830 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c437f8 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c437c0 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c43788 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c43750 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c43718 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c436e0 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c436a8 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001c43670 @board=#<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-Emk: exit 1
-
-Finished in 0.001307 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]=' for #<Board:0x00000001c438d8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:126:in `move'
-    /home/jdc/git/tictestrue/lib/board.rb:147:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:146:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:146:in `pick'
-    test/test_board.rb:110:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002922 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-ArgumentError: wrong number of arguments (0 for 1)
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `new'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `block in initialize'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `initialize'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `new'
-    /home/jdc/git/tictestrue/lib/board.rb:135:in `initialize'
-    test/test_board.rb:108:in `new'
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...#<Board:0x00000000e4a910 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a8d8 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a8a0 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a868 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a830 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a7f8 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a7c0 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a788 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000000e4a750 @board=#<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-mk: exit 1
-E
-Finished in 0.006925 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]=' for #<Board:0x00000000e4a9b8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:126:in `move'
-    /home/jdc/git/tictestrue/lib/board.rb:146:in `block in pick'
-    /home/jdc/git/tictestrue/lib/board.rb:145:in `upto'
-    /home/jdc/git/tictestrue/lib/board.rb:145:in `pick'
-    test/test_board.rb:110:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001661 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NameError: undefined local variable or method `board1' for #<Boards:0x0000000216d368>
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...#<Board:0x00000001536358 @board=#<Board:0x000000015363c8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x00000001536320 @board=#<Board:0x000000015363c8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-F
-Finished in 0.001535 seconds.
-
-  1) Failure:
-test_pick(TestTtt) [test/test_board.rb:110]:
-<nil> expected but was
-<5>.
-
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...#<Board:0x0000000148ec88 @board=#<Board:0x0000000148ecf8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x0000000148ec50 @board=#<Board:0x0000000148ecf8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-Emk: exit 1
-
-Finished in 0.001149 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]=' for #<Board:0x0000000148ecf8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:126:in `move'
-    /home/jdc/git/tictestrue/lib/board.rb:145:in `fill'
-    test/test_board.rb:110:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...#<Board:0x0000000127fc98 @board=#<Board:0x0000000127fd08 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-#<Board:0x0000000127fc60 @board=#<Board:0x0000000127fd08 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>>
-E
-Finished in 0.002187 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]=' for #<Board:0x0000000127fd08 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:126:in `move'
-    /home/jdc/git/tictestrue/lib/board.rb:145:in `fill'
-    test/test_board.rb:110:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001816 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000000e79c30 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:11:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:140:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001940 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000000ca7cf8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:32:in `display'
-    /home/jdc/git/tictestrue/lib/board.rb:161:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002363 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NameError: uninitialized constant TestTtt::Boards
-    test/test_board.rb:108:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001529 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x000000010cd0c8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:33:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-.
-Finished in 0.002175 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-.
-Finished in 0.001287 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-.
-Finished in 0.001794 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.001220 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x00000002374248 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:33:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-.
-Finished in 0.004092 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002267 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-ArgumentError: wrong number of arguments (0 for 1)
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:436:in `run'
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:415:in `block (2 levels) in run_test_suites'
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:409:in `each'
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:409:in `block in run_test_suites'
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:408:in `each'
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:408:in `run_test_suites'
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:388:in `run'
-    /usr/lib/ruby/1.9.1/minitest/unit.rb:329:in `block in autorun'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...E
-Finished in 0.002065 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `[]' for #<Board:0x0000000156f270 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
-    /home/jdc/git/tictestrue/lib/board.rb:33:in `display'
-    test/test_board.rb:109:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-o o 3
-4 5 6
-7 8 9
-.
-Finished in 0.001096 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-[1, 2, 3, 4, 5, 6, 7, 8, 9]Emk: exit 1
-
-Finished in 0.001425 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `move' for [1, 2, 3, 4, 5, 6, 7, 8, 9]:Array
-    test/test_board.rb:116:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-[1, 2, 3, 4, 5, 6, 7, 8, 9]E
-Finished in 0.001420 seconds.
-
-  1) Error:
-test_pick(TestTtt):
-NoMethodError: undefined method `move' for [1, 2, 3, 4, 5, 6, 7, 8, 9]:Array
-    test/test_board.rb:116:in `test_pick'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-mk: exit 1
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-1 o 3
-4 5 6
-7 8 9
-.
-Finished in 0.001270 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-.........please enter 1-9
-please enter 1-9
-...1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-.
-Finished in 0.001619 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
-chmod +x ./lib/board.rb
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-1 o 3
-4 5 6
-7 8 9
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.001506 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-test/test_board.rb:112: syntax error, unexpected tIDENTIFIER, expecting ')'
-		p boards.eval(""o")
-		                 ^
-mk: exit 1
-test/test_board.rb:112: unterminated string meets end of file
-test/test_board.rb:112: syntax error, unexpected $end, expecting keyword_end
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-/home/jdc/git/tictestrue/lib/boards.rb:24: warning: instance variable @board2 not initialized
-E.........please enter 1-9
-please enter 1-9
-...mk: exit 1
-
-Finished in 0.001378 seconds.
-
-  1) Error:
-test_boards(TestTtt):
-NoMethodError: undefined method `move' for nil:NilClass
-    /home/jdc/git/tictestrue/lib/boards.rb:24:in `move'
-    test/test_board.rb:111:in `test_boards'
-
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-[0, 1]
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.003218 seconds.
-
-13 tests, 32 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-F.........please enter 1-9
-please enter 1-9
-...
-Finished in 0.001792 seconds.
-
-  1) Failure:
-test_boards(TestTtt) [test/test_board.rb:112]:
-<[0, 1]> expected but was
+<0>.
+
+  6) Failure:
+test_first_9(TestTtt) [test/test_board.rb:109]:
+<1> expected but was
+<0>.
+
+  7) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:129]:
+<3> expected but was
 <2>.
 
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
+14 tests, 20 assertions, 7 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
 Loaded suite test/test_board
 Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-F.........please enter 1-9
 please enter 1-9
-...
-Finished in 0.004145 seconds.
+please enter 1-9
+.F...........1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+F
+Finished in 0.009208 seconds.
 
   1) Failure:
-test_boards(TestTtt) [test/test_board.rb:112]:
-<1> expected but was
+test_fill(TestTtt) [test/test_board.rb:32]:
+<11> expected but was
+<10>.
+
+  2) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:129]:
+<3> expected but was
 <2>.
 
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
+14 tests, 22 assertions, 2 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.001383 seconds.
-
-13 tests, 33 assertions, 0 failures, 0 errors, 0 skips
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.004393 seconds.
-
-13 tests, 33 assertions, 0 failures, 0 errors, 0 skips
 sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
 chmod +x ./test/test_board.rb
 sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
 chmod +x test/test_board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
 Loaded suite test/test_board
 Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
+please enter 1-9
+please enter 1-9
+.F...........1 2 3
+4 x 6
 7 8 9
 o 2 3
-4 5 6
+4 x 6
 7 8 9
-1 2 3
-4 o 6
-7 8 9
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.003614 seconds.
-
-13 tests, 33 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-1 2 3
-4 5 6
-7 8 9
-1 2 3
-4 5 6
-7 8 9
-o 2 3
-4 5 6
-7 8 9
-0
-1 2 3
-4 o 6
-7 8 9
-1
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.001285 seconds.
-
-13 tests, 33 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-o 2 3
-4 5 6
-7 8 9
-0
-1 2 3
-4 o 6
-7 8 9
-1
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.004942 seconds.
-
-13 tests, 33 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-F.........please enter 1-9
-please enter 1-9
-...
-Finished in 0.001626 seconds.
+F
+Finished in 0.008212 seconds.
 
   1) Failure:
-test_boards(TestTtt) [test/test_board.rb:111]:
-<1> expected but was
+test_fill(TestTtt) [test/test_board.rb:36]:
+<11> expected but was
+<10>.
+
+  2) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:129]:
+<3> expected but was
 <2>.
 
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
+14 tests, 24 assertions, 2 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
 sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
 chmod +x ./test/test_board.rb
 sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
 chmod +x test/test_board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
 Loaded suite test/test_board
 Started
-F.........please enter 1-9
 please enter 1-9
-...
-Finished in 0.001590 seconds.
+please enter 1-9
+.F...........1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o 2 x
+4 x 6
+7 8 9
+F
+Finished in 0.006811 seconds.
 
   1) Failure:
-test_boards(TestTtt) [test/test_board.rb:111]:
-<1> expected but was
-<5>.
+test_fill(TestTtt) [test/test_board.rb:52]:
+<314> expected but was
+<311>.
 
-13 tests, 33 assertions, 1 failures, 0 errors, 0 skips
+  2) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:134]:
+<7> expected but was
+<8>.
+
+14 tests, 33 assertions, 2 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-/home/jdc/git/tictestrue/lib/boards.rb:56: warning: mismatched indentations at 'end' with 'if' at 54
-/home/jdc/git/tictestrue/lib/boards.rb:57: warning: useless use of + in void context
-/home/jdc/git/tictestrue/lib/boards.rb:74: warning: mismatched indentations at 'end' with 'def' at 49
-test/test_board.rb:3:in `require': /home/jdc/git/tictestrue/lib/boards.rb:74: syntax error, unexpected $end, expecting keyword_end (SyntaxError)
-	from test/test_board.rb:3:in `<main>'
-mk: exit 1
-mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
-sed -f toascii.sed ./lib/boards.ℛℬ > ./lib/boards.rb
-chmod +x ./lib/boards.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
 Loaded suite test/test_board
 Started
+please enter 1-9
+please enter 1-9
+.F...........1 2 3
+4 x 6
+7 8 9
 o 2 3
-4 5 6
+4 x 6
 7 8 9
-0
-1 o 3
-4 5 6
+o 2 x
+4 x 6
 7 8 9
-0
-1 2 o
-4 5 6
-7 8 9
-0
-1 2 3
-o 5 6
-7 8 9
-0
-1 2 3
-4 o 6
-7 8 9
-1
-1 2 3
-4 5 o
-7 8 9
-0
-1 2 3
-4 5 6
+o 2 x
+4 x 6
 o 8 9
-0
-1 2 3
-4 5 6
-7 o 9
-0
-1 2 3
-4 5 6
-7 8 o
-0
-..........please enter 1-9
-please enter 1-9
-...
-Finished in 0.005607 seconds.
+o 2 x
+x x 6
+o 8 9
+o 2 x
+x x o
+o 8 9
+F
+Finished in 0.009615 seconds.
 
-13 tests, 33 assertions, 0 failures, 0 errors, 0 skips
-sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
-chmod +x ./test/test_board.rb
-sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
-chmod +x test/test_board.rb
-/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
-/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
-Loaded suite test/test_board
-Started
-E.........please enter 1-9
-please enter 1-9
-...
-Finished in 0.002027 seconds.
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:56]:
+<535> expected but was
+<531>.
 
-  1) Error:
-test_eval_first(TestTtt):
-NoMethodError: private method `eval' called for "o":String
-    test/test_board.rb:109:in `test_eval_first'
+  2) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:149]:
+<2> expected but was
+<3>.
 
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
+14 tests, 38 assertions, 2 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
 sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
@@ -4002,19 +1995,46 @@ sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
 chmod +x test/test_board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
 Loaded suite test/test_board
 Started
-E.........please enter 1-9
 please enter 1-9
-...
-Finished in 0.001414 seconds.
+please enter 1-9
+.F...........1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o 2 x
+4 x 6
+7 8 9
+o 2 x
+4 x 6
+o 8 9
+o 2 x
+x x 6
+o 8 9
+o 2 x
+x x o
+o 8 9
+o x x
+x x o
+o 8 9
+F
+Finished in 0.010840 seconds.
 
-  1) Error:
-test_eval_first(TestTtt):
-NoMethodError: private method `eval' called for "o":String
-    test/test_board.rb:109:in `test_eval_first'
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:60]:
+<675> expected but was
+<671>.
 
-13 tests, 32 assertions, 0 failures, 1 errors, 0 skips
+  2) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:154]:
+<8> expected but was
+<7>.
+
+14 tests, 41 assertions, 2 failures, 0 errors, 0 skips
 mk: exit 1
 mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
 sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
@@ -4023,14 +2043,91 @@ sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
 chmod +x test/test_board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
 /usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
 Loaded suite test/test_board
 Started
-..........please enter 1-9
 please enter 1-9
-...
-Finished in 0.001231 seconds.
+please enter 1-9
+.F...........1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o 2 x
+4 x 6
+7 8 9
+o 2 x
+4 x 6
+o 8 9
+o 2 x
+x x 6
+o 8 9
+o 2 x
+x x o
+o 8 9
+o x x
+x x o
+o 8 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.013218 seconds.
 
-13 tests, 33 assertions, 0 failures, 0 errors, 0 skips
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:64]:
+<1006> expected but was
+<1001>.
+
+14 tests, 44 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:177: warning: shadowing outer local variable - i
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.............1 2 3
+4 x 6
+7 8 9
+o 2 3
+4 x 6
+7 8 9
+o 2 x
+4 x 6
+7 8 9
+o 2 x
+4 x 6
+o 8 9
+o 2 x
+x x 6
+o 8 9
+o 2 x
+x x o
+o 8 9
+o x x
+x x o
+o 8 9
+o x x
+x x o
+o o 9
+o x x
+x x o
+o o x
+.
+Finished in 0.013767 seconds.
+
+14 tests, 44 assertions, 0 failures, 0 errors, 0 skips
 # On branch master
 # Changed but not updated:
 #   (use "git add <file>..." to update what will be committed)
@@ -4038,11 +2135,11 @@ Finished in 0.001231 seconds.
 #
 #	modified:   acme.dump
 #	modified:   guide
+#	modified:   history
 #	modified:   lib/board.rb
 #	modified:   "lib/board.\342\204\233\342\204\254"
-#	modified:   mkfile
-#	modified:   ruby
-#	modified:   test/test_board
+#	modified:   lib/boards.rb
+#	modified:   "lib/boards.\342\204\233\342\204\254"
 #	modified:   test/test_board.rb
 #	modified:   "test/test_board.\342\204\233\342\204\254"
 #	modified:   toascii.sed
@@ -4052,14 +2149,14 @@ Finished in 0.001231 seconds.
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
 #
-#	git add lib/boards.rb lib/boards.ℛℬ
+#	git add nbindex
+#	git add scratch
 no changes added to commit (use "git add" and/or "git commit -a")
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
 #
-#	new file:   lib/boards.rb
-#	new file:   "lib/boards.\342\204\233\342\204\254"
+#	new file:   nbindex
 #
 # Changed but not updated:
 #   (use "git add <file>..." to update what will be committed)
@@ -4067,14 +2164,72 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #
 #	modified:   acme.dump
 #	modified:   guide
+#	modified:   history
 #	modified:   lib/board.rb
 #	modified:   "lib/board.\342\204\233\342\204\254"
-#	modified:   mkfile
-#	modified:   ruby
-#	modified:   test/test_board
+#	modified:   lib/boards.rb
+#	modified:   "lib/boards.\342\204\233\342\204\254"
 #	modified:   test/test_board.rb
 #	modified:   "test/test_board.\342\204\233\342\204\254"
 #	modified:   toascii.sed
 #	modified:   ttt.rb
 #	modified:   "ttt.\342\204\233\342\204\254"
 #
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	scratch
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   nbindex
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   history
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   lib/boards.rb
+#	modified:   "lib/boards.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   nbindex
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   history
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   lib/boards.rb
+#	modified:   "lib/boards.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+f          1          10          79          90  57.9520697 
+         10          64         240           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look New scratch
+f          1          11        1332        1499  96.0784314 
+         11          50        1499           0           0 /home/jdc/git/tictestrue/scratch Del Snarf | Look 
+f          1          12        2610        2646  98.1481481 
+         12          61        3605           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf | Look 
