@@ -1,3 +1,13 @@
+CORNER = 1
+CENTER = 2
+PAIR = 10
+WIN = 100
+
+MINWIN = 2*PAIR + WIN
+
+ERROR_FULL = -1
+ERROR_RANGE = -2
+
 class Board
 	attr_accessor :board
 	
@@ -5,146 +15,157 @@ class Board
 		@board = board
 	end
 
-	def display
-		puts "#{@board[0]} #{@board[1]} #{@board[2]}"
-		puts "#{@board[3]} #{@board[4]} #{@board[5]}"
+	def display(xo)
+		ox = xo == "x" ? "o" : "x"
+		puts "#{@board[0]} #{@board[1]} #{@board[2]}	player #{xo}"
+		puts "#{@board[3]} #{@board[4]} #{@board[5]}	computer #{ox}"
 		puts "#{@board[6]} #{@board[7]} #{@board[8]}"
 	end
 
-	def displayline
-		puts "#{@board[0]} #{@board[1]} #{@board[2]} #{@board[3]} #{@board[4]} #{@board[5]} #{@board[6]} #{@board[7]} #{@board[8]}"
-	end
-	
 	def eval(xo)
 		score = 0
 		
-		# Each 3-in-a-row is worth 100.
+		# 3-in-a-row
 		# horizontal
 		if @board[0] == xo && @board[1] == xo && @board[2] == xo
-			score += 100
+			score += WIN
 		end
 		if @board[3] == xo && @board[4] == xo && @board[5] == xo
-			score += 100
+			score += WIN
 		end
 		if @board[6] == xo && @board[7] == xo && @board[8] == xo
-			score += 100
+			score += WIN
 		end
 		
 		# vertical
 		if @board[0] == xo && @board[3] == xo && @board[6] == xo
-			score += 100
+			score += WIN
 		end
 		if @board[1] == xo && @board[4] == xo && @board[7] == xo
-			score += 100
+			score += WIN
 		end
 		if @board[2] == xo && @board[5] == xo && @board[8] == xo
-			score += 100
+			score += WIN
 		end
 		
 		# diagonal
 		if @board[0] == xo && @board[4] == xo && @board[8] == xo
-			score += 100
+			score += WIN
 		end
 		if @board[2] == xo && @board[4] == xo && @board[6] == xo
-			score += 100
+			score += WIN
 		end
 
-		# Each 2-in-a-row is worth 10.
+		# 2-in-a-row
 		# horizontal
 		if @board[0] == xo && @board[1] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[1] == xo && @board[2] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[3] == xo && @board[4] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[4] == xo && @board[5] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[6] == xo && @board[7] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[7] == xo && @board[8] == xo
-			score += 10
+			score += PAIR
 		end
 		
 		# vertical
 		if @board[0] == xo && @board[3] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[1] == xo && @board[4] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[2] == xo && @board[5] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[3] == xo && @board[6] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[4] == xo && @board[7] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[5] == xo && @board[8] == xo
-			score += 10
+			score += PAIR
 		end
 		
 		# diagonal
 		if @board[0] == xo && @board[4] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[1] == xo && @board[3] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[1] == xo && @board[5] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[2] == xo && @board[4] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[3] == xo && @board[7] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[4] == xo && @board[6] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[4] == xo && @board[8] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[5] == xo && @board[7] == xo
-			score += 10
+			score += PAIR
 		end
 		
 		# corners
 		if @board[0] == xo && @board[2] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[0] == xo && @board[6] == xo
-			score += 10
+			score += PAIR
+		end
+		if @board[0] == xo && @board[8] == xo
+			score += PAIR
+		end
+		if @board[2] == xo && @board[6] == xo
+			score += PAIR
 		end
 		if @board[8] == xo && @board[2] == xo
-			score += 10
+			score += PAIR
 		end
 		if @board[8] == xo && @board[6] == xo
-			score += 10
+			score += PAIR
 		end
 		
-		# The center is worth 2, corners worth 1, to prevent forks.
+		# edges
+		if @board[1] == xo && @board[7] == xo
+			score += PAIR
+		end
+		if @board[3] == xo && @board[5] == xo
+			score += PAIR
+		end
+		
+		# Value center and corners (better forks)
 		if @board[0] == xo
-			score += 1
+			score += CORNER
 		end
 		if @board[2] == xo
-			score += 1
+			score += CORNER
 		end
 		if @board[4] == xo
-			score += 2
+			score += CENTER
 		end
 		if @board[6] == xo
-			score += 1
+			score += CORNER
 		end
 		if @board[8] == xo
-			score += 1
+			score += CORNER
 		end
 		
 		score
@@ -160,23 +181,11 @@ class Board
 				@board[move-1] = xo
 				move-1
 			else
-				-1
+				ERROR_FULL
 			end
 		else
-			puts "please enter 1-9"
-			-1
+			ERROR_RANGE
 		end
-	end
-	
-	def pickx(xo)
-		boards = Array.new(9) { Board.new([1, 2, 3, 4, 5, 6, 7, 8 ,9]) }
-		
-		evals = (0..8).map do |i|
-			boards[i].move(i+1, xo)
-			boards[i].eval(xo)
-		end
-		
-		1 + (1..8).reduce(0) {|imax, i| evals[i] > evals[imax] ? i : imax }
 	end
 	
 	def pickxo(xo)
@@ -188,9 +197,9 @@ class Board
 			eval = boards[i].eval(xo)
 			
 			oboards = Array.new(9) { Board.new(boards[i].board.dup) }
-			oevals = (0..8).map do |i|
-				oboards[i].move(i+1, ox)
-				oboards[i].eval(ox)
+			oevals = (0..8).map do |j|
+				oboards[j].move(j+1, ox)
+				oboards[j].eval(ox)
 			end
 			
 			eval -= oevals.max

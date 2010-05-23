@@ -1,13 +1,14 @@
-/home/jdc/Dropbox/nb/ttt
+/home/jdc/Dropbox/nb
 :, |sed 's,,,g'
 chmod +x ttt.3
-git mv oldtest testcmd
+git mv testcmd/* .
 git status
-git commit -a -m 'Value adjacent corners as 2-in-a-rows.'
+git commit -a -m 'Redo blackbox tests. Clean up input errors. Remove unnecessary code. Use constants.'
 git push origin master
 g def `{find . -name '*.ℛℬ'}
 ls -ltr
 mk -n
-#testcmd ttt
+testcmd ttt
 |fmt -w 72
 |sort|uniq
+|tr '[a-z]' '[A-Z]'

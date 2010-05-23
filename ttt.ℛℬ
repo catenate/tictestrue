@@ -4,31 +4,44 @@ require 'lib/board'
 player = "x"
 computer = "o"
 
-puts "GREETINGS CRAFTSMAN #{ENV['USER'].upcase}"
+puts "SHALL WE PLAY A GAME?"
 board ⇐ Board.new([1, 2, 3, 4, 5, 6, 7, 8, 9])
-board.display
+board.display(player)
 
 printf("> ")
-while (¬board.full) ⋀ (board.eval(player) < 120) ⋀ (board.eval(computer) < 120) ⋀ (move ⇐ gets)
+while (¬board.full) ⋀ (board.eval(player) < MINWIN) ⋀ (board.eval(computer) < MINWIN) ⋀ (move ⇐ gets)
 	if move ≠ "\n"
-		board.move(Integer(move), player)
-		board.move(board.pickxo(computer), computer)
-		board.display
+		begin
+			case board.move(Integer(move), player)
+			when ERROR_FULL
+				puts "position occupied"
+			when ERROR_RANGE
+				puts "please enter 1–9"
+			else
+				board.move(board.pickxo(computer), computer)
+			end
+		rescue ArgumentError
+			puts "please enter 1–9"
+		end
 	else
 		computer ⇐ player
 		player ⇐ player =? "x" ? "o" : "x"
 		board.move(board.pickxo(computer), computer)
-		board.display
 	end
+
+	board.display(player)
 	printf("> ")
 end
 
-if board.eval(player) < 120 ⋀ board.eval(computer) < 120
+case
+when board.eval(player) < MINWIN ⋀ board.eval(computer) < MINWIN ⋀ board.full
 	puts "THE ONLY WINNING MOVE IS NOT TO PLAY (tie)"
+when board.eval(computer) > MINWIN ⋀ board.eval(computer) > board.eval(player)
+	puts "HOW ABOUT A NICE GAME OF CHESS? (computer wins)"
+when board.eval(player) > MINWIN ⋀ board.eval(player) > board.eval(computer)
+	puts "A STRANGE GAME (computer loses)"
+when ¬board.full
+	puts "Because it's a boring game. It's always a tie."
 else
-	if board.eval(computer) > board.eval(player)
-		puts "HOW ABOUT A NICE GAME OF CHESS? (computer wins)"
-	else
-		puts "A STRANGE GAME (computer loses)"
-	end
+	puts "what?"
 end
