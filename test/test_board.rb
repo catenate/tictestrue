@@ -40,29 +40,27 @@ class TestTtt < Test::Unit::TestCase
 		
 		@board.move(4, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", 5, 6, 7, 8, 9])
-		assert_equal(@board.eval("x"), WIN+5*PAIR+2*CORNER)
+		assert_equal(@board.eval("x"), WIN+4*PAIR+PAIR_BLOCKED+2*CORNER)
 		
 		@board.move(5, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", 6, 7, 8, 9])
-		assert_equal(@board.eval("x"), WIN+9*PAIR+2*CORNER+CENTER)
+		assert_equal(@board.eval("x"), WIN+8*PAIR+PAIR_BLOCKED+2*CORNER+CENTER)
 		
 		@board.move(6, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", 7, 8, 9])
-		assert_equal(@board.eval("x"), 2*WIN+13*PAIR+2*CORNER+CENTER)
+		assert_equal(@board.eval("x"), 2*WIN+11*PAIR+2*PAIR_BLOCKED+2*CORNER+CENTER)
 		
 		@board.move(7, "x")
-		assert_equal(@board.board, ["x", "x", "x",
-		                        "x", "x", "x",
-		                        "x", 8, 9])
-		assert_equal(@board.eval("x"), 4*WIN+17*PAIR+3*CORNER+CENTER)
+		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", "x", 8, 9])
+		assert_equal(@board.eval("x"), 4*WIN+15*PAIR+2*PAIR_BLOCKED+3*CORNER+CENTER)
 		
 		@board.move(8, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", "x", "x", 9])
-		assert_equal(@board.eval("x"), 5*WIN+22*PAIR+3*CORNER+CENTER)
+		assert_equal(@board.eval("x"), 5*WIN+18*PAIR+4*PAIR_BLOCKED+3*CORNER+CENTER)
 		
 		@board.move(9, "x")
 		assert_equal(@board.board, ["x", "x", "x", "x", "x", "x", "x", "x", "x"])
-		assert_equal(@board.eval("x"), 8*WIN+28*PAIR+4*CORNER+CENTER)
+		assert_equal(@board.eval("x"), 8*WIN+24*PAIR+4*PAIR_BLOCKED+4*CORNER+CENTER)
 	end
 
 	def test_range
@@ -117,40 +115,69 @@ class TestTtt < Test::Unit::TestCase
 	end
 	
 	def test_pickxo
+		display = true
+		
 		pickaxe = @board.pickxo("x")
 		assert_equal(pickaxe, 5)
 		@board.move(pickaxe, "x")
+		if display
+			@board.display("x")
+		end
 		
 		pickaxe = @board.pickxo("o")
 		assert_equal(pickaxe, 1)		
 		@board.move(pickaxe, "o")
+		if display
+			@board.display("x")
+		end
 
 		pickaxe = @board.pickxo("x")
 		assert_equal(pickaxe, 3)
 		@board.move(pickaxe, "x")
+		if display
+			@board.display("x")
+		end
 		
 		pickaxe = @board.pickxo("o")
 		assert_equal(pickaxe, 7)		
 		@board.move(pickaxe, "o")
+		if display
+			@board.display("x")
+		end
 
 		pickaxe = @board.pickxo("x")
 		assert_equal(pickaxe, 4)
 		@board.move(pickaxe, "x")
+		if display
+			@board.display("x")
+		end
 		
 		pickaxe = @board.pickxo("o")
 		assert_equal(pickaxe, 6)		
 		@board.move(pickaxe, "o")
+		if display
+			@board.display("x")
+		end
 
 		pickaxe = @board.pickxo("x")
 		assert_equal(pickaxe, 9)
 		@board.move(pickaxe, "x")
+		if display
+			@board.display("x")
+		end
 		
 		pickaxe = @board.pickxo("o")
 		assert_equal(pickaxe, 2)		
 		@board.move(pickaxe, "o")
+		if display
+			@board.display("x")
+		end
 
 		pickaxe = @board.pickxo("x")
 		assert_equal(pickaxe, 8)
 		@board.move(pickaxe, "x")
+		if display
+			@board.display("x")
+		end
 	end
 end

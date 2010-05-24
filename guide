@@ -3,7 +3,7 @@
 chmod +x ttt.3
 git mv testcmd/* .
 git status
-git commit -a -m 'Redo blackbox tests. Clean up input errors. Remove unnecessary code. Use constants.'
+git commit -a -m 'Computer forks player.'
 git push origin master
 g def `{find . -name '*.ℛℬ'}
 ls -ltr

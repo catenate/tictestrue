@@ -1,6 +1,7 @@
 CORNER = 1
 CENTER = 2
 PAIR = 10
+PAIR_BLOCKED = 5
 WIN = 100
 
 MINWIN = 2*PAIR + WIN
@@ -25,149 +26,27 @@ class Board
 	def eval(xo)
 		score = 0
 		
-		# 3-in-a-row
 		# horizontal
-		if @board[0] == xo && @board[1] == xo && @board[2] == xo
-			score += WIN
-		end
-		if @board[3] == xo && @board[4] == xo && @board[5] == xo
-			score += WIN
-		end
-		if @board[6] == xo && @board[7] == xo && @board[8] == xo
-			score += WIN
-		end
+		score += scorewin(xo, 0, 1, 2) + scorepair(xo, 0, 1, 2) + scorepair(xo, 1, 2, 0) + scorepair(xo, 2, 0, 1)
+		score += scorewin(xo, 3, 4, 5) + scorepair(xo, 3, 4, 5) + scorepair(xo, 4, 5, 3) + scorepair(xo, 5, 3, 4)
+		score += scorewin(xo, 6, 7, 8) + scorepair(xo, 6, 7, 8) + scorepair(xo, 7, 8, 6) + scorepair(xo, 8, 6, 7)
 		
 		# vertical
-		if @board[0] == xo && @board[3] == xo && @board[6] == xo
-			score += WIN
-		end
-		if @board[1] == xo && @board[4] == xo && @board[7] == xo
-			score += WIN
-		end
-		if @board[2] == xo && @board[5] == xo && @board[8] == xo
-			score += WIN
-		end
+		score += scorewin(xo, 0, 3, 6) + scorepair(xo, 0, 3, 6) + scorepair(xo, 3, 6, 0) + scorepair(xo, 6, 0, 3)
+		score += scorewin(xo, 1, 4, 7) + scorepair(xo, 1, 4, 7) + scorepair(xo, 4, 7, 1) + scorepair(xo, 7, 1, 4)
+		score += scorewin(xo, 2, 5, 8) + scorepair(xo, 2, 5, 8) + scorepair(xo, 5, 8, 2) + scorepair(xo, 8, 2, 5)
 		
 		# diagonal
-		if @board[0] == xo && @board[4] == xo && @board[8] == xo
-			score += WIN
-		end
-		if @board[2] == xo && @board[4] == xo && @board[6] == xo
-			score += WIN
-		end
-
-		# 2-in-a-row
-		# horizontal
-		if @board[0] == xo && @board[1] == xo
-			score += PAIR
-		end
-		if @board[1] == xo && @board[2] == xo
-			score += PAIR
-		end
-		if @board[3] == xo && @board[4] == xo
-			score += PAIR
-		end
-		if @board[4] == xo && @board[5] == xo
-			score += PAIR
-		end
-		if @board[6] == xo && @board[7] == xo
-			score += PAIR
-		end
-		if @board[7] == xo && @board[8] == xo
-			score += PAIR
-		end
-		
-		# vertical
-		if @board[0] == xo && @board[3] == xo
-			score += PAIR
-		end
-		if @board[1] == xo && @board[4] == xo
-			score += PAIR
-		end
-		if @board[2] == xo && @board[5] == xo
-			score += PAIR
-		end
-		if @board[3] == xo && @board[6] == xo
-			score += PAIR
-		end
-		if @board[4] == xo && @board[7] == xo
-			score += PAIR
-		end
-		if @board[5] == xo && @board[8] == xo
-			score += PAIR
-		end
-		
-		# diagonal
-		if @board[0] == xo && @board[4] == xo
-			score += PAIR
-		end
-		if @board[1] == xo && @board[3] == xo
-			score += PAIR
-		end
-		if @board[1] == xo && @board[5] == xo
-			score += PAIR
-		end
-		if @board[2] == xo && @board[4] == xo
-			score += PAIR
-		end
-		if @board[3] == xo && @board[7] == xo
-			score += PAIR
-		end
-		if @board[4] == xo && @board[6] == xo
-			score += PAIR
-		end
-		if @board[4] == xo && @board[8] == xo
-			score += PAIR
-		end
-		if @board[5] == xo && @board[7] == xo
-			score += PAIR
-		end
-		
-		# corners
-		if @board[0] == xo && @board[2] == xo
-			score += PAIR
-		end
-		if @board[0] == xo && @board[6] == xo
-			score += PAIR
-		end
-		if @board[0] == xo && @board[8] == xo
-			score += PAIR
-		end
-		if @board[2] == xo && @board[6] == xo
-			score += PAIR
-		end
-		if @board[8] == xo && @board[2] == xo
-			score += PAIR
-		end
-		if @board[8] == xo && @board[6] == xo
-			score += PAIR
-		end
-		
-		# edges
-		if @board[1] == xo && @board[7] == xo
-			score += PAIR
-		end
-		if @board[3] == xo && @board[5] == xo
-			score += PAIR
-		end
-		
-		# Value center and corners (better forks)
-		if @board[0] == xo
-			score += CORNER
-		end
-		if @board[2] == xo
-			score += CORNER
-		end
+		score += scorewin(xo, 0, 4, 8) + scorepair(xo, 0, 4, 8) + scorepair(xo, 4, 8, 0) + scorepair(xo, 8, 0, 4)
+		score += scorewin(xo, 2, 4, 6) + scorepair(xo, 2, 4, 6) + scorepair(xo, 4, 6, 2) + scorepair(xo, 6, 2, 4)
+		score += scorepairblocked(xo, 1, 3) + scorepairblocked(xo, 1, 5) + scorepairblocked(xo, 3, 7) + scorepairblocked(xo, 5, 7)
+			
+		# center and corners
 		if @board[4] == xo
 			score += CENTER
 		end
-		if @board[6] == xo
-			score += CORNER
-		end
-		if @board[8] == xo
-			score += CORNER
-		end
-		
+		score += scorecorner(xo, 0) + scorecorner(xo, 2) + scorecorner(xo, 6) + scorecorner(xo, 8)
+					
 		score
 	end
 	
@@ -206,5 +85,38 @@ class Board
 		end
 		
 		1 + (1..8).reduce(0) {|imax, i| evals[i] > evals[imax] ? i : imax }
+	end
+	
+	def scorecorner(xo, corner)
+		if @board[corner] == xo
+			CORNER
+		else
+			0
+		end
+	end
+
+	def scorepair(xo, pair1, pair2, block)
+		ox = xo == "x" ? "o" : "x"
+		if @board[pair1] == xo && @board[pair2] == xo
+			(@board[block] == ox) ? PAIR_BLOCKED : PAIR
+		else
+			0
+		end
+	end
+
+	def scorepairblocked(xo, pair1, pair2)
+		if @board[pair1] == xo && @board[pair2] == xo
+			PAIR_BLOCKED
+		else
+			0
+		end
+	end
+		
+	def scorewin(xo, triple1, triple2, triple3)
+		if @board[triple1] == xo && @board[triple2] == xo && @board[triple3] == xo
+			WIN
+		else
+			0
+		end
 	end
 end

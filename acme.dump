@@ -5,18 +5,12 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           2          49          49   2.0697168 
-          2          47         216           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0           7        3544        3544   4.1394336 
-          7          50        3629           0           0 /home/jdc/git/tictestrue/history Del Snarf | Look 
-f          0           4        2678        2678   6.2091503 
-          4          55        3983           0           0 /home/jdc/git/tictestrue/lib/board.ℛℬ Del Snarf | Look 
-f          0           5        1807        1807   8.2788671 
-          5          61        3650           0           0 /home/jdc/git/tictestrue/test/test_board.ℛℬ Del Snarf | Look 
-f          0           6         304         304  10.3485839 
-          6          49         870           0           0 /home/jdc/git/tictestrue/ttt.ℛℬ Del Snarf | Look 
-F          1           0       46804       46804   2.0697168       46804 
-         10          53       46804           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf | Look mk 
+f          0          36         288         288   2.0697168 
+         36          49        1921           0           0 /home/jdc/Dropbox/nb/music Del Snarf Undo | Look 
+f          0           1         262         262   4.1394336 
+          1          47         292           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
+F          1           0      127514      127514   2.0697168      127514 
+         11          69      127514           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -2226,5 +2220,3614 @@ no changes added to commit (use "git add" and/or "git commit -a")
  create mode 100644 nbindex
 To git@github.com:catenate/tictestrue.git
    8923dc4..143dd17  master -> master
-f          1          11         139         162   4.1394336 
-         11          59         240           0           0 /home/jdc/git/tictestrue/guide Del Snarf | Look New scratch
+grep: exit 1
+lib/board.ℛℬ:	def displayline
+lib/boards.ℛℬ:		@board1.displayline
+lib/boards.ℛℬ:		@board2.displayline
+lib/boards.ℛℬ:		@board3.displayline
+lib/boards.ℛℬ:		@board4.displayline
+lib/boards.ℛℬ:		@board5.displayline
+lib/boards.ℛℬ:		@board6.displayline
+lib/boards.ℛℬ:		@board7.displayline
+lib/boards.ℛℬ:		@board8.displayline
+lib/boards.ℛℬ:		@board9.displayline
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    lib/boards.rb
+#	deleted:    "lib/boards.\342\204\233\342\204\254"
+#	renamed:    testcmd/ttt.1 -> ttt.1
+#	renamed:    testcmd/ttt.1.out -> ttt.1.out
+#	renamed:    testcmd/ttt.2 -> ttt.2
+#	renamed:    testcmd/ttt.2.out -> ttt.2.out
+#	renamed:    testcmd/ttt.3 -> ttt.3
+#	renamed:    testcmd/ttt.3.out -> ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   ttt.1.out
+#	modified:   ttt.2
+#	modified:   ttt.2.out
+#	modified:   ttt.3.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git add makefile
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    lib/boards.rb
+#	deleted:    "lib/boards.\342\204\233\342\204\254"
+#	new file:   makefile
+#	renamed:    testcmd/ttt.1 -> ttt.1
+#	renamed:    testcmd/ttt.1.out -> ttt.1.out
+#	renamed:    testcmd/ttt.2 -> ttt.2
+#	renamed:    testcmd/ttt.2.out -> ttt.2.out
+#	renamed:    testcmd/ttt.3 -> ttt.3
+#	renamed:    testcmd/ttt.3.out -> ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#	modified:   ttt.1.out
+#	modified:   ttt.2
+#	modified:   ttt.2.out
+#	modified:   ttt.3.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o o 9
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.012619 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o o 9
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.013742 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+15a16,18
+> > o 2 3	player x
+> 4 x 6	computer o
+> 7 8 9
+failed ttt.2
+
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+please enter 1-9
+please enter 1-9
+.position occupied
+...........position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+1 2 3	player x
+4 x 6	computer o
+7 8 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o 2 x	player x
+x x 6	computer o
+o 8 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o 2 x	player x
+x x o	computer o
+o 8 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o x x	player x
+x x o	computer o
+o 8 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o x x	player x
+x x o	computer o
+o o 9
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+position occupied
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.039793 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o o 9
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.011808 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+16c16,17
+< > o 2 3	player x
+---
+> > position occupied
+> o 2 3	player x
+22c23,24
+< > o 2 o	player x
+---
+> > position occupied
+> o 2 o	player x
+failed ttt.2
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o o 9
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.015099 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+16c16,17
+< > o 2 3	player x
+---
+> > position occupied
+> o 2 3	player x
+22c23,24
+< > o 2 o	player x
+---
+> > position occupied
+> o 2 o	player x
+failed ttt.2
+1,2d0
+< ./ttt.rb:14:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:14:in `<main>'
+7c5,9
+< > 
+---
+> > please enter 1-9
+> 1 2 3	player x
+> 4 5 6	computer o
+> 7 8 9
+> > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+failed ttt.3
+23c23,24
+< > o 2 o	player x
+---
+> > position occupied
+> o 2 o	player x
+failed ttt.2
+1,2d0
+< ./ttt.rb:14:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:14:in `<main>'
+7c5,9
+< > 
+---
+> > please enter 1-9
+> 1 2 3	player x
+> 4 5 6	computer o
+> 7 8 9
+> > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+failed ttt.3
+
+23c23,24
+< > o 2 o	player x
+---
+> > position occupied
+> o 2 o	player x
+failed ttt.2
+1,2d0
+< ./ttt.rb:14:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:14:in `<main>'
+7c5,9
+< > 
+---
+> > please enter 1-9
+> 1 2 3	player x
+> 4 5 6	computer o
+> 7 8 9
+> > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+failed ttt.3
+1,2d0
+< ./ttt.rb:14:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:14:in `<main>'
+7c5,9
+< > 
+---
+> > please enter 1-9
+> 1 2 3	player x
+> 4 5 6	computer o
+> 7 8 9
+> > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+failed ttt.3
+1,2d0
+< ./ttt.rb:14:in `Integer': invalid value for Integer: "y\n" (ArgumentError)
+< 	from ./ttt.rb:14:in `<main>'
+7c5,9
+< > 
+---
+> > please enter 1-9
+> 1 2 3	player x
+> 4 5 6	computer o
+> 7 8 9
+> > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+failed ttt.3
+error: 'ttt.3' has changes staged in the index
+(use --cached to keep the file, or -f to force removal)
+1
+error: 'ttt.3.out' has staged content different from both the file and the HEAD
+(use -f to force removal)
+
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o o 9
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.018649 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o o 9
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.012409 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:3:in `<top (required)>': uninitialized constant PAIR (NameError)
+	from test/test_board.rb:2:in `require'
+	from test/test_board.rb:2:in `<main>'
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o 8 9
+o x x	player x
+x x o	computer o
+o o 9
+o x x	player x
+x x o	computer o
+o o x
+.
+Finished in 0.012826 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.............
+Finished in 0.015745 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.............
+Finished in 0.009788 seconds.
+
+13 tests, 43 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.............
+Finished in 0.009310 seconds.
+
+13 tests, 44 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.016954 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.009083 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.009305 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.009084 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.009270 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:39]:
+<132> expected but was
+<122>.
+
+14 tests, 34 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.009075 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.012983 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.015580 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:47]:
+<194> expected but was
+<182>.
+
+14 tests, 38 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.009204 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:47]:
+<194> expected but was
+<184>.
+
+14 tests, 38 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.009806 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.009326 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:51]:
+<324> expected but was
+<334>.
+
+14 tests, 40 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.009374 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:51]:
+<334> expected but was
+<294>.
+
+14 tests, 40 assertions, 1 failures, 0 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+mk: exit 1
+1c1
+< GREETINGS CRAFTSMAN JDC
+---
+> SHALL WE PLAY A GAME?
+5c5
+< > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+---
+> > Because it's a boring game. It's always a tie.
+failed ttt.1
+1c1
+< GREETINGS CRAFTSMAN JDC
+---
+> SHALL WE PLAY A GAME?
+34c34
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > Because it's a boring game. It's always a tie.
+failed ttt.2
+1c1
+< GREETINGS CRAFTSMAN JDC
+---
+> SHALL WE PLAY A GAME?
+9c9
+< > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+---
+> > Because it's a boring game. It's always a tie.
+failed ttt.3
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.011991 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:51]:
+<334> expected but was
+<294>.
+
+14 tests, 40 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.016959 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:55]:
+<565> expected but was
+<555>.
+
+14 tests, 42 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.010119 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:55]:
+<565> expected but was
+<475>.
+
+14 tests, 42 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.009579 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:57]:
+<565> expected but was
+<575>.
+
+14 tests, 42 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........F.
+Finished in 0.017121 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:61]:
+<725> expected but was
+<695>.
+
+  2) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:145]:
+<9> expected but was
+<2>.
+
+14 tests, 42 assertions, 2 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........F.
+Finished in 0.009069 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:65]:
+<1086> expected but was
+<1046>.
+
+  2) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:145]:
+<9> expected but was
+<2>.
+
+14 tests, 44 assertions, 2 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............F.
+Finished in 0.007565 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:145]:
+<9> expected but was
+<2>.
+
+14 tests, 44 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+F.
+Finished in 0.012553 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:152]:
+<9> expected but was
+<2>.
+
+14 tests, 44 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+F.
+Finished in 0.010309 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:151]:
+<9> expected but was
+<2>.
+
+14 tests, 44 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+F.
+Finished in 0.012944 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:156]:
+<2> expected but was
+<8>.
+
+14 tests, 45 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..F.F.F.F.F.1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+F.
+Finished in 0.005221 seconds.
+
+  1) Failure:
+test_first_1(TestTtt) [test/test_board.rb:75]:
+<0> expected but was
+<1>.
+
+  2) Failure:
+test_first_3(TestTtt) [test/test_board.rb:86]:
+<0> expected but was
+<1>.
+
+  3) Failure:
+test_first_5(TestTtt) [test/test_board.rb:96]:
+<1> expected but was
+<2>.
+
+  4) Failure:
+test_first_7(TestTtt) [test/test_board.rb:106]:
+<0> expected but was
+<1>.
+
+  5) Failure:
+test_first_9(TestTtt) [test/test_board.rb:116]:
+<0> expected but was
+<1>.
+
+  6) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:131]:
+<2> expected but was
+<3>.
+
+14 tests, 39 assertions, 6 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+F.
+Finished in 0.006333 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:131]:
+<2> expected but was
+<3>.
+
+14 tests, 40 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+24c24
+< > o 2 o	player x
+---
+> > o o 3	player x
+27,29c27,28
+< > position occupied
+< o 2 o	player x
+< 4 x 6	computer o
+---
+> > o o x	player x
+> o x 6	computer o
+31,32c30,31
+< > o o o	player x
+< 4 x 6	computer o
+---
+> > o o x	player x
+> o x o	computer o
+34c33
+< > Because it's a boring game. It's always a tie.
+---
+> > A STRANGE GAME (computer loses)
+failed ttt.2
+5,7c5,6
+< > please enter 1-9
+< 1 2 3	player x
+< 4 5 6	computer o
+---
+> > o 2 3	player x
+> 4 x 6	computer o
+9c8,17
+< > Because it's a boring game. It's always a tie.
+---
+> > o o 3	player x
+> 4 x 6	computer o
+> 7 8 x
+> > o o x	player x
+> o x 6	computer o
+> 7 8 x
+> > o o x	player x
+> o x o	computer o
+> x 8 x
+> > A STRANGE GAME (computer loses)
+failed ttt.3
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+F.
+Finished in 0.012690 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:156]:
+<2> expected but was
+<8>.
+
+14 tests, 45 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.013098 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.011484 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+34c34
+< > Because it's a boring game. It's always a tie.
+---
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.2
+5,7c5,6
+< > please enter 1-9
+< 1 2 3	player x
+< 4 5 6	computer o
+---
+> > o 2 3	player x
+> 4 x 6	computer o
+9c8,18
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > position occupied
+> o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > o o o	player x
+> 4 x 6	computer o
+> x 8 x
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.3
+
+5,7c5,6
+< > please enter 1-9
+< 1 2 3	player x
+< 4 5 6	computer o
+---
+> > o 2 3	player x
+> 4 x 6	computer o
+9c8,18
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > position occupied
+> o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > o o o	player x
+> 4 x 6	computer o
+> x 8 x
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.3
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.009679 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+5,7c5,6
+< > please enter 1-9
+< 1 2 3	player x
+< 4 5 6	computer o
+---
+> > o 2 3	player x
+> 4 x 6	computer o
+9c8,18
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > position occupied
+> o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > o o o	player x
+> 4 x 6	computer o
+> x 8 x
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.3
+5,7c5,6
+< > please enter 1-9
+< 1 2 3	player x
+< 4 5 6	computer o
+---
+> > o 2 3	player x
+> 4 x 6	computer o
+8a8,17
+> > o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > position occupied
+> o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > o o o	player x
+> 4 x 6	computer o
+> x 8 x
+failed ttt.3
+5,7c5,6
+< > please enter 1-9
+< 1 2 3	player x
+< 4 5 6	computer o
+---
+> > o 2 3	player x
+> 4 x 6	computer o
+8a8,13
+> > o 2 o	player x
+> 4 x 6	computer o
+> 7 8 x
+> > o o o	player x
+> 4 x 6	computer o
+> 7 x x
+failed ttt.3
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.010242 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+13c13
+< x 8 x
+---
+> 7 x x
+failed ttt.3
+13c13
+< x 7 x
+---
+> 7 x x
+failed ttt.3
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.010557 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+..............
+Finished in 0.017523 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    lib/boards.rb
+#	deleted:    "lib/boards.\342\204\233\342\204\254"
+#	new file:   makefile
+#	renamed:    testcmd/ttt.1 -> ttt.1
+#	renamed:    testcmd/ttt.1.out -> ttt.1.out
+#	renamed:    testcmd/ttt.2 -> ttt.2
+#	renamed:    testcmd/ttt.2.out -> ttt.2.out
+#	renamed:    testcmd/ttt.3 -> ttt.3
+#	renamed:    testcmd/ttt.3.out -> ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#	modified:   ttt.1.out
+#	modified:   ttt.2
+#	modified:   ttt.2.out
+#	modified:   ttt.3
+#	modified:   ttt.3.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    lib/boards.rb
+#	deleted:    "lib/boards.\342\204\233\342\204\254"
+#	new file:   makefile
+#	renamed:    testcmd/ttt.1 -> ttt.1
+#	renamed:    testcmd/ttt.1.out -> ttt.1.out
+#	renamed:    testcmd/ttt.2 -> ttt.2
+#	renamed:    testcmd/ttt.2.out -> ttt.2.out
+#	renamed:    testcmd/ttt.3 -> ttt.3
+#	renamed:    testcmd/ttt.3.out -> ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#	modified:   ttt.1.out
+#	modified:   ttt.2
+#	modified:   ttt.2.out
+#	modified:   ttt.3
+#	modified:   ttt.3.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    lib/boards.rb
+#	deleted:    "lib/boards.\342\204\233\342\204\254"
+#	new file:   makefile
+#	renamed:    testcmd/ttt.1 -> ttt.1
+#	renamed:    testcmd/ttt.1.out -> ttt.1.out
+#	renamed:    testcmd/ttt.2 -> ttt.2
+#	renamed:    testcmd/ttt.2.out -> ttt.2.out
+#	renamed:    testcmd/ttt.3 -> ttt.3
+#	renamed:    testcmd/ttt.3.out -> ttt.3.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#	modified:   ttt.1.out
+#	modified:   ttt.2
+#	modified:   ttt.2.out
+#	modified:   ttt.3
+#	modified:   ttt.3.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+[master 394ae5a] Redo blackbox tests. Clean up input errors. Remove unnecessary code. Use constants.
+ 21 files changed, 339 insertions(+), 463 deletions(-)
+ delete mode 100755 lib/boards.rb
+ delete mode 100644 "lib/boards.\342\204\233\342\204\254"
+ create mode 100644 makefile
+ delete mode 100644 testcmd/ttt.1.out
+ delete mode 100644 testcmd/ttt.2.out
+ delete mode 100644 testcmd/ttt.3.out
+ rename testcmd/ttt.1 => ttt.1 (100%)
+ create mode 100644 ttt.1.out
+ rename testcmd/ttt.2 => ttt.2 (88%)
+ create mode 100644 ttt.2.out
+ rename testcmd/ttt.3 => ttt.3 (91%)
+ create mode 100644 ttt.3.out
+To git@github.com:catenate/tictestrue.git
+   08f8113..394ae5a  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+20c20
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+failed ttt.4
+
+12,14d11
+< > 1 2 3	player o
+< 4 x 6	computer x
+< 7 8 9
+failed ttt.6
+12,14d11
+< > x o 3	player o
+< 4 x 6	computer x
+< 7 8 9
+failed ttt.6
+
+15,16c15,16
+< > x o 3	player o
+< x x 6	computer x
+---
+> > x o x	player o
+> 4 x 6	computer x
+failed ttt.6
+15,16c15,16
+< > x o 3	player o
+< x x 6	computer x
+---
+> > x o x	player o
+> 4 x 6	computer x
+failed ttt.6
+15,16c15,16
+< > x o 3	player o
+< x x 6	computer x
+---
+> > x o x	player o
+> 4 x 6	computer x
+failed ttt.6
+5,6c5,6
+< > 1 2 3	player o
+< 4 x 6	computer x
+---
+> > o 2 3	player x
+> 4 x 6	computer o
+9,10c9,10
+< 1 2 3	player o
+< 4 x 6	computer x
+---
+> o 2 3	player x
+> 4 x 6	computer o
+12,13c12,13
+< > x o 3	player o
+< 4 x 6	computer x
+---
+> > o 2 3	player x
+> x x o	computer o
+15,17d14
+< > x o 3	player o
+< x x 6	computer x
+< 7 8 o
+failed ttt.7
+
+15,16c15,16
+< > x o 3	player o
+< x x 6	computer x
+---
+> > x o x	player o
+> 4 x 6	computer x
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.010758 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:39]:
+<127> expected but was
+<132>.
+
+14 tests, 34 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F............
+Finished in 0.011258 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:39]:
+<127> expected but was
+<132>.
+
+14 tests, 34 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............F.
+Finished in 0.013735 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:149]:
+<8> expected but was
+<2>.
+
+14 tests, 45 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............E.
+Finished in 0.006534 seconds.
+
+  1) Error:
+test_pickxo(TestTtt):
+ArgumentError: wrong number of arguments (0 for 1)
+    test/test_board.rb:126:in `test_pickxo'
+
+14 tests, 38 assertions, 0 failures, 1 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+F.
+Finished in 0.017710 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:172]:
+<8> expected but was
+<2>.
+
+14 tests, 45 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o 2 x	player x
+x x o	computer o
+o o x
+o x x	player x
+x x o	computer o
+o o x
+..
+Finished in 0.014555 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+12c12
+< > x o 3	player o
+---
+> > 1 o x	player o
+15,18c15,18
+< > x o 3	player o
+< x x 6	computer x
+< 7 8 o
+< > Because it's a boring game. It's always a tie.
+---
+> > 1 o x	player o
+> 4 x 6	computer x
+> x 8 o
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+15,18c15,18
+< > x o 3	player o
+< x x 6	computer x
+< 7 8 o
+< > Because it's a boring game. It's always a tie.
+---
+> > 1 o x	player o
+> 4 x 6	computer x
+> x 8 o
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+
+15,16c15,16
+< > 1 o x	player o
+< 4 x x	computer x
+---
+> > x o x	player o
+> 4 x 6	computer x
+18c18
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > Because it's a boring game. It's always a tie.
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+15,16c15,16
+< > 1 o x	player o
+< 4 x x	computer x
+---
+> > x o x	player o
+> 4 x 6	computer x
+18,19c18,19
+< > 1 o x	player o
+< o x x	computer x
+---
+> > x o x	player o
+> o x 6	computer x
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+
+15,16c15,16
+< > 1 o x	player o
+< 4 x x	computer x
+---
+> > x o x	player o
+> 4 x 6	computer x
+18,19c18,19
+< > 1 o x	player o
+< o x x	computer x
+---
+> > x o x	player o
+> o x 6	computer x
+failed ttt.6
+
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+
+0 1 2
+3 4 5
+6 7 8
+
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+F.
+Finished in 0.021826 seconds.
+
+  1) Failure:
+test_pickxo(TestTtt) [test/test_board.rb:172]:
+<2> expected but was
+<8>.
+
+14 tests, 45 assertions, 1 failures, 0 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.015297 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+12c12
+< > 1 o x	player o
+---
+> > x o 3	player o
+15,19c15,16
+< > 1 o x	player o
+< 4 x x	computer x
+< o 8 9
+< > 1 o x	player o
+< o x x	computer x
+---
+> > x o 3	player o
+> 4 x 6	computer x
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+
+15,19c15,16
+< > 1 o x	player o
+< 4 x x	computer x
+< o 8 9
+< > 1 o x	player o
+< o x x	computer x
+---
+> > x o 3	player o
+> 4 x 6	computer x
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+16,19c16
+< 4 x x	computer x
+< o 8 9
+< > x o 3	player o
+< o x x	computer x
+---
+> 4 x 6	computer x
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+15c15
+< > x o 3	player o
+---
+> > x o x	player o
+17a18,20
+> > x o x	player o
+> o x 6	computer x
+> x 8 o
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+
+15c15
+< > x o 3	player o
+---
+> > x o x	player o
+18c18,21
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > x o x	player o
+> 4 x 6	computer x
+> o x o
+> > Because it's a boring game. It's always a tie.
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.013594 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+15c15
+< > x o 3	player o
+---
+> > x o x	player o
+18c18,21
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > x o x	player o
+> 4 x 6	computer x
+> o x o
+> > Because it's a boring game. It's always a tie.
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.014569 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:43]:
+<147> expected but was
+<152>.
+
+14 tests, 36 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.014979 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:47]:
+<189> expected but was
+<194>.
+
+14 tests, 38 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.018478 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:51]:
+<324> expected but was
+<334>.
+
+14 tests, 40 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.014217 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:57]:
+<565> expected but was
+<575>.
+
+14 tests, 42 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.013470 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:59]:
+<705> expected but was
+<725>.
+
+14 tests, 44 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.F..........1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.014388 seconds.
+
+  1) Failure:
+test_fill(TestTtt) [test/test_board.rb:63]:
+<1066> expected but was
+<1086>.
+
+14 tests, 46 assertions, 1 failures, 0 errors, 0 skips
+mk: exit 1
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./test/test_board.ℛℬ > ./test/test_board.rb
+chmod +x ./test/test_board.rb
+sed -f toascii.sed test/test_board.ℛℬ > test/test_board.rb
+chmod +x test/test_board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.019188 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+17,18c17,22
+< 7 8 o
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> x 8 o
+> > position occupied
+> x o 3	player o
+> 4 x 6	computer x
+> x 8 o
+> > Because it's a boring game. It's always a tie.
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.013408 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+16,21c16,22
+< x x 6	computer x
+< 7 8 o
+< > x o 3	player o
+< x x x	computer x
+< o 8 o
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> 4 x 6	computer x
+> x 8 o
+> > position occupied
+> x o 3	player o
+> 4 x 6	computer x
+> x 8 o
+> > Because it's a boring game. It's always a tie.
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.015553 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+16,21c16,22
+< x x 6	computer x
+< 7 8 o
+< > x o 3	player o
+< x x x	computer x
+< o 8 o
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> 4 x 6	computer x
+> x 8 o
+> > position occupied
+> x o 3	player o
+> 4 x 6	computer x
+> x 8 o
+> > Because it's a boring game. It's always a tie.
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.014398 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+19c19
+< o x x	computer x
+---
+> o x 6	computer x
+failed ttt.6
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.019357 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.029717 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+8c8,14
+< > Because it's a boring game. It's always a tie.
+---
+> > o 2 x	player x
+> 4 x 6	computer o
+> o 8 9
+> > o 2 x	player x
+> o x x	computer o
+> o 8 9
+> > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+failed ttt.7
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.020454 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.031647 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.041459 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.046366 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+/home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.037807 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+0a1
+> /home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+failed ttt.1
+0a1
+> /home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+failed ttt.2
+0a1
+> /home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+failed ttt.3
+0a1
+> /home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+failed ttt.4
+0a1
+> /home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+failed ttt.5
+0a1
+> /home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+failed ttt.6
+0a1
+> /home/jdc/git/tictestrue/lib/board.rb:103: warning: method redefined; discarding old scorewin
+failed ttt.7
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.039073 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+EE.........EE.
+Finished in 0.007619 seconds.
+
+  1) Error:
+test_error(TestTtt):
+NoMethodError: undefined method `board' for #<Board:0x000000017e91a8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
+    test/test_board.rb:17:in `test_error'
+
+  2) Error:
+test_fill(TestTtt):
+NoMethodError: undefined method `board' for #<Board:0x000000017e7618 @board=["x", 2, 3, 4, 5, 6, 7, 8, 9]>
+    test/test_board.rb:26:in `test_fill'
+
+  3) Error:
+test_new(TestTtt):
+NoMethodError: undefined method `board' for #<Board:0x000000017ef1e8 @board=[1, 2, 3, 4, 5, 6, 7, 8, 9]>
+    test/test_board.rb:11:in `test_new'
+
+  4) Error:
+test_pickxo(TestTtt):
+NoMethodError: undefined method `board' for #<Board:0x000000017f7838 @board=["x", 2, 3, 4, 5, 6, 7, 8, 9]>
+    /home/jdc/git/tictestrue/lib/board.rb:78:in `block (2 levels) in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:78:in `initialize'
+    /home/jdc/git/tictestrue/lib/board.rb:78:in `new'
+    /home/jdc/git/tictestrue/lib/board.rb:78:in `block in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:74:in `each'mk: exit 1
+
+    /home/jdc/git/tictestrue/lib/board.rb:74:in `map'
+    /home/jdc/git/tictestrue/lib/board.rb:74:in `pickxo'
+    test/test_board.rb:120:in `test_pickxo'
+
+14 tests, 14 assertions, 0 failures, 4 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.057661 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.040657 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.039510 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+.EEEEEEEEEE.E.
+Finished in 0.004379 seconds.
+
+  1) Error:
+test_fill(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:23:in `test_fill'
+
+  2) Error:
+test_first_1(TestTtt):
+TypeError: nil can't be coerced into Fixnum
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `+'
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:73:in `test_first_1'
+
+  3) Error:
+test_first_2(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:79:in `test_first_2'
+
+  4) Error:
+test_first_3(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:84:in `test_first_3'
+
+  5) Error:
+test_first_4(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:89:in `test_first_4'
+
+  6) Error:
+tesmk: exit 1
+t_first_5(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:94:in `test_first_5'
+
+  7) Error:
+test_first_6(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:99:in `test_first_6'
+
+  8) Error:
+test_first_7(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:104:in `test_first_7'
+
+  9) Error:
+test_first_8(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:109:in `test_first_8'
+
+ 10) Error:
+test_first_9(TestTtt):
+NoMethodError: undefined method `+' for nil:NilClass
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    test/test_board.rb:114:in `test_first_9'
+
+ 11) Error:
+test_pickxo(TestTtt):
+TypeError: nil can't be coerced into Fixnum
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `+'
+    /home/jdc/git/tictestrue/lib/board.rb:48:in `eval'
+    /home/jdc/git/tictestrue/lib/board.rb:76:in `block in pickxo'
+    /home/jdc/git/tictestrue/lib/board.rb:74:in `each'
+    /home/jdc/git/tictestrue/lib/board.rb:74:in `map'
+    /home/jdc/git/tictestrue/lib/board.rb:74:in `pickxo'
+    test/test_board.rb:120:in `test_pickxo'
+
+14 tests, 6 assertions, 0 failures, 11 errors, 0 skips
+mk: /usr/bin/ruby1.9.1 -w -I ...  : exit status=exit(1)
+sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
+chmod +x ./lib/board.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.038189 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+f          1          12         251         263  67.2113290 
+         12          64         305           0           0 /home/jdc/git/tictestrue/guide Del Snarf Redo | Look New scratch
