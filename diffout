@@ -1,0 +1,11 @@
+#!/usr/local/plan9/bin/rc
+run=$1
+chmod +x $run
+out=$run.out
+runout=`{cptmp $out}
+
+./$run > $runout >[2=1]
+if(! diff $out $runout)
+	echo 'failed '^$run
+
+rm $runout

@@ -9,12 +9,6 @@ SHALL WE PLAY A GAME?
 4 x 6	computer o
 o 8 9
 > o 2 x	player x
-x x o	computer o
-o 8 9
-> o x x	player x
-x x o	computer o
-o o 9
-> o x x	player x
-x x o	computer o
-o o x
-> THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+o x 6	computer o
+o 8 x
+> YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)

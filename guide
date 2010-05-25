@@ -1,14 +1,14 @@
 /home/jdc/Dropbox/nb
 :, |sed 's,,,g'
-chmod +x ttt.3
+chmod +x testcmd diffout apply
 git mv testcmd/* .
 git status
-git commit -a -m 'Computer forks player.'
+git commit -a -m 'Go away, or I will taunt you a second time.'
 git push origin master
 g def `{find . -name '*.ℛℬ'}
 ls -ltr
 mk -n
-testcmd ttt
+./testcmd ttt
 |fmt -w 72
 |sort|uniq
 |tr '[a-z]' '[A-Z]'

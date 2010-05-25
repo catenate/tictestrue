@@ -1,0 +1,8 @@
+#!/bin/sh
+./ttt.rb <<EOF
+
+1
+7
+6
+2
+EOF

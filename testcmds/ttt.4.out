@@ -9,6 +9,12 @@ SHALL WE PLAY A GAME?
 4 x 6	computer o
 o 8 9
 > o 2 x	player x
-o x x	computer o
+x x o	computer o
 o 8 9
-> HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+> o x x	player x
+x x o	computer o
+o o 9
+> o x x	player x
+x x o	computer o
+o o x
+> HOW ABOUT A NICE GAME OF CHESS? (tie)

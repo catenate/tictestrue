@@ -5,12 +5,12 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0          36         288         288   2.0697168 
-         36          49        1921           0           0 /home/jdc/Dropbox/nb/music Del Snarf Undo | Look 
-f          0           1         262         262   4.1394336 
-          1          47         292           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-F          1           0      127514      127514   2.0697168      127514 
-         11          69      127514           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+f          0           1         288         288   2.0697168 
+          1          44        1921           0           0 /home/jdc/Dropbox/nb/music Del Snarf | Look 
+f          0           2           0           0   4.1394336 
+          2          47         292           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
+F          1           0      130539      130539   2.0697168      130539 
+          3          50      130539           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -5829,5 +5829,118 @@ o x x
 Finished in 0.038189 seconds.
 
 14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
-f          1          12         251         263  67.2113290 
-         12          64         305           0           0 /home/jdc/git/tictestrue/guide Del Snarf Redo | Look New scratch
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.037111 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#
+# Untracked files:
+#   (use "git add ttt.4	ttt.4.out	ttt.5	ttt.5.out	ttt.6	ttt.6.out	ttt.7	ttt.7.out
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ttt.4
+#	new file:   ttt.4.out
+#	new file:   ttt.5
+#	new file:   ttt.5.out
+#	new file:   ttt.6
+#	new file:   ttt.6.out
+#	new file:   ttt.7
+#	new file:   ttt.7.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   ttt.4
+#	new file:   ttt.4.out
+#	new file:   ttt.5
+#	new file:   ttt.5.out
+#	new file:   ttt.6
+#	new file:   ttt.6.out
+#	new file:   ttt.7
+#	new file:   ttt.7.out
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   lib/board.rb
+#	modified:   "lib/board.\342\204\233\342\204\254"
+#	modified:   test/test_board.rb
+#	modified:   "test/test_board.\342\204\233\342\204\254"
+#	modified:   toascii.sed
+#
+[master dc6080b] Computer forks player.
+ 15 files changed, 4040 insertions(+), 453 deletions(-)
+ rewrite lib/board.rb (68%)
+ rewrite "lib/board.\342\204\233\342\204\254" (71%)
+ create mode 100755 ttt.4
+ create mode 100644 ttt.4.out
+ create mode 100755 ttt.5
+ create mode 100644 ttt.5.out
+ create mode 100755 ttt.6
+ create mode 100644 ttt.6.out
+ create mode 100755 ttt.7
+ create mode 100644 ttt.7.out
+To git@github.com:catenate/tictestrue.git
+   394ae5a..dc6080b  master -> master
+f          1           4         244         244  26.4705882 
+          4          59         244           0           0 /home/jdc/git/tictestrue/guide Del Snarf | Look New scratch

@@ -35,9 +35,9 @@ end
 
 case
 when board.eval(player) < MINWIN ⋀ board.eval(computer) < MINWIN ⋀ board.full
-	puts "THE ONLY WINNING MOVE IS NOT TO PLAY (tie)"
+	puts "HOW ABOUT A NICE GAME OF CHESS? (tie)"
 when board.eval(computer) > MINWIN ⋀ board.eval(computer) > board.eval(player)
-	puts "HOW ABOUT A NICE GAME OF CHESS? (computer wins)"
+	puts "YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)"
 when board.eval(player) > MINWIN ⋀ board.eval(player) > board.eval(computer)
 	puts "A STRANGE GAME (computer loses)"
 when ¬board.full

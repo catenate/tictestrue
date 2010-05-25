@@ -1,0 +1,37 @@
+#!/usr/local/plan9/bin/rc
+# apply - apply command to each file in parallel
+
+flagfmt='h,l,s,j nproc'
+args='command files...'
+if(! ifs=() eval `{getflags $*} || ~ $#* [01]){
+  usage
+  exit usage
+}
+
+cmd=$1
+shift
+
+if (! ~ $flagl '') {
+  for(x in $*) eval $cmd $x
+  exit
+}
+
+mkfile=/tmp/apply.mkfile.$USER.$pid
+
+#Q
+cat > $mkfile <<EOF
+%.map:QV: %
+	$cmd $$stem
+EOF
+
+if (! ~ $flags '') serial=-s
+
+# by default use as many processors as we have
+if (~ $flagj '') NPROC=`{ls /proc/acpi/processor | wc -l}
+if not NPROC=$flagj
+
+mk $serial -f $mkfile `{echo $* |fmt -w 1 | ssam -e ',s/$/.map/g
+,p'}
+
+rm $mkfile
+exit 0
