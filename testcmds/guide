@@ -1,4 +1,4 @@
-cp ttt.1 ttt.17
-cp ttt.1.out ttt.17.out
+cp ttt.1 ttt.18
+cp ttt.1.out ttt.18.out
 md5sum * | sort
 |sort|uniq

@@ -41,7 +41,7 @@ when board.eval(computer) > MINWIN && board.eval(computer) > board.eval(player)
 when board.eval(player) > MINWIN && board.eval(player) > board.eval(computer)
 	puts "A STRANGE GAME (computer loses)"
 when !board.full
-	puts "Because it's a boring game. It's always a tie."
+	puts "Because it's a boring game. It's always a tie. (player forfeit)"
 else
 	puts "what?"
 end

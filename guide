@@ -3,7 +3,7 @@
 chmod +x testcmd diffout apply
 git mv testcmd/* .
 git status
-git commit -a -m 'Go away, or I will taunt you a second time.'
+git commit -a -m 'Instructions.'
 git push origin master
 g def `{find . -name '*.ℛℬ'}
 ls -ltr
