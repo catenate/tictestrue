@@ -1,0 +1,16 @@
+#!/usr/local/plan9/bin/rc
+flag e +
+
+if(~ $#TMPDIR 0)
+	TMPDIR=/tmp
+base=`{basename $1}
+tmp=$TMPDIR/$base.$USER.$pid
+
+if (test -f $1) {
+	cp -pr $1 $tmp
+}
+if not {
+	touch $tmp
+}
+chmod +wx $tmp
+echo $tmp

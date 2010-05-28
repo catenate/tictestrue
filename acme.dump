@@ -11,14 +11,14 @@ f          0           2           0           0   4.1394336
           2          47         199           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
 f          0          15          57         106  13.7254902 
          15          55         115           0           0 /home/jdc/git/tictestrue/testcmd Del Snarf Undo | Look 
-f          0          16          33          33  27.0152505 
+f          0          16         113         113  27.0152505 
          16          55         171           0           0 /home/jdc/git/tictestrue/diffout Del Snarf Undo | Look 
 f          0          17           0           0  51.4161220 
          17          56         329           1           0 /home/jdc/git/tictestrue/testcmds/ Del Snarf Get | Look 
 f          0          19          11          12  61.0021786 
          19          67         236           0           0 /home/jdc/git/tictestrue/testcmds/ttt.16.out Del Snarf Redo | Look 
-F          1           0      166146      166146   2.0697168      166146 
-         10          59      166146           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+F          1           0      167039      167039   2.0697168      167039 
+         10          59      167039           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -7586,8 +7586,34 @@ testcmds/ttt.9
 #	modified:   testcmd
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-f          1          11         129         129  63.5076253 
-         11          64         382           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look New scratch
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   diffout
+#	modified:   guide
+#	modified:   testcmd
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   diffout
+#	modified:   guide
+#	modified:   testcmd
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master b3ea918] change ls in testcmd, print test executed in diffout
+ 4 files changed, 1838 insertions(+), 9 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   157d2d6..b3ea918  master -> master
+f          1          11          98         193  63.5076253 
+         11          64         394           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look New scratch
 F          1           2        6718        6718  94.0087146        6718 
          12          59        6718           0           1 /home/jdc/git/tictestrue/testcmds/+Errors Del Snarf | Look 
 7bd4a6ec8ba6a1fe13bcbd205abc12f8	ttt.1

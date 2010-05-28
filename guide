@@ -3,7 +3,7 @@
 chmod +x testcmd diffout apply
 git mv testcmd/* .
 git status
-git commit -a -m 'change ls in testcmd, print test executed in diffout'
+git commit -a -m 'add cptmp'
 git push origin master
 g def `{find . -name '*.ℛℬ'}
 ls -ltr
