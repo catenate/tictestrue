@@ -3,7 +3,7 @@ echo $1
 run=$1
 chmod +x $run
 out=$run.out
-runout=`{cptmp $out}
+runout=`{./cptmp $out}
 
 ./$run > $runout >[2=1]
 if(! diff $out $runout)
