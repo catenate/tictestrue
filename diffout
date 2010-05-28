@@ -1,4 +1,5 @@
 #!/usr/local/plan9/bin/rc
+echo $1
 run=$1
 chmod +x $run
 out=$run.out

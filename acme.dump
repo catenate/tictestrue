@@ -5,12 +5,20 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           1         288         288   2.0697168 
-          1          44        1921           0           0 /home/jdc/Dropbox/nb/music Del Snarf | Look 
+f          0           1         608         608   2.0697168 
+          1          44        2323           0           0 /home/jdc/Dropbox/nb/music Del Snarf | Look 
 f          0           2           0           0   4.1394336 
-          2          47         292           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-F          1           0      130539      130539   2.0697168      130539 
-          3          50      130539           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf | Look 
+          2          47         199           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
+f          0          15          57         106  13.7254902 
+         15          55         115           0           0 /home/jdc/git/tictestrue/testcmd Del Snarf Undo | Look 
+f          0          16          33          33  27.0152505 
+         16          55         171           0           0 /home/jdc/git/tictestrue/diffout Del Snarf Undo | Look 
+f          0          17           0           0  51.4161220 
+         17          56         329           1           0 /home/jdc/git/tictestrue/testcmds/ Del Snarf Get | Look 
+f          0          19          11          12  61.0021786 
+         19          67         236           0           0 /home/jdc/git/tictestrue/testcmds/ttt.16.out Del Snarf Redo | Look 
+F          1           0      166146      166146   2.0697168      166146 
+         10          59      166146           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -5942,5 +5950,1821 @@ no changes added to commit (use "git add" and/or "git commit -a")
  create mode 100644 ttt.7.out
 To git@github.com:catenate/tictestrue.git
    394ae5a..dc6080b  master -> master
-f          1           4         244         244  26.4705882 
-          4          59         244           0           0 /home/jdc/git/tictestrue/guide Del Snarf | Look New scratch
+4a5,7
+> > 1 2 3	player o
+> 4 x 6	computer x
+> 7 8 9
+7a11,13
+> > o 2 x	player o
+> 4 x 6	computer x
+> 7 8 9
+10a17,19
+> > o 2 x	player o
+> x x 6	computer x
+> o 8 9
+12c21
+< o x x	computer o
+---
+> x x o	computer o
+14c23,32
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > o 2 x	player o
+> x x o	computer x
+> o 8 x
+> > o o x	player x
+> x x o	computer o
+> o 8 x
+> > o o x	player o
+> x x o	computer x
+> o x x
+> > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+failed ttt.7
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.071475 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.048200 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+which sh
+/bin/sh
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.041303 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+5,6c5
+< > 5
+< o 2 3	player x
+---
+> > o 2 3	player x
+9,10c8
+< > 8
+< o o 3	player x
+---
+> > o o 3	player x
+13,14c11
+< > 7
+< o o o	player x
+---
+> > o o o	player x
+failed ttt.10
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.043344 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+5,6c5
+< > 5
+< o 2 3	player x
+---
+> > o 2 3	player x
+9,10c8
+< > 9
+< o 2 o	player x
+---
+> > o 2 o	player x
+13,14c11
+< > 2
+< o x o	player x
+---
+> > o x o	player x
+17,18c14
+< > 4
+< o x o	player x
+---
+> > o x o	player x
+21,22c17
+< > 7
+< o x o	player x
+---
+> > o x o	player x
+failed ttt.12
+5,6c5
+< > 
+< 1 2 3	player o
+---
+> > 1 2 3	player o
+9,10c8
+< > 8
+< 1 2 3	player o
+---
+> > 1 2 3	player o
+13,14c11
+< > 3
+< x 2 o	player o
+---
+> > x 2 o	player o
+17,18c14
+< > 4
+< x 2 o	player o
+---
+> > x 2 o	player o
+failed ttt.13
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.038381 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.045273 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+14c14
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)
+failed ttt.10
+17c17
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)
+failed ttt.11
+20c20
+< > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+---
+> > HOW ABOUT A NICE GAME OF CHESS? (tie)
+failed ttt.12
+17c17
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)
+failed ttt.13
+34c34
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)
+failed ttt.2
+14c14
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)
+failed ttt.3
+20c20
+< > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+---
+> > HOW ABOUT A NICE GAME OF CHESS? (tie)
+failed ttt.4
+21c21
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)
+failed ttt.6
+14c14
+< > HOW ABOUT A NICE GAME OF CHESS? (computer wins)
+---
+> > YOUR ONLY WINNING MOVE IS NOT TO PLAY (computer wins)
+failed ttt.7
+32c32
+< > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+---
+> > HOW ABOUT A NICE GAME OF CHESS? (tie)
+failed ttt.8
+20c20
+< > THE ONLY WINNING MOVE IS NOT TO PLAY (tie)
+---
+> > HOW ABOUT A NICE GAME OF CHESS? (tie)
+failed ttt.9
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.031446 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+which testcmd
+/home/jdc/bin/9/testcmd
+which apply
+/home/jdc/bin/9/apply
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.044249 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+./testcmd: Permission denied
+testcmd: exit 1
+usage: apply [-hls] [-j nproc] command files...
+ls: exit 1
+ls: test.[0-9]+: No such file or directory
+ls: test.[0-9]+.out: No such file or directory
+ttt.1
+ttt.1.out
+ttt.10
+ttt.10.out
+ttt.11
+ttt.11.out
+ttt.12
+ttt.12.out
+ttt.13
+ttt.13.out
+ttt.14
+ttt.14.out
+ttt.15
+ttt.15.out
+ttt.2
+ttt.2.out
+ttt.3
+ttt.3.out
+ttt.4
+ttt.4.out
+ttt.5
+ttt.5.out
+ttt.6
+ttt.6.out
+ttt.7
+ttt.7.out
+ttt.8
+ttt.8.out
+ttt.9
+ttt.9.out
+ttt.rb
+
+ttt.1
+ttt.1.out
+ttt.10
+ttt.10.out
+ttt.11
+ttt.11.out
+ttt.12
+ttt.12.out
+ttt.13
+ttt.13.out
+ttt.14
+ttt.14.out
+ttt.15
+ttt.15.out
+ttt.2
+ttt.2.out
+ttt.3
+ttt.3.out
+ttt.4
+ttt.4.out
+ttt.5
+ttt.5.out
+ttt.6
+ttt.6.out
+ttt.7
+ttt.7.out
+ttt.8
+ttt.8.out
+ttt.9
+ttt.9.out
+git: 'mkdir' is not a git command. See 'git --help'.
+git: exit 1
+mkdir: testcmd already exists
+1
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.037050 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+diff: can't stat testcmds/testcmds/ttt.1.out
+failed testcmds/ttt.1
+diff: can't stat testcmds/testcmds/ttt.10.out
+failed testcmds/ttt.10
+diff: can't stat testcmds/testcmds/ttt.11.out
+failed testcmds/ttt.11
+diff: can't stat testcmds/testcmds/ttt.12.out
+failed testcmds/ttt.12
+diff: can't stat testcmds/testcmds/ttt.13.out
+failed testcmds/ttt.13
+diff: can't stat testcmds/testcmds/ttt.14.out
+failed testcmds/ttt.14
+diff: can't stat testcmds/testcmds/ttt.15.out
+failed testcmds/ttt.15
+diff: can't stat testcmds/testcmds/ttt.2.out
+failed testcmds/ttt.2
+diff: can't stat testcmds/testcmds/ttt.3.out
+failed testcmds/ttt.3
+diff: can't stat testcmds/testcmds/ttt.4.out
+failed testcmds/ttt.4
+diff: can't stat testcmds/testcmds/ttt.5.out
+failed testcmds/ttt.5
+diff: can't stat testcmds/testcmds/ttt.6.out
+failed testcmds/ttt.6
+diff: can't stat testcmds/testcmds/ttt.7.out
+failed testcmds/ttt.7
+diff: can't stat testcmds/testcmds/ttt.8.out
+failed testcmds/ttt.8
+diff: can't stat testcmds/testcmds/ttt.9.out
+failed testcmds/ttt.9
+
+1c1
+< SHALL WE PLY A GAME?
+---
+> SHALL WE PLAY A GAME?
+failed testcmds/ttt.12
+# On branch master
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git add apply diffout	testcmd	testcmds/
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   apply
+#	new file:   diffout
+#	new file:   testcmd
+#	new file:   testcmds/ttt.1
+#	new file:   testcmds/ttt.1.out
+#	new file:   testcmds/ttt.10
+#	new file:   testcmds/ttt.10.out
+#	new file:   testcmds/ttt.11
+#	new file:   testcmds/ttt.11.out
+#	new file:   testcmds/ttt.12
+#	new file:   testcmds/ttt.12.out
+#	new file:   testcmds/ttt.13
+#	new file:   testcmds/ttt.13.out
+#	new file:   testcmds/ttt.14
+#	new file:   testcmds/ttt.14.out
+#	new file:   testcmds/ttt.15
+#	new file:   testcmds/ttt.15.out
+#	new file:   testcmds/ttt.2
+#	new file:   testcmds/ttt.2.out
+#	new file:   testcmds/ttt.3
+#	new file:   testcmds/ttt.3.out
+#	new file:   testcmds/ttt.4
+#	new file:   testcmds/ttt.4.out
+#	new file:   testcmds/ttt.5
+#	new file:   testcmds/ttt.5.out
+#	new file:   testcmds/ttt.6
+#	new file:   testcmds/ttt.6.out
+#	new file:   testcmds/ttt.7
+#	new file:   testcmds/ttt.7.out
+#	new file:   testcmds/ttt.8
+#	new file:   testcmds/ttt.8.out
+#	new file:   testcmds/ttt.9
+#	new file:   testcmds/ttt.9.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+git: exit 128
+fatal: not under version control, source=ttt.10.out, destination=testcmds/ttt.10.out
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   apply
+#	new file:   diffout
+#	new file:   testcmd
+#	new file:   testcmds/ttt.1
+#	new file:   testcmds/ttt.1.out
+#	new file:   testcmds/ttt.10
+#	new file:   testcmds/ttt.10.out
+#	new file:   testcmds/ttt.11
+#	new file:   testcmds/ttt.11.out
+#	new file:   testcmds/ttt.12
+#	new file:   testcmds/ttt.12.out
+#	new file:   testcmds/ttt.13
+#	new file:   testcmds/ttt.13.out
+#	new file:   testcmds/ttt.14
+#	new file:   testcmds/ttt.14.out
+#	new file:   testcmds/ttt.15
+#	new file:   testcmds/ttt.15.out
+#	new file:   testcmds/ttt.2
+#	new file:   testcmds/ttt.2.out
+#	new file:   testcmds/ttt.3
+#	new file:   testcmds/ttt.3.out
+#	new file:   testcmds/ttt.4
+#	new file:   testcmds/ttt.4.out
+#	new file:   testcmds/ttt.5
+#	new file:   testcmds/ttt.5.out
+#	new file:   testcmds/ttt.6
+#	new file:   testcmds/ttt.6.out
+#	new file:   testcmds/ttt.7
+#	new file:   testcmds/ttt.7.out
+#	new file:   testcmds/ttt.8
+#	new file:   testcmds/ttt.8.out
+#	new file:   testcmds/ttt.9
+#	new file:   testcmds/ttt.9.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.041759 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+20c20
+< > HOW ABOUT A NCE GAME OF CHESS? (tie)
+---
+> > HOW ABOUT A NICE GAME OF CHESS? (tie)
+failed testcmds/ttt.14
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.042305 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   apply
+#	new file:   diffout
+#	new file:   testcmd
+#	new file:   testcmds/ttt.1
+#	new file:   testcmds/ttt.1.out
+#	new file:   testcmds/ttt.10
+#	new file:   testcmds/ttt.10.out
+#	new file:   testcmds/ttt.11
+#	new file:   testcmds/ttt.11.out
+#	new file:   testcmds/ttt.12
+#	new file:   testcmds/ttt.12.out
+#	new file:   testcmds/ttt.13
+#	new file:   testcmds/ttt.13.out
+#	new file:   testcmds/ttt.14
+#	new file:   testcmds/ttt.14.out
+#	new file:   testcmds/ttt.15
+#	new file:   testcmds/ttt.15.out
+#	new file:   testcmds/ttt.2
+#	new file:   testcmds/ttt.2.out
+#	new file:   testcmds/ttt.3
+#	new file:   testcmds/ttt.3.out
+#	new file:   testcmds/ttt.4
+#	new file:   testcmds/ttt.4.out
+#	new file:   testcmds/ttt.5
+#	new file:   testcmds/ttt.5.out
+#	new file:   testcmds/ttt.6
+#	new file:   testcmds/ttt.6.out
+#	new file:   testcmds/ttt.7
+#	new file:   testcmds/ttt.7.out
+#	new file:   testcmds/ttt.8
+#	new file:   testcmds/ttt.8.out
+#	new file:   testcmds/ttt.9
+#	new file:   testcmds/ttt.9.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add testcmds/guide testcmds/ttt.16	testcmds/ttt.16.out
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   apply
+#	new file:   diffout
+#	new file:   testcmd
+#	new file:   testcmds/guide
+#	new file:   testcmds/ttt.1
+#	new file:   testcmds/ttt.1.out
+#	new file:   testcmds/ttt.10
+#	new file:   testcmds/ttt.10.out
+#	new file:   testcmds/ttt.11
+#	new file:   testcmds/ttt.11.out
+#	new file:   testcmds/ttt.12
+#	new file:   testcmds/ttt.12.out
+#	new file:   testcmds/ttt.13
+#	new file:   testcmds/ttt.13.out
+#	new file:   testcmds/ttt.14
+#	new file:   testcmds/ttt.14.out
+#	new file:   testcmds/ttt.15
+#	new file:   testcmds/ttt.15.out
+#	new file:   testcmds/ttt.16
+#	new file:   testcmds/ttt.16.out
+#	new file:   testcmds/ttt.2
+#	new file:   testcmds/ttt.2.out
+#	new file:   testcmds/ttt.3
+#	new file:   testcmds/ttt.3.out
+#	new file:   testcmds/ttt.4
+#	new file:   testcmds/ttt.4.out
+#	new file:   testcmds/ttt.5
+#	new file:   testcmds/ttt.5.out
+#	new file:   testcmds/ttt.6
+#	new file:   testcmds/ttt.6.out
+#	new file:   testcmds/ttt.7
+#	new file:   testcmds/ttt.7.out
+#	new file:   testcmds/ttt.8
+#	new file:   testcmds/ttt.8.out
+#	new file:   testcmds/ttt.9
+#	new file:   testcmds/ttt.9.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.049749 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.038434 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+5,6c5
+< > 
+< 1 2 3	player o
+---
+> > 1 2 3	player o
+9,10c8
+< > 1
+< o 2 x	player o
+---
+> > o 2 x	player o
+13,14c11
+< > 7
+< o 2 x	player o
+---
+> > o 2 x	player o
+17,18c14
+< > 6
+< o 2 x	player o
+---
+> > o 2 x	player o
+21,22c17
+< > 2
+< o o x	player o
+---
+> > o o x	player o
+failed testcmds/ttt.18
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   apply
+#	new file:   diffout
+#	new file:   testcmd
+#	new file:   testcmds/guide
+#	new file:   testcmds/ttt.1
+#	new file:   testcmds/ttt.1.out
+#	new file:   testcmds/ttt.10
+#	new file:   testcmds/ttt.10.out
+#	new file:   testcmds/ttt.11
+#	new file:   testcmds/ttt.11.out
+#	new file:   testcmds/ttt.12
+#	new file:   testcmds/ttt.12.out
+#	new file:   testcmds/ttt.13
+#	new file:   testcmds/ttt.13.out
+#	new file:   testcmds/ttt.14
+#	new file:   testcmds/ttt.14.out
+#	new file:   testcmds/ttt.15
+#	new file:   testcmds/ttt.15.out
+#	new file:   testcmds/ttt.16
+#	new file:   testcmds/ttt.16.out
+#	new file:   testcmds/ttt.2
+#	new file:   testcmds/ttt.2.out
+#	new file:   testcmds/ttt.3
+#	new file:   testcmds/ttt.3.out
+#	new file:   testcmds/ttt.4
+#	new file:   testcmds/ttt.4.out
+#	new file:   testcmds/ttt.5
+#	new file:   testcmds/ttt.5.out
+#	new file:   testcmds/ttt.6
+#	new file:   testcmds/ttt.6.out
+#	new file:   testcmds/ttt.7
+#	new file:   testcmds/ttt.7.out
+#	new file:   testcmds/ttt.8
+#	new file:   testcmds/ttt.8.out
+#	new file:   testcmds/ttt.9
+#	new file:   testcmds/ttt.9.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# Untracked files:
+#   (use "git add testcmds/ttt.17	testcmds/ttt.17.out	testcmds/ttt.18	testcmds/ttt.18.out
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   apply
+#	new file:   diffout
+#	new file:   testcmd
+#	new file:   testcmds/guide
+#	new file:   testcmds/ttt.1
+#	new file:   testcmds/ttt.1.out
+#	new file:   testcmds/ttt.10
+#	new file:   testcmds/ttt.10.out
+#	new file:   testcmds/ttt.11
+#	new file:   testcmds/ttt.11.out
+#	new file:   testcmds/ttt.12
+#	new file:   testcmds/ttt.12.out
+#	new file:   testcmds/ttt.13
+#	new file:   testcmds/ttt.13.out
+#	new file:   testcmds/ttt.14
+#	new file:   testcmds/ttt.14.out
+#	new file:   testcmds/ttt.15
+#	new file:   testcmds/ttt.15.out
+#	new file:   testcmds/ttt.16
+#	new file:   testcmds/ttt.16.out
+#	new file:   testcmds/ttt.17
+#	new file:   testcmds/ttt.17.out
+#	new file:   testcmds/ttt.18
+#	new file:   testcmds/ttt.18.out
+#	new file:   testcmds/ttt.2
+#	new file:   testcmds/ttt.2.out
+#	new file:   testcmds/ttt.3
+#	new file:   testcmds/ttt.3.out
+#	new file:   testcmds/ttt.4
+#	new file:   testcmds/ttt.4.out
+#	new file:   testcmds/ttt.5
+#	new file:   testcmds/ttt.5.out
+#	new file:   testcmds/ttt.6
+#	new file:   testcmds/ttt.6.out
+#	new file:   testcmds/ttt.7
+#	new file:   testcmds/ttt.7.out
+#	new file:   testcmds/ttt.8
+#	new file:   testcmds/ttt.8.out
+#	new file:   testcmds/ttt.9
+#	new file:   testcmds/ttt.9.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   apply
+#	new file:   diffout
+#	new file:   testcmd
+#	new file:   testcmds/guide
+#	new file:   testcmds/ttt.1
+#	new file:   testcmds/ttt.1.out
+#	new file:   testcmds/ttt.10
+#	new file:   testcmds/ttt.10.out
+#	new file:   testcmds/ttt.11
+#	new file:   testcmds/ttt.11.out
+#	new file:   testcmds/ttt.12
+#	new file:   testcmds/ttt.12.out
+#	new file:   testcmds/ttt.13
+#	new file:   testcmds/ttt.13.out
+#	new file:   testcmds/ttt.14
+#	new file:   testcmds/ttt.14.out
+#	new file:   testcmds/ttt.15
+#	new file:   testcmds/ttt.15.out
+#	new file:   testcmds/ttt.16
+#	new file:   testcmds/ttt.16.out
+#	new file:   testcmds/ttt.17
+#	new file:   testcmds/ttt.17.out
+#	new file:   testcmds/ttt.18
+#	new file:   testcmds/ttt.18.out
+#	new file:   testcmds/ttt.2
+#	new file:   testcmds/ttt.2.out
+#	new file:   testcmds/ttt.3
+#	new file:   testcmds/ttt.3.out
+#	new file:   testcmds/ttt.4
+#	new file:   testcmds/ttt.4.out
+#	new file:   testcmds/ttt.5
+#	new file:   testcmds/ttt.5.out
+#	new file:   testcmds/ttt.6
+#	new file:   testcmds/ttt.6.out
+#	new file:   testcmds/ttt.7
+#	new file:   testcmds/ttt.7.out
+#	new file:   testcmds/ttt.8
+#	new file:   testcmds/ttt.8.out
+#	new file:   testcmds/ttt.9
+#	new file:   testcmds/ttt.9.out
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	deleted:    ttt.1
+#	deleted:    ttt.1.out
+#	deleted:    ttt.2
+#	deleted:    ttt.2.out
+#	deleted:    ttt.3
+#	deleted:    ttt.3.out
+#	deleted:    ttt.4
+#	deleted:    ttt.4.out
+#	deleted:    ttt.5
+#	deleted:    ttt.5.out
+#	deleted:    ttt.6
+#	deleted:    ttt.6.out
+#	deleted:    ttt.7
+#	deleted:    ttt.7.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+[master c8d41a7] Go away, or I will taunt you a second time.
+ 51 files changed, 478 insertions(+), 98 deletions(-)
+ create mode 100755 apply
+ create mode 100755 diffout
+ create mode 100755 testcmd
+ create mode 100644 testcmds/guide
+ create mode 100755 testcmds/ttt.1
+ rename ttt.1.out => testcmds/ttt.1.out (100%)
+ create mode 100755 testcmds/ttt.10
+ copy ttt.3.out => testcmds/ttt.10.out (63%)
+ create mode 100755 testcmds/ttt.11
+ copy ttt.4.out => testcmds/ttt.11.out (51%)
+ create mode 100755 testcmds/ttt.12
+ copy ttt.3.out => testcmds/ttt.12.out (52%)
+ create mode 100755 testcmds/ttt.13
+ create mode 100644 testcmds/ttt.13.out
+ create mode 100755 testcmds/ttt.14
+ create mode 100644 testcmds/ttt.14.out
+ create mode 100755 testcmds/ttt.15
+ create mode 100644 testcmds/ttt.15.out
+ create mode 100755 testcmds/ttt.16
+ copy ttt.7.out => testcmds/ttt.16.out (66%)
+ create mode 100755 testcmds/ttt.17
+ create mode 100644 testcmds/ttt.17.out
+ create mode 100755 testcmds/ttt.18
+ create mode 100644 testcmds/ttt.18.out
+ create mode 100755 testcmds/ttt.2
+ rename ttt.2.out => testcmds/ttt.2.out (89%)
+ create mode 100755 testcmds/ttt.3
+ copy ttt.3.out => testcmds/ttt.3.out (76%)
+ create mode 100755 testcmds/ttt.4
+ rename ttt.4.out => testcmds/ttt.4.out (85%)
+ create mode 100755 testcmds/ttt.5
+ rename ttt.5.out => testcmds/ttt.5.out (100%)
+ create mode 100755 testcmds/ttt.6
+ rename ttt.6.out => testcmds/ttt.6.out (83%)
+ create mode 100755 testcmds/ttt.7
+ rename ttt.7.out => testcmds/ttt.7.out (76%)
+ create mode 100755 testcmds/ttt.8
+ create mode 100644 testcmds/ttt.8.out
+ create mode 100755 testcmds/ttt.9
+ rename ttt.3.out => testcmds/ttt.9.out (52%)
+ delete mode 100755 ttt.1
+ delete mode 100755 ttt.2
+ delete mode 100755 ttt.3
+ delete mode 100755 ttt.4
+ delete mode 100755 ttt.5
+ delete mode 100755 ttt.6
+ delete mode 100755 ttt.7
+To git@github.com:catenate/tictestrue.git
+   dc6080b..c8d41a7  master -> master
+sed -f toascii.sed ./ttt.ℛℬ > ./ttt.rb
+chmod +x ./ttt.rb
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.035029 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+5c5
+< > Because it's a boring game. It's always a tie.
+---
+> > Because it's a boring game. It's always a tie. (player forfeit)
+failed testcmds/ttt.1
+17c17
+< > Because it's a boring game. It's always a tie.
+---
+> > Because it's a boring game. It's always a tie. (player forfeit)
+failed testcmds/ttt.5
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README
+#	modified:   guide
+#	modified:   testcmds/ttt.1.out
+#	modified:   testcmds/ttt.5.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+/usr/bin/ruby1.9.1 -w -I . test/test_board.rb
+/usr/lib/ruby/1.9.1/test/unit/assertions.rb:31: warning: shadowing outer local variable - line
+Loaded suite test/test_board
+Started
+............1 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 3	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+7 8 9
+o 2 x	player x
+4 x 6	computer o
+o 8 9
+o 2 x	player x
+x x 6	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 9
+o 2 x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o 8 x
+o o x	player x
+x x o	computer o
+o x x
+..
+Finished in 0.044952 seconds.
+
+14 tests, 46 assertions, 0 failures, 0 errors, 0 skips
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README
+#	modified:   guide
+#	modified:   testcmds/ttt.1.out
+#	modified:   testcmds/ttt.5.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README
+#	modified:   guide
+#	modified:   testcmds/ttt.1.out
+#	modified:   testcmds/ttt.5.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README
+#	modified:   guide
+#	modified:   testcmds/guide
+#	modified:   testcmds/ttt.1.out
+#	modified:   testcmds/ttt.5.out
+#	modified:   ttt.rb
+#	modified:   "ttt.\342\204\233\342\204\254"
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 157d2d6] Instructions.
+ 7 files changed, 15 insertions(+), 7 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   c8d41a7..157d2d6  master -> master
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+1c1
+< SHALL WE PLY A GAME?
+---
+> SHALL WE PLAY A GAME?
+failed testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+1c1
+< SHALL WE PLY A GAME?
+---
+> SHALL WE PLAY A GAME?
+failed testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+rc: null list in concatenation
+ls: exit 1
+rc: null list in concatenation
+1
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+cmd=ttt: exit 1
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+1c1
+< SHALL WE PLY A GAME?
+---
+> SHALL WE PLAY A GAME?
+failed testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+testcmds/ttt.1
+testcmds/ttt.10
+testcmds/ttt.11
+testcmds/ttt.12
+testcmds/ttt.13
+testcmds/ttt.14
+testcmds/ttt.15
+testcmds/ttt.16
+testcmds/ttt.17
+testcmds/ttt.18
+testcmds/ttt.2
+testcmds/ttt.3
+testcmds/ttt.4
+testcmds/ttt.5
+testcmds/ttt.6
+testcmds/ttt.7
+testcmds/ttt.8
+testcmds/ttt.9
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   diffout
+#	modified:   testcmd
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+f          1          11         129         129  63.5076253 
+         11          64         382           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look New scratch
+F          1           2        6718        6718  94.0087146        6718 
+         12          59        6718           0           1 /home/jdc/git/tictestrue/testcmds/+Errors Del Snarf | Look 
+7bd4a6ec8ba6a1fe13bcbd205abc12f8	ttt.1
+7c29f4e0180694cc9ad4138c9b638570	ttt.1.out
+4f3d6252728de73f08d6824e3d60fa9f	ttt.10
+d279ddee5be13601c9a0714a299bb85f	ttt.10.out
+55bb180fd15abddff154836c309ff963	ttt.11
+c07014720806ce4557297ba1ca82d176	ttt.11.out
+c1a932bea1afaf525544a8c51ded2e66	ttt.12
+123d1c4912af4a18ce22005e44adbb66	ttt.12.out
+c3897a4de7815cc687f913b36a68ddd3	ttt.13
+cfda337b9d7adba00054d8e0d205595c	ttt.13.out
+d39b1c6f2392c0e72aa32c8bc1a698d5	ttt.14
+07d73e574e344ffe4aefc10e9cd89b53	ttt.14.out
+4cce10b1af810a5201013f83b4e9414e	ttt.15
+cea997c8e07e19c62a2cc95cb1d89129	ttt.15.out
+3dcf9a1c2573b5dfb9b521ab02dc0e2d	ttt.16
+8828a7247759e014a1b414caba6878c0	ttt.16.out
+c1a932bea1afaf525544a8c51ded2e66	ttt.17
+123d1c4912af4a18ce22005e44adbb66	ttt.17.out
+e39ccbba88570cdc2c9a75452d72be50	ttt.2
+0cdb3eaa5c3e4f45312c9916986555ea	ttt.2.out
+263aa904acd70ce2b21819d0ff3bf756	ttt.3
+817521f12233fb8f2e7e5edbf1b6bf66	ttt.3.out
+907d3653dbcc9c0bd1756aeb8d67e766	ttt.4
+99b44eb4294f874af23841f7bc79362a	ttt.4.out
+462803fa1247498475542dad4a74a95c	ttt.5
+52f57ea1dca575ac5b95748ea2f2e537	ttt.5.out
+2dfe79d1fbb6ece1bf3817e958ca1079	ttt.6
+3d76eb8871cf2dc4a6ee7debe1c28634	ttt.6.out
+1cb42bf1db1a77952e5229da407bb69e	ttt.7
+45884ea10df9b9b372c7eb4138b6c296	ttt.7.out
+70bd9d108a28734d0dd75e54004b56d6	ttt.8
+d0d1ae54c3a488d109edb194cba51c04	ttt.8.out
+76e3be8b663f9f1ed1ed4ca7a4ad5249	ttt.9
+547b779fd8b2c09c57f2e0d2c3858b40	ttt.9.out
+7bd4a6ec8ba6a1fe13bcbd205abc12f8
+7c29f4e0180694cc9ad4138c9b638570
+4f3d6252728de73f08d6824e3d60fa9f
+d279ddee5be13601c9a0714a299bb85f
+55bb180fd15abddff154836c309ff963
+c07014720806ce4557297ba1ca82d176
+c1a932bea1afaf525544a8c51ded2e66
+123d1c4912af4a18ce22005e44adbb66
+c3897a4de7815cc687f913b36a68ddd3
+cfda337b9d7adba00054d8e0d205595c
+d39b1c6f2392c0e72aa32c8bc1a698d5
+07d73e574e344ffe4aefc10e9cd89b53
+4cce10b1af810a5201013f83b4e9414e
+cea997c8e07e19c62a2cc95cb1d89129
+3dcf9a1c2573b5dfb9b521ab02dc0e2d
+8828a7247759e014a1b414caba6878c0
+c1a932bea1afaf525544a8c51ded2e66
+123d1c4912af4a18ce22005e44adbb66
+e39ccbba88570cdc2c9a75452d72be50
+0cdb3eaa5c3e4f45312c9916986555ea
+263aa904acd70ce2b21819d0ff3bf756
+817521f12233fb8f2e7e5edbf1b6bf66
+907d3653dbcc9c0bd1756aeb8d67e766
+99b44eb4294f874af23841f7bc79362a
+462803fa1247498475542dad4a74a95c
+52f57ea1dca575ac5b95748ea2f2e537
+2dfe79d1fbb6ece1bf3817e958ca1079
+3d76eb8871cf2dc4a6ee7debe1c28634
+1cb42bf1db1a77952e5229da407bb69e
+45884ea10df9b9b372c7eb4138b6c296
+70bd9d108a28734d0dd75e54004b56d6
+d0d1ae54c3a488d109edb194cba51c04
+76e3be8b663f9f1ed1ed4ca7a4ad5249
+547b779fd8b2c09c57f2e0d2c3858b40
+     34
+     32
+   1 07d73e574e344ffe4aefc10e9cd89b53
+   1 0cdb3eaa5c3e4f45312c9916986555ea
+   2 123d1c4912af4a18ce22005e44adbb66
+   1 1cb42bf1db1a77952e5229da407bb69e
+   1 263aa904acd70ce2b21819d0ff3bf756
+   1 2dfe79d1fbb6ece1bf3817e958ca1079
+   1 3d76eb8871cf2dc4a6ee7debe1c28634
+   1 3dcf9a1c2573b5dfb9b521ab02dc0e2d
+   1 45884ea10df9b9b372c7eb4138b6c296
+   1 462803fa1247498475542dad4a74a95c
+   1 4cce10b1af810a5201013f83b4e9414e
+   1 4f3d6252728de73f08d6824e3d60fa9f
+   1 52f57ea1dca575ac5b95748ea2f2e537
+   1 547b779fd8b2c09c57f2e0d2c3858b40
+   1 55bb180fd15abddff154836c309ff963
+   1 70bd9d108a28734d0dd75e54004b56d6
+   1 76e3be8b663f9f1ed1ed4ca7a4ad5249
+   1 7bd4a6ec8ba6a1fe13bcbd205abc12f8
+   1 7c29f4e0180694cc9ad4138c9b638570
+   1 817521f12233fb8f2e7e5edbf1b6bf66
+   1 8828a7247759e014a1b414caba6878c0
+   1 907d3653dbcc9c0bd1756aeb8d67e766
+   1 99b44eb4294f874af23841f7bc79362a
+   1 c07014720806ce4557297ba1ca82d176
+   2 c1a932bea1afaf525544a8c51ded2e66
+   1 c3897a4de7815cc687f913b36a68ddd3
+   1 cea997c8e07e19c62a2cc95cb1d89129
+   1 cfda337b9d7adba00054d8e0d205595c
+   1 d0d1ae54c3a488d109edb194cba51c04
+   1 d279ddee5be13601c9a0714a299bb85f
+   1 d39b1c6f2392c0e72aa32c8bc1a698d5
+   1 e39ccbba88570cdc2c9a75452d72be50
+
+
+
+   1 07d73e574e344ffe4aefc10e9cd89b53	ttt.14.out
+   1 0cdb3eaa5c3e4f45312c9916986555ea	ttt.2.out
+   1 123d1c4912af4a18ce22005e44adbb66	ttt.12.out
+   1 123d1c4912af4a18ce22005e44adbb66 rm	ttt.17.out
+   1 1cb42bf1db1a77952e5229da407bb69e	ttt.7
+   1 263aa904acd70ce2b21819d0ff3bf756	ttt.3
+   1 2dfe79d1fbb6ece1bf3817e958ca1079	ttt.6
+   1 3d76eb8871cf2dc4a6ee7debe1c28634	ttt.6.out
+   1 3dcf9a1c2573b5dfb9b521ab02dc0e2d	ttt.16
+   1 45884ea10df9b9b372c7eb4138b6c296	ttt.7.out
+   1 462803fa1247498475542dad4a74a95c	ttt.5
+   1 4cce10b1af810a5201013f83b4e9414e	ttt.15
+   1 4f3d6252728de73f08d6824e3d60fa9f	ttt.10
+   1 52f57ea1dca575ac5b95748ea2f2e537	ttt.5.out
+   1 547b779fd8b2c09c57f2e0d2c3858b40	ttt.9.out
+   1 55bb180fd15abddff154836c309ff963	ttt.11
+   1 70bd9d108a28734d0dd75e54004b56d6	ttt.8
+   1 76e3be8b663f9f1ed1ed4ca7a4ad5249	ttt.9
+   1 7bd4a6ec8ba6a1fe13bcbd205abc12f8	ttt.1
+   1 7c29f4e0180694cc9ad4138c9b638570	ttt.1.out
+   1 817521f12233fb8f2e7e5edbf1b6bf66	ttt.3.out
+   1 8828a7247759e014a1b414caba6878c0	ttt.16.out
+   1 907d3653dbcc9c0bd1756aeb8d67e766	ttt.4
+   1 99b44eb4294f874af23841f7bc79362a	ttt.4.out
+   1 c07014720806ce4557297ba1ca82d176	ttt.11.out
+   1 c1a932bea1afaf525544a8c51ded2e66	ttt.12
+   1 c1a932bea1afaf525544a8c51ded2e66	rm ttt.17
+   1 c3897a4de7815cc687f913b36a68ddd3	ttt.13
+   1 cea997c8e07e19c62a2cc95cb1d89129	ttt.15.out
+   1 cfda337b9d7adba00054d8e0d205595c	ttt.13.out
+   1 d0d1ae54c3a488d109edb194cba51c04	ttt.8.out
+   1 d279ddee5be13601c9a0714a299bb85f	ttt.10.out
+   1 d39b1c6f2392c0e72aa32c8bc1a698d5	ttt.14
+   1 e39ccbba88570cdc2c9a75452d72be50	ttt.2
+07d73e574e344ffe4aefc10e9cd89b53	ttt.14.out
+0cdb3eaa5c3e4f45312c9916986555ea	ttt.2.out
+123d1c4912af4a18ce22005e44adbb66	ttt.12.out
+1cb42bf1db1a77952e5229da407bb69e	ttt.7
+263aa904acd70ce2b21819d0ff3bf756	ttt.3
+2dfe79d1fbb6ece1bf3817e958ca1079	ttt.6
+3d76eb8871cf2dc4a6ee7debe1c28634	ttt.6.out
+3dcf9a1c2573b5dfb9b521ab02dc0e2d	ttt.16
+45884ea10df9b9b372c7eb4138b6c296	ttt.7.out
+462803fa1247498475542dad4a74a95c	ttt.5
+4cce10b1af810a5201013f83b4e9414e	ttt.15
+4f3d6252728de73f08d6824e3d60fa9f	ttt.10
+52f57ea1dca575ac5b95748ea2f2e537	ttt.5.out
+547b779fd8b2c09c57f2e0d2c3858b40	ttt.9.out
+55bb180fd15abddff154836c309ff963	ttt.11
+70bd9d108a28734d0dd75e54004b56d6	ttt.8
+76e3be8b663f9f1ed1ed4ca7a4ad5249	ttt.9
+7bd4a6ec8ba6a1fe13bcbd205abc12f8	ttt.1
+7c29f4e0180694cc9ad4138c9b638570	ttt.1.out
+7f57439455e00b572358857a46a80119	guide
+817521f12233fb8f2e7e5edbf1b6bf66	ttt.3.out
+8828a7247759e014a1b414caba6878c0	ttt.16.out
+907d3653dbcc9c0bd1756aeb8d67e766	ttt.4
+99b44eb4294f874af23841f7bc79362a	ttt.4.out
+c07014720806ce4557297ba1ca82d176	ttt.11.out
+c1a932bea1afaf525544a8c51ded2e66	ttt.12
+c3897a4de7815cc687f913b36a68ddd3	ttt.13
+cea997c8e07e19c62a2cc95cb1d89129	ttt.15.out
+cfda337b9d7adba00054d8e0d205595c	ttt.13.out
+d0d1ae54c3a488d109edb194cba51c04	ttt.8.out
+d279ddee5be13601c9a0714a299bb85f	ttt.10.out
+d39b1c6f2392c0e72aa32c8bc1a698d5	ttt.14
+e39ccbba88570cdc2c9a75452d72be50	ttt.2
+f          1          13           0          40  96.0784314 
+         13          57          67           0           0 /home/jdc/git/tictestrue/testcmds/guide Del Snarf | Look 
+F          1           4           0         116  98.1481481         116 
+         14          25         116           0           1 +Errors Del Snarf | Look 
+/home/jdc/git/tictestrue/testcmds/ttt.17 modified since last read
+	was 2010/05/24 22:21:05; now 2010/05/24 22:28:20

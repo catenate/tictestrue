@@ -1,5 +1,5 @@
 #!/usr/local/plan9/bin/rc
 cmd=$1
 
-./apply -l ./diffout `{ls testcmds/$cmd.[0-9] testcmds/$cmd.[0-9][0-9] testcmds/$cmd.[0-9][0-9][0-9] >[2]/dev/null}
+./apply -l ./diffout `{ls testcmds/*.out | sed 's,\.out,,' >[2]/dev/null}
 exit 0
