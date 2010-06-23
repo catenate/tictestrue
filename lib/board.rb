@@ -4,7 +4,7 @@ PAIR = 10
 PAIR_BLOCKED = 5
 WIN = 100
 
-MINWIN = 2*PAIR + WIN
+MINWIN = 3*PAIR + WIN
 
 ERROR_FULL = -1
 ERROR_RANGE = -2
@@ -12,7 +12,7 @@ ERROR_RANGE = -2
 class Board
 	attr_accessor :board
 	
-	def initialize(board)
+	def initialize(board = [1, 2, 3, 4, 5, 6, 7, 8, 9])
 		@board = board
 	end
 

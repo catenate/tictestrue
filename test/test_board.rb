@@ -115,7 +115,7 @@ class TestTtt < Test::Unit::TestCase
 	end
 	
 	def test_pickxo
-		display = true
+		display = false
 		
 		pickaxe = @board.pickxo("x")
 		assert_equal(pickaxe, 5)

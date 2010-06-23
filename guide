@@ -1,18 +1,20 @@
-/home/jdc/Dropbox/nb
+./testcmd ttt
+/home/jdc/Dropbox/nb/music
+:, |sed 's,'',’,'
 :, |sed 's,,,g'
 chmod +x testcmd diffout apply
-git mv testcmd/* .
-git status
-git commit -a -m 'add cptmp'
-git push origin master
 g def `{find . -name '*.ℛℬ'}
+git commit -a -m 'rspec board tests: initializes, rejects invalid move'
+git mv testcmd/* .
+git push origin master
+git status
+http://musicdiscovery.cdbabypodcast.com/
 ls -ltr
 mk -n
-./testcmd ttt
+pr -n -t lib/board.rb > numbered
 |fmt -w 72
 |sort|uniq
 |tr '[a-z]' '[A-Z]'
 
 cmd=ttt
 ls testcmds/$cmd.[0-9] testcmds/$cmd.[0-9][0-9] testcmds/$cmd.[0-9][0-9][0-9] >[2]/dev/null
-
