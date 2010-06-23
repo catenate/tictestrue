@@ -8,4 +8,6 @@ whole-program tests.
 
 “./ttt.rb” runs the tic-tac-toe program.
 
-Tasks tracked at http://www.pivotaltracker.com/projects/82400
+“spec spec” (in progress) runs RSpec behavior tests.
+
+Tasks tracked in the file kanban, and at http://www.pivotaltracker.com/projects/82400

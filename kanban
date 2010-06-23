@@ -1,5 +1,7 @@
 # backlog ready(5) working(2) complete archive
 working story:/nb rspec port unit test/
 working story:/nb rspec spec command/
+complete rspec board test: rejects invalid move
+complete rspec board test: initializes
 complete story:/install rspec gem/
 complete story:/install rubygems/
