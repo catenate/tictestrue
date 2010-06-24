@@ -1,7 +1,7 @@
 Test-driven tic-tac-toe in Ruby 1.9.1.
 
-`make` (or `mk` if you installed plan9port) converts *.ℛℬ (unicode ruby)
-files to *.rb using toascii.sed, and runs unit tests.
+`make` (or `mk` if you installed plan9port) converts \*.ℛℬ (unicode ruby)
+files to \*.rb using toascii.sed, and runs unit tests.
 
 `./testcmd ttt` (expects /usr/local/plan9/bin/rc) runs user-interface
 whole-program tests.
