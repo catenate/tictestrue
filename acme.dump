@@ -5,22 +5,16 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           2           0           0   2.0697168 
-          2          47         241           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0           6         150         150   4.1394336 
-          6          60        2976           0           0 /home/jdc/git/tictestrue/lib/board.rb Del Snarf Undo | Look 
-f          0          18           0          17   6.2091503 
-         18          52          17           1           1 /home/jdc/git/tictestrue/spec/ Del Snarf Get | Look 
-f          0          19         176         176   8.2788671 
-         19          66         968           0           0 /home/jdc/git/tictestrue/spec/board_spec.rb Del Snarf Undo | Look 
-f          0           8         295         414  77.2331155 
-          8          61        4176           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf | Look 
-f          0           7           0           0  96.0784314 
-          7          52          42           1           0 /home/jdc/git/tictestrue/test/ Del Snarf Get | Look 
-f          0           9         121         148  98.1481481 
-          9          49        1227           0           0 /home/jdc/git/tictestrue/ttt.ℛℬ Del Snarf | Look 
-F          1           0      474229      474229   2.0697168      474229 
-         12          59      474229           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+f          0           2         150         150   2.0697168 
+          2          55        2976           0           0 /home/jdc/git/tictestrue/lib/board.rb Del Snarf | Look 
+f          0           4         176         176   6.2091503 
+          4          61         968           0           0 /home/jdc/git/tictestrue/spec/board_spec.rb Del Snarf | Look 
+f          0           5         295         414  10.3485839 
+          5          61        4176           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf | Look 
+f          0           8         124         124  12.4183007 
+          8          52         444           0           0 /home/jdc/git/tictestrue/README.md Del Snarf | Look 
+F          1           0      478137      478137   2.0697168      478137 
+          9          59      478137           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -22461,9 +22455,116 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #
 #	maketest
 #	numbered
-f          1          13         153         153  52.3965142 
-         13          64         491           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look New scratch
-f          1           3          18          18  82.8976035 
-          3          54         194           0           0 /home/jdc/git/tictestrue/kanban Del Snarf Undo | Look 
-f          1           4         972         982  96.1873638 
-          4          52        1307           0           0 /home/jdc/git/tictestrue/story Del Snarf Undo | Look
+[master c0c2a0b] rspec board tests: initializes, rejects invalid move
+ 8 files changed, 14968 insertions(+), 206 deletions(-)
+ create mode 100644 kanban
+ create mode 100644 spec/board_spec.rb
+ create mode 100644 story
+To git@github.com:catenate/tictestrue.git
+   f750dbc..c0c2a0b  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README
+#	modified:   kanban
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	maketest
+#	numbered
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 4f20f58] minor README and kanban updates
+ 2 files changed, 5 insertions(+), 1 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   c0c2a0b..4f20f58  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	maketest
+#	numbered
+no changes added to commit (use "git add" and/or "git commit -a")
+[master f574298] use single backtick to code-ify commands in README
+ 1 files changed, 4 insertions(+), 4 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   4f20f58..f574298  master -> master
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    README -> README.md
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	maketest
+#	numbered
+[master 9a6ab8d] use markdown for README
+ 1 files changed, 0 insertions(+), 0 deletions(-)
+ rename README => README.md (100%)
+To git@github.com:catenate/tictestrue.git
+   f574298..9a6ab8d  master -> master
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	README
+#	maketest
+#	numbered
+nothing added to commit but untracked files present (use "git add" to track)
+Everything up-to-date
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	rm README
+#	maketest
+#	numbered
+nothing added to commit but untracked files present (use "git add" to track)
+[master a0eaf12] literal asterisks in README
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   9a6ab8d..a0eaf12  master -> master
+WARNING:  Installing to ~/.gem since /var/lib/gems/1.9.1 and
+	  /var/lib/gems/1.9.1/bin aren't both writable.
+/usr/lib/ruby/1.9.1/rubygems/installer.rb:149: warning: Insecure world writable dir /usr/local in PATH, mode 040777
+Couldn't find file to include: 'MaRuKu.txt'
+Updating class cache with 142 classes...
+Couldn't find file to include: 'MaRuKu.txt'
+Successfully installed liquid-2.0.0
+Successfully installed stemmer-1.0.1
+Successfully installed classifier-1.3.1
+Successfully installed directory_watcher-1.3.2
+Successfully installed syntax-1.0.0
+Successfully installed maruku-0.6.0
+Successfully installed jekyll-0.6.1
+7 gems installed
+Installing ri documentation for liquid-2.0.0...
+Installing ri documentation for stemmer-1.0.1...
+Installing ri documentation for classifier-1.3.1...
+Installing ri documentation for directory_watcher-1.3.2...
+Installing ri documentation for syntax-1.0.0...
+Installing ri documentation for maruku-0.6.0...
+Installing ri documentation for jekyll-0.6.1...
+Installing RDoc documentation for liquid-2.0.0...
+Installing RDoc documentation for stemmer-1.0.1...
+Installing RDoc documentation for classifier-1.3.1...
+Installing RDoc documentation for directory_watcher-1.3.2...
+Installing RDoc documentation for syntax-1.0.0...
+Installing RDoc documentation for maruku-0.6.0...
+Installing RDoc documentation for jekyll-0.6.1...
+f          1          10           0           0   4.1394336 
+         10          59         565           0           0 /home/jdc/git/tictestrue/guide Del Snarf | Look New scratch
+f          1          11         121         168   6.2091503 
+         11          54         324           0           0 /home/jdc/git/tictestrue/kanban Del Snarf Undo | Look 
+f          1          12        1542        1542   8.2788671 
+         12          52        1716           0           0 /home/jdc/git/tictestrue/story Del Snarf Undo | Look

@@ -38,3 +38,15 @@ gem1.9.1 install rspec
 /home/jdc/.bashrc
 PATH=$PATH:/home/jdc/.gem/ruby/1.9.1/bin/ export PATH
 which spec
+
+
+nb jekyll github web site blog
+http://github.com/mojombo/jekyll
+http://pages.github.com/
+http://wiki.github.com/mojombo/jekyll/install
+gem1.9.1 install jekyll
+http://wiki.github.com/mojombo/jekyll/usage
+http://wiki.github.com/mojombo/jekyll/configuration
+http://wiki.github.com/mojombo/jekyll/sites
+http://wiki.github.com/mojombo/jekyll/yaml-front-matter
+http://wiki.github.com/mojombo/jekyll/template-data
