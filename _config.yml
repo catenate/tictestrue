@@ -1,6 +1,6 @@
 --- 
 permalink: /:year/:month/:title
-destination: ./_site
+destination: ./tictestrue/_site
 exclude: 
 - README.md
 - acme.dump
