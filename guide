@@ -1,15 +1,17 @@
+:,
 http://daringfireball.net/projects/markdown/syntax
 http://www.liquidmarkup.org/
 |sed 's,'',’,'
-|sed 's,<br/>$,,' |fmt -w 62 |sed 's,$,<br/>,'
+|sed 's,  $,,' |fmt -w 62 |sed 's,$,  ,'
 |sort|uniq
 
 jekyll --server
 ps -a | grep jekyll
 http://0.0.0.0:4000
 
+cp 2010-05-28-board-pickxo.markdown _posts/2010-05-28-board-pickxo.markdown
 git status
-git commit -a -m 'permalink: /tictestrue/:year/:month/:title'
+git commit -a -m 'Try two spaces at end of each line for hard wrap.'
 git push origin gh-pages
 
 git branch
