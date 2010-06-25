@@ -1,1 +1,16 @@
-Test-driven tic-tac-toe in Ruby, managed by user stories.
+---
+layout: index
+title: tictestrue
+---
+<strong>tictestrue</strong>
+<br/>
+<span class="mute">Test-driven tic-tac-toe in Ruby, managed by user stories.</span>
+<br/>
+<br/>
+<br/>
+<span class="mute">Explain</span><br/>
+<br/>
+{% for post in site.categories.explain %}
+	<em><a href="{{ post.url }}">{{ post.title }}</a></em> &nbsp; <span class="mute">{{ post.date | date_to_string }}</span>
+	{{ post.content | truncate: 140 }}<br/>
+{% endfor %}

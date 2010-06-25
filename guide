@@ -1,0 +1,18 @@
+http://daringfireball.net/projects/markdown/syntax
+http://www.liquidmarkup.org/
+|sed 's,'',’,'
+|sed 's,<br/>$,,' |fmt -w 62 |sed 's,$,<br/>,'
+|sort|uniq
+
+jekyll --server
+ps -a | grep jekyll
+http://0.0.0.0:4000
+
+git status
+git commit -a -m 'First pages commit'
+git push origin gh-pages
+
+git branch
+git checkout master
+
+cp -r /home/jdc/git/catenate.github.com/
