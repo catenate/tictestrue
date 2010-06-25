@@ -1,6 +1,6 @@
 --- 
-permalink: /:year/:month/:title
-destination: ./tictestrue/_site
+permalink: /tictestrue/:year/:month/:title
+destination: ./_site
 exclude: 
 - README.md
 - acme.dump
