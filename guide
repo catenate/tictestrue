@@ -9,7 +9,7 @@ ps -a | grep jekyll
 http://0.0.0.0:4000
 
 git status
-git commit -a -m 'First pages commit'
+git commit -a -m 'permalink: /tictestrue/:year/:month/:title'
 git push origin gh-pages
 
 git branch
