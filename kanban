@@ -1,8 +1,24 @@
 # backlog ready(5) working(2) complete archive
-ready story:/nb rspec port unit test/
-ready story:/nb rspec spec command/
-working story:/nb jekyll github web site blog/
-complete rspec board test: rejects invalid move
+archive story:/install rspec gem/
+archive story:/install rubygems/
+backlog set SIDE=0 and return SIDE
 complete rspec board test: initializes
-complete story:/install rspec gem/
-complete story:/install rubygems/
+complete story:/nb jekyll github web site blog/
+complete story:/nb rspec spec command/
+complete test/test_board.rb:/setup/
+complete test/test_board.rb:/test_error/
+complete test/test_board.rb:/test_new/
+ready test/test_board.rb:/test_fill/
+ready test/test_board.rb:/test_first_1/
+ready test/test_board.rb:/test_first_2/
+ready test/test_board.rb:/test_first_3/
+ready test/test_board.rb:/test_first_4/
+ready test/test_board.rb:/test_first_5/
+ready test/test_board.rb:/test_first_6/
+ready test/test_board.rb:/test_first_7/
+ready test/test_board.rb:/test_first_8/
+ready test/test_board.rb:/test_first_9/
+ready test/test_board.rb:/test_pickxo/
+ready test/test_board.rb:/test_range/
+working rspec board test: rejects invalid move
+working story:/nb rspec port unit test/

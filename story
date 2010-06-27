@@ -27,17 +27,19 @@ Install rubygems1.9.1.
 http://en.wikipedia.org/wiki/RubyGems
 
 
-
 nb install rspec gem
 Install the rspec gem.
 gem1.9.1(1l)
 gem1.9.1 list --local
 gem1.9.1 list --remote | grep spec
-http://rspec.info/
 gem1.9.1 install rspec
 /home/jdc/.bashrc
 PATH=$PATH:/home/jdc/.gem/ruby/1.9.1/bin/ export PATH
 which spec
+
+
+nb rspec info documentation before after each all example module include pending
+http://rspec.info/documentation/
 
 
 nb jekyll github web site blog

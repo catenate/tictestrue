@@ -30,13 +30,138 @@ describe Board, "rejects invalid move" do
 		@board.board.should == @empty
 	end
 	
-	it "that underflows the array range" do
+	it "and leaves board unchanged on underflow" do
 		@board.move(0, "x")
 		@board.board.should == @empty
 	end
 	
-	it "that overflows the array range" do
+	it "and returns error on underflow" do
+		@board.move(0, "x").should == ERROR_RANGE
+	end
+	
+	it "and leaves board unchanged on overflow" do
 		@board.move(10, "x")
 		@board.board.should == @empty
+	end
+	
+	it "and returns error on overflow" do
+		@board.move(10, "x").should == ERROR_RANGE
+	end
+end
+
+describe Board, "move" do
+	before(:each) do
+		@board = Board.new
+		@empty = @board.board
+	end
+	
+	it "fills in the board with a first move" do
+		@board.move(1, "x")
+		@board.board.should == ["x", 2, 3, 4, 5, 6, 7, 8, 9]
+	end
+end
+
+describe Board, "eval first move" do
+	before(:each) do
+		@board = Board.new
+		@empty = @board.board
+	end
+	
+	it "sets value on corner 1" do
+		@board.move(1, "x")
+		@board.eval("x").should == CORNER
+	end
+	
+	it "sets value on corner 3" do
+		@board.move(3, "x")
+		@board.eval("x").should == CORNER
+	end
+	
+	it "sets value on corner 7" do
+		@board.move(7, "x")
+		@board.eval("x").should == CORNER
+	end
+	
+	it "sets value on corner 9" do
+		@board.move(9, "x")
+		@board.eval("x").should == CORNER
+	end
+	
+	it "sets value on side 2" do
+		@board.move(2, "x")
+		@board.eval("x").should == 0
+	end
+	
+	it "sets value on side 4" do
+		@board.move(4, "x")
+		@board.eval("x").should == 0
+	end
+	
+	it "sets value on side 6" do
+		@board.move(6, "x")
+		@board.eval("x").should == 0
+	end
+	
+	it "sets value on side 8" do
+		@board.move(8, "x")
+		@board.eval("x").should == 0
+	end
+	
+	it "sets value on center 5" do
+		@board.move(5, "x")
+		@board.eval("x").should == CENTER
+	end
+end
+
+describe Board, "eval first two moves" do
+	before(:each) do
+		@board = Board.new
+		@empty = @board.board
+	end
+	
+	it "sets pair on corner 1 and side 2" do
+		@board.move(1, "x")
+		@board.move(2, "x")
+		@board.eval("x").should == PAIR + CORNER
+	end
+	
+	it "sets pair on corner 1 and center 5" do
+		@board.move(1, "x")
+		@board.move(5, "x")
+		@board.eval("x").should == PAIR + CENTER + CORNER
+	end
+	
+	it "sets pair on corner 1 and corner 9" do
+		@board.move(1, "x")
+		@board.move(9, "x")
+		@board.eval("x").should == PAIR + 2*CORNER
+	end
+end
+
+describe Board, "eval first three moves" do
+	before(:each) do
+		@board = Board.new
+		@empty = @board.board
+	end
+	
+	it "sets win on corners 1 and 3, and side 2" do
+		@board.move(1, "x")
+		@board.move(2, "x")
+		@board.move(3, "x")
+		@board.eval("x").should == WIN + 3*PAIR + 2*CORNER
+	end
+	
+	it "sets win on corners 1 and 9, and center 5" do
+		@board.move(1, "x")
+		@board.move(5, "x")
+		@board.move(9, "x")
+		@board.eval("x").should == WIN + 3*PAIR + CENTER + 2*CORNER
+	end
+	
+	it "sets win on sides 2 and 8, and center 5" do
+		@board.move(1, "x")
+		@board.move(2, "x")
+		@board.move(3, "x")
+		@board.eval("x").should == WIN + 3*PAIR + CENTER
 	end
 end
