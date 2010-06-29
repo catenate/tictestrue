@@ -5,16 +5,18 @@
 w jekyll jekyll Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           1         130         130   2.0697168 
+f          0           1           0           0   2.0697168 
           1          47         243           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0          14           0           0  85.7298475 
+f          0          16           0           0   4.1394336 
+         16          53          93           1           0 /home/jdc/git/tictestrue/_site/ Del Snarf Get | Look 
+f          0          14           0           0   6.2091503 
          14          51          18           1           0 /home/jdc/git/tictestrue/lib/ Del Snarf Get | Look 
-f          0           9        2888        2888  87.7995643 
+f          0           9        1161        1161   8.2788671 
           9          66        3539           0           0 /home/jdc/git/tictestrue/spec/board_spec.rb Del Snarf Undo | Look 
-f          0          12         525         554  89.8692810 
+f          0          12         525         554  98.1481481 
          12          66        4176           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf Redo | Look 
-F          1           0      812827      812827   2.0697168      812827 
-          3          69      812827           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+F          1           0      814333      814333   2.0697168      814333 
+          3          69      814333           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -27717,9 +27719,56 @@ Finished in 0.008397866 seconds
 Finished in 0.008929551 seconds
 
 24 examples, 0 failures
-f          1          15         159         170   4.1394336 
-         15          53         579           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
-f          1           7         689         689  94.0087146 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   kanban
+#	modified:   spec/board_spec.rb
+#	modified:   story
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	_site/
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   kanban
+#	modified:   spec/board_spec.rb
+#	modified:   story
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   kanban
+#	modified:   spec/board_spec.rb
+#	modified:   story
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 24a70bd] rspec tests: range error; first move; eval first 1, 2, and 3
+ 6 files changed, 5330 insertions(+), 30 deletions(-)
+ rewrite kanban (73%)
+To git@github.com:catenate/tictestrue.git
+   9cab862..24a70bd  master -> master
+f          1          15         170         273  41.2854031 
+         15          53         620           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
+f          1           7         689         689  67.5381264 
           7          53        1812           0           0 /home/jdc/git/tictestrue/story Del Snarf Undo | Look 
-f          1          13         952         952  96.0784314 
+f          1          13         952         952  96.1873638 
          13          63         952           0           0 /home/jdc/git/tictestrue/kanban Del Snarf Undo | Look 

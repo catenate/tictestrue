@@ -6,7 +6,7 @@ chmod +x testcmd diffout apply
 g def `{find . -name '*.ℛℬ'}
 git mv README README.md
 git status
-git commit -a -m 'rspec tests: range error; first move; eval first 1, 2, and 3'
+git commit -a -m 'commit change to acme.dump'
 git push origin master
 git checkout gh-pages
 http://musicdiscovery.cdbabypodcast.com/
