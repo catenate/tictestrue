@@ -2,21 +2,17 @@
 /usr/local/plan9/font/times/latin1.7a.font
 /home/jdc/opt/src/icons/icons.14.font
   0.0000000  57.9687500
-w jekyll jekyll Newcol Kill Putall Dump acme.dump Exit 
+w jekyll jekyll jekyll Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           1           0           0   2.0697168 
           1          47         243           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0          16           0           0   4.1394336 
-         16          53          93           1           0 /home/jdc/git/tictestrue/_site/ Del Snarf Get | Look 
-f          0          14           0           0   6.2091503 
-         14          51          18           1           0 /home/jdc/git/tictestrue/lib/ Del Snarf Get | Look 
-f          0           9        1161        1161   8.2788671 
-          9          66        3539           0           0 /home/jdc/git/tictestrue/spec/board_spec.rb Del Snarf Undo | Look 
-f          0          12         525         554  98.1481481 
-         12          66        4176           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf Redo | Look 
-F          1           0      814333      814333   2.0697168      814333 
-          3          69      814333           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+f          0           9        3776        3776   4.1394336 
+          9          66        4740           0           0 /home/jdc/git/tictestrue/spec/board_spec.rb Del Snarf Undo | Look 
+f          0          11        1290        1328  98.1481481 
+         11          66        4176           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf Redo | Look 
+F          1           0      814903      814903   2.0697168      814903 
+          3          69      814903           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -27513,239 +27509,175 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #	modified:   index.html
 #
 no changes added to commit (use "git add" and/or "git commit -a")
+    110
+    140
+/home/jdc/.gem/ruby/1.9.1/gems/liquid-2.0.0/lib/liquid/strainer.rb:48: warning: undefining `object_id' may cause serious problem
+[2010-06-29 21:55:51] INFO  WEBrick 1.3.1
+[2010-06-29 21:55:51] INFO  ruby 1.9.1 (2010-01-10) [x86_64-linux]
+[2010-06-29 21:55:56] INFO  WEBrick::HTTPServer#start: pid=7649 port=4000
+localhost - - [29/Jun/2010:21:55:56 CDT] "GET / HTTP/1.1" 200 1046
+- -> /
+localhost - - [29/Jun/2010:21:55:56 CDT] "GET /css/screen.css HTTP/1.1" 200 323
+Referer -> /css/screen.css
+[2010-06-29 21:55:56] ERROR `/favicon.ico' not found.
+localhost - - [29/Jun/2010:21:55:56 CDT] "GET /favicon.ico HTTP/1.1" 404 279
+- -> /favicon.ico
+[2010-06-29 21:56:06] ERROR `/tictestrue/2010-05-28-board-pickxo.html' not found.
+localhost - - [29/Jun/2010:21:56:06 CDT] "GET /tictestrue/2010-05-28-board-pickxo.html HTTP/1.1" 404 307
+Referer -> /tictestrue/2010-05-28-board-pickxo.html
+[2010-06-29 21:56:06] ERROR `/favicon.ico' not found.
+localhost - - [29/Jun/2010:21:56:06 CDT] "GET /favicon.ico HTTP/1.1" 404 279
+- -> /favicon.ico
 # On branch gh-pages
 # Changed but not updated:
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   acme.dump
+#	modified:   index.html
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-error: You have local changes to 'acme.dump'; cannot switch branches.
-git: exit 1
 # On branch gh-pages
 # Changed but not updated:
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   acme.dump
+#	modified:   guide
+#	modified:   index.html
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-[gh-pages c7279a9] Update dump.
- 1 files changed, 8 insertions(+), 8 deletions(-)
+[gh-pages 01f1428] Add link to kanban, and summarize status.
+ 2 files changed, 12 insertions(+), 9 deletions(-)
 To git@github.com:catenate/tictestrue.git
-   03ea4b2..c7279a9  gh-pages -> gh-pages
+   c7279a9..01f1428  gh-pages -> gh-pages
+* gh-pages
+  master
+  remotes/origin/gh-pages
+  remotes/origin/master
+* gh-pages
+  master
 Switched to branch 'master'
-......
+# On branch master
+nothing to commit (working directory clean)
+.........................
 
-Finished in 0.004902362 seconds
+Finished in 0.006714029 seconds
 
-6 examples, 0 failures
-......
+25 examples, 0 failures
+..........................
 
-Finished in 0.003652798 seconds
+Finished in 0.008851324 seconds
 
-6 examples, 0 failures
-........
+26 examples, 0 failures
+..........................
 
-Finished in 0.003294246 seconds
+Finished in 0.009064566 seconds
 
-8 examples, 0 failures
-grep def /home/jdc/git/tictestrue/test/test_board.rb
-........*
-
-Pending:
-
-Board repeated move returns same board (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:53:in `block in <top (required)>'
-
-Finished in 0.00412012 seconds
-
-9 examples, 0 failures, 1 pending
-........F
+26 examples, 0 failures
+.........................F
 
 1)
-'Board move fills in the board' FAILED
-expected: ["x", 2, 3, 4, 5, 6, 7, 8, 9],
-     got: 0 (using ==)
-/home/jdc/git/tictestrue/spec/board_spec.rb:59:in `block (2 levels) in <top (required)>'
+'Board eval as fill board with x sets values after each move 1..9' FAILED
+expected: 2,
+     got: 1 (using ==)
+/home/jdc/git/tictestrue/spec/board_spec.rb:184:in `block (2 levels) in <top (required)>'
 
-Finished in 0.004844872 seconds
+Finished in 0.010074845 seconds
 
-9 examples, 1 failure
+26 examples, 1 failure
 spec: exit 1
-.........
+..........................
 
-Finished in 0.004698139 seconds
+Finished in 0.008752524 seconds
 
-9 examples, 0 failures
-.........F
+26 examples, 0 failures
+..........................
+
+Finished in 0.009761172 seconds
+
+26 examples, 0 failures
+/home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': /home/jdc/git/tictestrue/spec/board_spec.rb:193: syntax error, unexpected tSTRING_BEG, expecting ')' (SyntaxError)
+		@board.move(6 "x")
+		               ^
+/home/jdc/git/tictestrue/spec/board_spec.rb:193: syntax error, unexpected ')', expecting keyword_end
+/home/jdc/git/tictestrue/spec/board_spec.rb:199: syntax error, unexpected tSTRING_BEG, expecting ')'
+		@board.move(9 "x")
+		               ^
+/home/jdc/git/tictestrue/spec/board_spec.rb:199: syntax error, unexpected ')', expecting keyword_end
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `block in load_files'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /spec: exit 1
+home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/bin/spec:5:in `<top (required)>'
+	from /home/jdc/.gem/ruby/1.9.1/bin/spec:19:in `load'
+	from /home/jdc/.gem/ruby/1.9.1/bin/spec:19:in `<main>'
+/home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': /home/jdc/git/tictestrue/spec/board_spec.rb:199: syntax error, unexpected tSTRING_BEG, expecting ')' (SyntaxError)
+		@board.move(9 "x")
+		               ^
+/home/jdc/git/tictestrue/spec/board_spec.rb:199: syntax error, unexpected ')', expecting keyword_end
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `block in load_files'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /home/jdc/.gem/ruby/1.9.1/gems/rspec-1.3.0/bin/spec:5:in `<top (required)>'
+	from /home/jdc/.gem/ruby/1.9.1/bin/spec:19:in `load'
+	from /home/jdc/.gem/ruby/1.9.1/bin/spec:19:in `<main>'
+spec: exit 1
+.........................F
 
 1)
-ArgumentError in 'Board eval sets value on corner 1'
-wrong number of arguments (0 for 1)
-/home/jdc/git/tictestrue/spec/board_spec.rb:72:in `block (2 levels) in <top (required)>'
+'Board eval as fill board with x sets values after each move 1..9' FAILED
+expected: 152,
+     got: 147 (using ==)
+/home/jdc/git/tictestrue/spec/board_spec.rb:190:in `block (2 levels) in <top (required)>'
 
-Finished in 0.005045087 seconds
+Finished in 0.009901853 seconds
 
-10 examples, 1 failure
+26 examples, 1 failure
 spec: exit 1
-..........
-
-Finished in 0.003857942 seconds
-
-10 examples, 0 failures
-..........***
-
-Pending:
-
-Board eval sets value on corner 3 (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:75:in `block in <top (required)>'
-
-Board eval sets value on corner 7 (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:77:in `block in <top (required)>'
-
-Board eval sets value on corner 9 (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:79:in `block in <top (required)>'
-
-Finished in 0.004911066 seconds
-
-13 examples, 0 failures, 3 pending
-.............
-
-Finished in 0.004849133 seconds
-
-13 examples, 0 failures
-.............****
-
-Pending:
-
-Board eval first move sets value on side 2 (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:90:in `block in <top (required)>'
-
-Board eval first move sets value on side 4 (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:92:in `block in <top (required)>'
-
-Board eval first move sets value on side 6 (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:94:in `block in <top (required)>'
-
-Board eval first move sets value on side 8 (Not Yet Implemented)
-/home/jdc/git/tictestrue/spec/board_spec.rb:96:in `block in <top (required)>'
-
-Finished in 0.005939941 seconds
-
-17 examples, 0 failures, 4 pending
-.................
-
-Finished in 0.006090862 seconds
-
-17 examples, 0 failures
-..................
-
-Finished in 0.006645247 seconds
-
-18 examples, 0 failures
-..................
-
-Finished in 0.006250273 seconds
-
-18 examples, 0 failures
-..................F
+.........................F
 
 1)
-'Board eval first two moves sets value on corner 1 and side 2' FAILED
-expected: 1,
-     got: 11 (using ==)
-/home/jdc/git/tictestrue/spec/board_spec.rb:126:in `block (2 levels) in <top (required)>'
+'Board eval as fill board with x sets values after each move 1..9' FAILED
+expected: 154,
+     got: 147 (using ==)
+/home/jdc/git/tictestrue/spec/board_spec.rb:190:in `block (2 levels) in <top (required)>'
 
-Finished in 0.007150214 seconds
+Finished in 0.0094073 seconds
 
-19 examples, 1 failure
+26 examples, 1 failure
 spec: exit 1
-...................
-
-Finished in 0.007446618 seconds
-
-19 examples, 0 failures
-....................
-
-Finished in 0.012487894 seconds
-
-20 examples, 0 failures
-....................F
+.........................F
 
 1)
-'Board eval first two moves sets pair on corner 1 and corner 9' FAILED
-expected: 12,
-     got: 13 (using ==)
-/home/jdc/git/tictestrue/spec/board_spec.rb:137:in `block (2 levels) in <top (required)>'
+'Board eval as fill board with x sets values after each move 1..9' FAILED
+expected: 184,
+     got: 189 (using ==)
+/home/jdc/git/tictestrue/spec/board_spec.rb:194:in `block (2 levels) in <top (required)>'
 
-Finished in 0.007832487 seconds
+Finished in 0.009142153 seconds
 
-21 examples, 1 failure
+26 examples, 1 failure
 spec: exit 1
-.....................
+..........................
 
-Finished in 0.007996419 seconds
+Finished in 0.01021713 seconds
 
-21 examples, 0 failures
-.....................
+26 examples, 0 failures
+..........................
 
-Finished in 0.007007454 seconds
+Finished in 0.009121504 seconds
 
-21 examples, 0 failures
-......................
-
-Finished in 0.007423085 seconds
-
-22 examples, 0 failures
-.......................
-
-Finished in 0.008060823 seconds
-
-23 examples, 0 failures
-.......................
-
-Finished in 0.00719304 seconds
-
-23 examples, 0 failures
-........................
-
-Finished in 0.008397866 seconds
-
-24 examples, 0 failures
-........................
-
-Finished in 0.008929551 seconds
-
-24 examples, 0 failures
+26 examples, 0 failures
 # On branch master
 # Changed but not updated:
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   acme.dump
-#	modified:   guide
 #	modified:   kanban
 #	modified:   spec/board_spec.rb
-#	modified:   story
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	_site/
-no changes added to commit (use "git add" and/or "git commit -a")
-# On branch master
-# Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   .gitignore
-#	modified:   acme.dump
-#	modified:   guide
-#	modified:   kanban
-#	modified:   spec/board_spec.rb
-#	modified:   story
 #
 no changes added to commit (use "git add" and/or "git commit -a")
 # On branch master
@@ -27753,22 +27685,12 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #   (use "git add <file>..." to update what will be committed)
 #   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#	modified:   .gitignore
-#	modified:   acme.dump
 #	modified:   guide
 #	modified:   kanban
 #	modified:   spec/board_spec.rb
-#	modified:   story
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-[master 24a70bd] rspec tests: range error; first move; eval first 1, 2, and 3
- 6 files changed, 5330 insertions(+), 30 deletions(-)
- rewrite kanban (73%)
-To git@github.com:catenate/tictestrue.git
-   9cab862..24a70bd  master -> master
-f          1          15         170         273  41.2854031 
-         15          53         620           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
-f          1           7         689         689  67.5381264 
-          7          53        1812           0           0 /home/jdc/git/tictestrue/story Del Snarf Undo | Look 
-f          1          13         952         952  96.1873638 
-         13          63         952           0           0 /home/jdc/git/tictestrue/kanban Del Snarf Undo | Look 
+f          1           7         159         170  54.2483660 
+          7          53         609           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
+f          1          10         976         976  98.1481481 
+         10          60        1013           0           0 /home/jdc/git/tictestrue/kanban Del Snarf Undo | Look 

@@ -1,24 +1,24 @@
 # backlog ready(5) working(2) complete archive
-archive story:/install rspec gem/
-archive story:/install rubygems/
-backlog set SIDE=0 and return SIDE
-complete rspec board test: initializes
-complete story:/nb jekyll github web site blog/
-complete story:/nb rspec spec command/
-complete test/test_board.rb:/setup/
-complete test/test_board.rb:/test_error/
-complete test/test_board.rb:/test_new/
-ready test/test_board.rb:/test_fill/
-ready test/test_board.rb:/test_first_1/
-ready test/test_board.rb:/test_first_2/
-ready test/test_board.rb:/test_first_3/
-ready test/test_board.rb:/test_first_4/
-ready test/test_board.rb:/test_first_5/
-ready test/test_board.rb:/test_first_6/
-ready test/test_board.rb:/test_first_7/
-ready test/test_board.rb:/test_first_8/
-ready test/test_board.rb:/test_first_9/
-ready test/test_board.rb:/test_pickxo/
-ready test/test_board.rb:/test_range/
-working rspec board test: rejects invalid move
-working story:/nb rspec port unit test/
+archive 1 story:/install rspec gem/
+archive 1 story:/install rubygems/
+backlog 1 test/test_board.rb:/test_first_7/
+backlog 1 test/test_board.rb:/test_first_8/
+backlog 1 test/test_board.rb:/test_first_9/
+backlog 1 test/test_board.rb:/test_pickxo/
+backlog 1 test/test_board.rb:/test_range/
+backlog 2 set SIDE=0 and return SIDE
+complete 1 rejects move to taken location
+complete 1 rspec board test: initializes
+complete 1 story:/nb rspec spec command/
+complete 1 test/test_board.rb:/setup/
+complete 1 test/test_board.rb:/test_error/
+complete 1 test/test_board.rb:/test_fill/
+complete 1 test/test_board.rb:/test_new/
+complete 2 story:/nb jekyll github web site blog/
+ready 1 test/test_board.rb:/test_first_2/
+ready 1 test/test_board.rb:/test_first_3/
+ready 1 test/test_board.rb:/test_first_4/
+ready 1 test/test_board.rb:/test_first_5/
+ready 1 test/test_board.rb:/test_first_6/
+working 1 rspec board test: rejects invalid move
+working 1 test/test_board.rb:/test_first_1/

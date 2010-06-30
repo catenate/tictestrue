@@ -47,6 +47,13 @@ describe Board, "rejects invalid move" do
 	it "and returns error on overflow" do
 		@board.move(10, "x").should == ERROR_RANGE
 	end
+	
+	it "to a filled square" do
+		@board.move(1, "x")
+		@board.board.should == ["x", 2, 3, 4, 5, 6, 7, 8, 9]
+		@board.move(1, "o")
+		@board.board.should == ["x", 2, 3, 4, 5, 6, 7, 8, 9]
+	end
 end
 
 describe Board, "move" do
@@ -163,5 +170,32 @@ describe Board, "eval first three moves" do
 		@board.move(2, "x")
 		@board.move(3, "x")
 		@board.eval("x").should == WIN + 3*PAIR + CENTER
+	end
+end
+
+describe Board, "eval as fill board with x" do
+	it "sets values after each move 1..9" do
+		@board = Board.new
+		@empty = @board.board
+		@board.move(1, "x")
+		@board.eval("x").should == CORNER
+		@board.move(2, "x")
+		@board.eval("x").should == PAIR + CORNER
+		@board.move(2, "o")
+		@board.eval("x").should == PAIR + CORNER
+		@board.move(3, "x")
+		@board.eval("x").should == WIN + 3*PAIR + 2*CORNER
+		@board.move(4, "x")
+		@board.eval("x").should == WIN + 4*PAIR + PAIR_BLOCKED + 2*CORNER
+		@board.move(5, "x")
+		@board.eval("x").should == WIN + 8*PAIR + PAIR_BLOCKED + 2*CORNER + CENTER
+		@board.move(6, "x")
+		@board.eval("x").should == 2*WIN + 11*PAIR + 2*PAIR_BLOCKED + 2*CORNER + CENTER
+		@board.move(7, "x")
+		@board.eval("x").should == 4*WIN + 15*PAIR + 2*PAIR_BLOCKED + 3*CORNER + CENTER
+		@board.move(8, "x")
+		@board.eval("x").should == 5*WIN + 18*PAIR + 4*PAIR_BLOCKED + 3*CORNER + CENTER
+		@board.move(9, "x")
+		@board.eval("x").should == 8*WIN + 24*PAIR + 4*PAIR_BLOCKED + 4*CORNER + CENTER
 	end
 end
