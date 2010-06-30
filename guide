@@ -1,8 +1,9 @@
 :,
+>wc -c
 http://daringfireball.net/projects/markdown/syntax
 http://www.liquidmarkup.org/
-|sed 's,'',’,'
 |sed 's,  $,,' |fmt -w 62 |sed 's,$,  ,'
+|sed 's,'',’,'
 |sort|uniq
 
 jekyll --server
@@ -11,7 +12,7 @@ http://0.0.0.0:4000
 
 cp 2010-05-28-board-pickxo.markdown _posts/2010-05-28-board-pickxo.markdown
 git status
-git commit -a -m 'Make title a link to the github repo.'
+git commit -a -m 'Add link to kanban, and summarize status.'
 git push origin gh-pages
 
 git branch
