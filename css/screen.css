@@ -31,6 +31,6 @@ a:visited {
   color: #a00;
 }
 
-#disqus_thread {
+.disqus_thread {
   width: 500px;
 }

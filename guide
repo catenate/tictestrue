@@ -1,5 +1,6 @@
 :,
 >wc -c
+/home/jdc/Dropbox/nb/20100630
 http://daringfireball.net/projects/markdown/syntax
 http://www.liquidmarkup.org/
 |sed 's,  $,,' |fmt -w 62 |sed 's,$,  ,'
