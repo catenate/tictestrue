@@ -7,26 +7,26 @@ c          0 New Cut Paste Snarf Sort Zerox Delcol
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           1           0           0   2.0697168 
           1          47         169           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0           7           0           0   4.1394336 
-          7          51          11           1           0 /home/jdc/git/tictestrue/css/ Del Snarf Get | Look 
-f          0           2           0           0   6.2091503 
-          2          56          35           1           0 /home/jdc/git/tictestrue/_layouts/ Del Snarf Get | Look 
-f          0           3         456         462   8.2788671 
-          3          75         462           0           0 /home/jdc/git/catenate.github.com/_layouts/post.html Del Snarf Undo | Look 
-f          0          11           0           0  10.3485839 
-         11          56         116           1           0 /home/jdc/git/catenate.github.com/ Del Snarf Get | Look 
-f          0          12           0           0  12.4183007 
-         12          60          11           1           0 /home/jdc/git/catenate.github.com/css/ Del Snarf Get | Look 
-f          0           4         258         258  14.4880174 
-          4          66         463           0           0 /home/jdc/git/tictestrue/_layouts/post.html Del Snarf Undo | Look 
-f          0           9         323         359  16.5577342 
-          9          62         359           0           0 /home/jdc/git/tictestrue/css/screen.css Del Snarf Undo | Look 
-f          0          10         561         561  18.6274510 
-         10          47        5289           0           0 /home/jdc/Dropbox/nb/20100630 Del Snarf | Look 
-f          0          13         323         359  20.6971678 
-         13          71         359           0           0 /home/jdc/git/catenate.github.com/css/screen.css Del Snarf Undo | Look 
-F          1           0      819533      819533   2.0697168      819533 
-          5          59      819533           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+f          0           2           0           0   4.1394336 
+          2          51          11           1           0 /home/jdc/git/tictestrue/css/ Del Snarf Get | Look 
+f          0           3           0           0   6.2091503 
+          3          56          35           1           0 /home/jdc/git/tictestrue/_layouts/ Del Snarf Get | Look 
+f          0           4         235         282   8.2788671 
+          4          75         485           0           0 /home/jdc/git/catenate.github.com/_layouts/post.html Del Snarf Undo | Look 
+f          0           5           0           0  10.3485839 
+          5          56         112           1           0 /home/jdc/git/catenate.github.com/ Del Snarf Get | Look 
+f          0           7         485         485  12.4183007 
+          7          66         485           0           0 /home/jdc/git/tictestrue/_layouts/post.html Del Snarf Undo | Look 
+f          0           8         323         358  91.9389978 
+          8          62         358           0           0 /home/jdc/git/tictestrue/css/screen.css Del Snarf Undo | Look 
+f          0          10         323         358  94.0087146 
+         10          66         358           0           0 /home/jdc/git/catenate.github.com/css/screen.css Del Snarf | Look 
+f          0           9         561         561  96.0784314 
+          9          47        5289           0           0 /home/jdc/Dropbox/nb/20100630 Del Snarf | Look 
+f          0           6           0           0  98.1481481 
+          6          60          11           1           0 /home/jdc/git/catenate.github.com/css/ Del Snarf Get | Look 
+F          1           0      819736      819736   2.0697168      819736 
+         11          59      819736           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -27814,5 +27814,9 @@ To git@github.com:catenate/tictestrue.git
  2 files changed, 2 insertions(+), 1 deletions(-)
 To git@github.com:catenate/tictestrue.git
    37184ab..ba8db99  gh-pages -> gh-pages
-f          1           6         332         424   9.1503268 
-          6          53         497           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
+[gh-pages ef9f2ad] Figure out page width to keep comments in line.
+ 3 files changed, 82 insertions(+), 13 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   ba8db99..ef9f2ad  gh-pages -> gh-pages
+f          1          12         332         424   6.1002179 
+         12          48         497           0           0 /home/jdc/git/tictestrue/guide Del Snarf | Look 

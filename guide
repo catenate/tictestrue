@@ -13,7 +13,7 @@ http://0.0.0.0:4000
 
 cp 2010-05-28-board-pickxo.markdown _posts/2010-05-28-board-pickxo.markdown
 git status
-git commit -a -m 'Figure out page width to keep comments in line.'
+git commit -a -m 'push dump'
 git push origin gh-pages
 
 git branch
