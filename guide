@@ -12,7 +12,7 @@ http://0.0.0.0:4000
 
 cp 2010-05-28-board-pickxo.markdown _posts/2010-05-28-board-pickxo.markdown
 git status
-git commit -a -m 'Add link to kanban, and summarize status.'
+git commit -a -m 'Add disqus comments to posts.'
 git push origin gh-pages
 
 git branch
