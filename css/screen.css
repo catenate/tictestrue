@@ -1,7 +1,6 @@
 body {
   background-color: #ffc;
   background: #ffc;
-  max-width: 600px;
 }
 
 a {
@@ -30,4 +29,8 @@ a:visited {
 
 .mute a:hover {
   color: #a00;
+}
+
+#disqus_thread {
+  width: 500px;
 }
