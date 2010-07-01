@@ -19,6 +19,8 @@ write a shell script to run all the specs, so when you port it over make
 sure it can be run with a simple `spec spec`.  Your integration specs
 don't need to be moved over, at least for now.
 
+spec/board_spec.rb
+test/test_board.rb
 spec spec
 
 

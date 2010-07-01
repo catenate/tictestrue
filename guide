@@ -6,7 +6,7 @@ chmod +x testcmd diffout apply
 g def `{find . -name '*.ℛℬ'}
 git mv README README.md
 git status
-git commit -a -m 'test board fill and reject move to taken location'
+git commit -a -m 'finish porting Test::Unit cases'
 git push origin master
 git checkout gh-pages
 http://musicdiscovery.cdbabypodcast.com/

@@ -2,17 +2,13 @@
 /usr/local/plan9/font/times/latin1.7a.font
 /home/jdc/opt/src/icons/icons.14.font
   0.0000000  57.9687500
-w jekyll jekyll jekyll Newcol Kill Putall Dump acme.dump Exit 
+w jekyll jekyll jekyll jekyll Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           1           0           0   2.0697168 
           1          47         243           1           0 /home/jdc/git/tictestrue/ Del Snarf Get | Look 
-f          0           9        3776        3776   4.1394336 
-          9          66        4740           0           0 /home/jdc/git/tictestrue/spec/board_spec.rb Del Snarf Undo | Look 
-f          0          11        1290        1328  98.1481481 
-         11          66        4176           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf Redo | Look 
-F          1           0      815481      815481   2.0697168      815481 
-          3          69      815481           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+F          1           0      820277      820277   2.0697168      820277 
+         11          59      820277           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -27706,7 +27702,118 @@ no changes added to commit (use "git add" and/or "git commit -a")
  rewrite kanban (95%)
 To git@github.com:catenate/tictestrue.git
    3d8efa1..9400874  master -> master
-f          1           7         170         262   4.1394336 
-          7          53         609           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
-f          1          10         976         976   6.2091503 
-         10          60        1013           0           0 /home/jdc/git/tictestrue/kanban Del Snarf Undo | Look 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 34ee991] commit dump
+ 1 files changed, 20 insertions(+), 4 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   9400874..34ee991  master -> master
+# On branch master
+nothing to commit (working directory clean)
+Switched to branch 'gh-pages'
+../catenate.github.com/_layouts/post.html 
+# On branch gh-pages
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   _layouts/post.html
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch gh-pages
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   _layouts/post.html
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[gh-pages e69c800] Add disqus comments to posts.
+ 2 files changed, 4 insertions(+), 1 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   01f1428..e69c800  gh-pages -> gh-pages
+BODY { 
+max-width : 900px; 
+}/home/jdc/.gem/ruby/1.9.1/gems/liquid-2.0.0/lib/liquid/strainer.rb:48: warning: undefining `object_id' may cause serious problem
+[2010-06-30 20:18:16] INFO  WEBrick 1.3.1
+[2010-06-30 20:18:16] INFO  ruby 1.9.1 (2010-01-10) [x86_64-linux]
+[2010-06-30 20:18:22] INFO  WEBrick::HTTPServer#start: pid=29491 port=4000
+localhost - - [30/Jun/2010:20:18:31 CDT] "GET / HTTP/1.1" 200 1046
+- -> /
+localhost - - [30/Jun/2010:20:18:31 CDT] "GET /css/screen.css HTTP/1.1" 200 343
+Referer -> /css/screen.css
+[2010-06-30 20:18:32] ERROR `/favicon.ico' not found.
+localhost - - [30/Jun/2010:20:18:32 CDT] "GET /favicon.ico HTTP/1.1" 404 279
+- -> /favicon.ico
+[2010-06-30 20:18:36] ERROR `/tictestrue/2010-05-28-board-pickxo.html' not found.
+localhost - - [30/Jun/2010:20:18:36 CDT] "GET /tictestrue/2010-05-28-board-pickxo.html HTTP/1.1" 404 307
+Referer -> /tictestrue/2010-05-28-board-pickxo.html
+[2010-06-30 20:18:36] ERROR `/favicon.ico' not found.
+localhost - - [30/Jun/2010:20:18:36 CDT] "GET /favicon.ico HTTP/1.1" 404 279
+- -> /favicon.ico
+# On branch gh-pages
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   css/screen.css
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[gh-pages 5b8bdaa] Figure out page width to keep comments in line.
+ 2 files changed, 237 insertions(+), 15 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   e69c800..5b8bdaa  gh-pages -> gh-pages
+# On branch gh-pages
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   css/screen.css
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[gh-pages a421c55] Figure out page width to keep comments in line.
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   5b8bdaa..a421c55  gh-pages -> gh-pages
+[gh-pages 0e80afb] Figure out page width to keep comments in line.
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   a421c55..0e80afb  gh-pages -> gh-pages
+[gh-pages 37184ab] Figure out page width to keep comments in line.
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   0e80afb..37184ab  gh-pages -> gh-pages
+[gh-pages ba8db99] Figure out page width to keep comments in line.
+ 2 files changed, 2 insertions(+), 1 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   37184ab..ba8db99  gh-pages -> gh-pages
+[gh-pages ef9f2ad] Figure out page width to keep comments in line.
+ 3 files changed, 82 insertions(+), 13 deletions(-)
+To git@github.com:catenate/tictestrue.git
+   ba8db99..ef9f2ad  gh-pages -> gh-pages
+# On branch gh-pages
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[gh-pages f3dcf43] push dump
+ 2 files changed, 27 insertions(+), 23 deletions(-)
+# On branch gh-pages
+nothing to commit (working directory clean)
+To git@github.com:catenate/tictestrue.git
+   ef9f2ad..f3dcf43  gh-pages -> gh-pages
+Switched to branch 'master'
+f          1          12         398         418  30.1742919 
+         12          53         459           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 

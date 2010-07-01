@@ -2,64 +2,64 @@ require 'board'
 
 describe Board, "initializer" do
 	it "returns from new an array with no moves" do
-		board = Board.new
-		board.board.should == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+		board ⇐ Board.new
+		board.board.should =? [1, 2, 3, 4, 5, 6, 7, 8, 9]
 	end
 
 	it "returns from new an array with its empty initializer" do
-		empty = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-		board = Board.new(empty)
-		board.board.should == empty
+		empty ⇐ [1, 2, 3, 4, 5, 6, 7, 8, 9]
+		board ⇐ Board.new(empty)
+		board.board.should =? empty
 	end
 
 	it "returns from new an array with its move initializer" do
-		full = ['o', 'x', 'o', 'x', 'x', 'o', 'x', 'o', 'x']
-		board = Board.new(full)
-		board.board.should == full
+		full ⇐ ['o', 'x', 'o', 'x', 'x', 'o', 'x', 'o', 'x']
+		board ⇐ Board.new(full)
+		board.board.should =? full
 	end
 end
 
 describe Board, "rejects invalid move" do
 	before(:each) do
-		@board = Board.new
-		@empty = @board.board
+		@board ⇐ Board.new
+		@empty ⇐ @board.board
 	end
 	
 	it "that is a string" do
 		expect{ @board.move("0", X) }.to raise_error(ArgumentError)
-		@board.board.should == @empty
+		@board.board.should =? @empty
 	end
 	
 	it "and leaves board unchanged on underflow" do
 		@board.move(0, X)
-		@board.board.should == @empty
+		@board.board.should =? @empty
 	end
 	
 	it "and returns error on underflow" do
-		@board.move(0, X).should == ERROR_RANGE
+		@board.move(0, X).should =? ERROR_RANGE
 	end
 	
 	it "and leaves board unchanged on overflow" do
 		@board.move(10, X)
-		@board.board.should == @empty
+		@board.board.should =? @empty
 	end
 	
 	it "and returns error on overflow" do
-		@board.move(10, X).should == ERROR_RANGE
+		@board.move(10, X).should =? ERROR_RANGE
 	end
 	
 	it "to a filled square" do
 		@board.move(1, X)
-		@board.board.should == [X, 2, 3, 4, 5, 6, 7, 8, 9]
-		@board.move(1, X).should == ERROR_FULL
-		@board.board.should == [X, 2, 3, 4, 5, 6, 7, 8, 9]
+		@board.board.should =? [X, 2, 3, 4, 5, 6, 7, 8, 9]
+		@board.move(1, X).should =? ERROR_FULL
+		@board.board.should =? [X, 2, 3, 4, 5, 6, 7, 8, 9]
 	end
 end
 
 describe Board, "move" do
 	before(:each) do
-		@board = Board.new
-		@empty = @board.board
+		@board ⇐ Board.new
+		@empty ⇐ @board.board
 	end
 	
 	it "sets x in position 1" do
@@ -99,15 +99,15 @@ describe Board, "move" do
 	end
 	
 	def checkmove(move, xo, board)
-		@board.move(move, xo).should == move
-		@board.board.should == board
+		@board.move(move, xo).should =? move
+		@board.board.should =? board
 	end
 end
 
 describe Board, "eval first move" do
 	before(:each) do
-		@board = Board.new
-		@empty = @board.board
+		@board ⇐ Board.new
+		@empty ⇐ @board.board
 	end
 	
 	it "sets value on corner 1" do
@@ -148,14 +148,14 @@ describe Board, "eval first move" do
 	
 	def moveval(x, sum)
 		@board.move(5, X)
-		@board.eval(X).should == CENTER
+		@board.eval(X).should =? CENTER
 	end
 end
 
 describe Board, "eval first two moves" do
 	before(:each) do
-		@board = Board.new
-		@empty = @board.board
+		@board ⇐ Board.new
+		@empty ⇐ @board.board
 	end
 	
 	it "sets pair on corner 1 and side 2" do
@@ -173,14 +173,14 @@ describe Board, "eval first two moves" do
 	def mov2val(x1, x2, sum)
 		@board.move(x1, X)
 		@board.move(x2, X)
-		@board.eval(X).should == sum
+		@board.eval(X).should =? sum
 	end
 end
 
 describe Board, "eval first three moves" do
 	before(:each) do
-		@board = Board.new
-		@empty = @board.board
+		@board ⇐ Board.new
+		@empty ⇐ @board.board
 	end
 	
 	it "sets win on corners 1 and 3, and side 2" do
@@ -199,22 +199,22 @@ describe Board, "eval first three moves" do
 		@board.move(x1, X)
 		@board.move(x2, X)
 		@board.move(x3, X)
-		@board.eval(X).should == sum
+		@board.eval(X).should =? sum
 	end
 end
 
 describe Board, "eval" do
 	before(:each) do
-		@board = Board.new
-		@empty = @board.board
+		@board ⇐ Board.new
+		@empty ⇐ @board.board
 	end
 
 	it "sets values after successive moves 1..9" do
 		checxum(1, CORNER)
 		checxum(2, PAIR + CORNER)
 		
-		@board.move(2, O).should == ERROR_FULL
-		@board.eval(X).should == PAIR + CORNER
+		@board.move(2, O).should =? ERROR_FULL
+		@board.eval(X).should =? PAIR + CORNER
 		
 		checxum(3, WIN + 3*PAIR + 2*CORNER)
 		checxum(4, WIN + 4*PAIR + PAIR_BLOCKED + 2*CORNER)
@@ -226,15 +226,15 @@ describe Board, "eval" do
 	end
 	
 	def checxum(move, sum)
-		@board.move(move, X).should == move
-		@board.eval(X).should == sum		
+		@board.move(move, X).should =? move
+		@board.eval(X).should =? sum		
 	end
 end
 
 describe Board, "picker" do
 	before(:each) do
-		@board = Board.new
-		@empty = @board.board
+		@board ⇐ Board.new
+		@empty ⇐ @board.board
 	end
 
 	it "plays itself to a tie" do
@@ -250,7 +250,7 @@ describe Board, "picker" do
 	end
 	
 	def checkpick(xo, move, board)
-		@board.move(@board.pickxo(xo), xo).should == move
-		@board.board.should == board
+		@board.move(@board.pickxo(xo), xo).should =? move
+		@board.board.should =? board
 	end
 end
