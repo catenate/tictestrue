@@ -11,8 +11,8 @@ f          0           9        3776        3776   4.1394336
           9          66        4740           0           0 /home/jdc/git/tictestrue/spec/board_spec.rb Del Snarf Undo | Look 
 f          0          11        1290        1328  98.1481481 
          11          66        4176           0           0 /home/jdc/git/tictestrue/test/test_board.rb Del Snarf Redo | Look 
-F          1           0      814903      814903   2.0697168      814903 
-          3          69      814903           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
+F          1           0      815481      815481   2.0697168      815481 
+          3          69      815481           0           1 /home/jdc/git/tictestrue/+Errors Del Snarf Undo Put | Look 
 sed -f toascii.sed ./lib/board.ℛℬ > ./lib/board.rb
 chmod +x ./lib/board.rb
 /usr/bin/ruby1.9.1 -w -I . test/test_board.rb
@@ -27690,7 +27690,23 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #	modified:   spec/board_spec.rb
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-f          1           7         159         170  54.2483660 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#	modified:   kanban
+#	modified:   spec/board_spec.rb
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 9400874] test board fill and reject move to taken location
+ 4 files changed, 186 insertions(+), 230 deletions(-)
+ rewrite kanban (95%)
+To git@github.com:catenate/tictestrue.git
+   3d8efa1..9400874  master -> master
+f          1           7         170         262   4.1394336 
           7          53         609           0           0 /home/jdc/git/tictestrue/guide Del Snarf Undo | Look 
-f          1          10         976         976  98.1481481 
+f          1          10         976         976   6.2091503 
          10          60        1013           0           0 /home/jdc/git/tictestrue/kanban Del Snarf Undo | Look 
